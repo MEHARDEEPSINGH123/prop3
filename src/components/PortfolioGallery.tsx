@@ -53,8 +53,8 @@ export default function PortfolioGallery({ galleryItems }: PortfolioGalleryProps
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <div className="h-[1px] w-12 bg-accent" />
-              <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold">
-                Chapter 09 · Visual Anthology
+              <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold font-mono">
+                Visual Anthology & Architectural Gallery
               </span>
             </div>
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-normal leading-[1.08]">

@@ -104,8 +104,8 @@ export default function ViewingAppointments({
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <div className="h-[1px] w-12 bg-accent" />
-              <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold">
-                Chapter 08 · Private Access
+              <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold font-mono">
+                Private Client Viewing Appointments
               </span>
             </div>
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-normal leading-[1.08]">

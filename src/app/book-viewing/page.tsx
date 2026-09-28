@@ -203,7 +203,7 @@ function BookViewingContent() {
               <div className="flex items-center space-x-3 mb-4">
                 <div className="h-[1px] w-12 bg-accent" />
                 <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold font-mono">
-                  Chapter 08 · Bespoke Access
+                  Private Client Viewing Salon · Bespoke Access
                 </span>
               </div>
               <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl text-white font-normal leading-[1.06]">

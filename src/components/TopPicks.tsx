@@ -116,8 +116,8 @@ export default function TopPicks({
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <div className="h-[1px] w-12 bg-accent" />
-              <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold">
-                Chapter 04 · Curated Portfolio
+              <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold font-mono">
+                Curated Portfolio & Signature Acquisitions
               </span>
             </div>
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-primary font-normal leading-[1.08]">

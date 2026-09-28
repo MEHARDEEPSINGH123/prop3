@@ -168,7 +168,7 @@ export default function Navbar() {
                 >
                   <div className="pr-4">
                     <span className="text-[11px] font-mono tracking-widest text-accent font-bold block mb-2">
-                      CHAPTER {item.index}
+                      INDEX // {item.index}
                     </span>
                     <span className="font-serif text-2xl sm:text-3xl text-white group-hover:text-accent font-normal block leading-tight transition-colors">
                       {item.label}

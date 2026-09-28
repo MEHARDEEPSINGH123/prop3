@@ -181,7 +181,7 @@ export default function HeroShowcase({
   return (
     <>
       {/* =========================================================
-          CHAPTER 01: ULTRA-EDITORIAL ARCHITECTURAL MONOGRAPH
+          ULTRA-EDITORIAL ARCHITECTURAL MONOGRAPH
           Full-Bleed Edge-to-Edge Canvas with Floating Telemetry
       ========================================================= */}
       <section
@@ -233,7 +233,7 @@ export default function HeroShowcase({
               className="flex items-center space-x-3 text-xs font-mono"
             >
               <span className="text-accent font-bold tracking-[0.25em] uppercase">
-                Chapter 01 // Monograph
+                Signature Monograph Collection
               </span>
               <span className="text-white/20 hidden sm:inline">|</span>
               <span className="text-neutral-300 tracking-wider hidden sm:inline">
@@ -423,7 +423,7 @@ export default function HeroShowcase({
             <div className="flex items-center space-x-2.5">
               <Compass className="w-4 h-4 text-accent" />
               <span className="text-[11px] font-mono uppercase tracking-[0.2em] text-accent font-bold">
-                Chapter 01 · Curated Residence Search Console
+                Curated Residence Search Console
               </span>
             </div>
             <span className="hidden sm:inline-block text-[10px] font-mono text-neutral-400 uppercase tracking-wider">

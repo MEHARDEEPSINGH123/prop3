@@ -98,19 +98,19 @@ export default function HomePage() {
       {/* Editorial Navigation */}
       <Navbar />
 
-      {/* CHAPTER 01: Hero Showcase & Masthead */}
+      {/* Hero Showcase & Masthead */}
       <HeroShowcase
         heroProjects={heroProjects}
         onSearchFilter={handleSearchFilter}
       />
 
-      {/* CHAPTER 02: The Atelier Manifesto / Our Story */}
+      {/* The Atelier Manifesto / Our Story */}
       <OurStory story={story} />
 
-      {/* CHAPTER 03: Property Statistics */}
+      {/* Property Statistics */}
       <PropertyStatistics statistics={statistics} />
 
-      {/* CHAPTER 04: Top Picks Portfolio */}
+      {/* Top Picks Portfolio */}
       <TopPicks
         properties={properties}
         onSelectProperty={(prop) => setSelectedPropertyModal(prop)}
@@ -121,19 +121,19 @@ export default function HomePage() {
         activeFilters={activeFilters}
       />
 
-      {/* CHAPTER 05: Architectural Amenities / Facilities Showcase */}
+      {/* Architectural Amenities / Facilities Showcase */}
       <FacilitiesShowcase facilities={facilities} />
 
-      {/* CHAPTER 06: Capital Advisory / Financing Solutions */}
+      {/* Capital Advisory / Financing Solutions */}
       <FinancingSolutions financingOptions={financingOptions} />
 
-      {/* CHAPTER 07: Analytical Architecture / Project Comparison Tool */}
+      {/* Analytical Architecture / Project Comparison Tool */}
       <ProjectComparison
         comparisons={comparisons}
         onSelectForViewing={(name) => handleBookViewing(name)}
       />
 
-      {/* CHAPTER 08: Private Viewing Appointments */}
+      {/* Private Viewing Appointments */}
       <ViewingAppointments
         viewingAppointments={viewingAppointments}
         agents={agents}
@@ -141,19 +141,19 @@ export default function HomePage() {
         preselectedPropertyName={preselectedViewingProperty}
       />
 
-      {/* CHAPTER 09: Visual Anthology / Portfolio Gallery */}
+      {/* Visual Anthology / Portfolio Gallery */}
       <PortfolioGallery galleryItems={galleryItems} />
 
-      {/* CHAPTER 10: Patronage Testimonials */}
+      {/* Patronage Testimonials */}
       <Testimonials testimonials={testimonials} />
 
-      {/* CHAPTER 11: Enclave Cartography / Featured Locations */}
+      {/* Enclave Cartography / Featured Locations */}
       <FeaturedLocations
         locations={locations}
         onSelectDistrict={handleDistrictFilter}
       />
 
-      {/* CHAPTER 12: Private Concierge & Epilogue / Footer */}
+      {/* Private Concierge & Epilogue / Footer */}
       <Footer />
 
       {/* Interactive Property Inspection Modal */}

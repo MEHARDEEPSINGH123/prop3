@@ -36,8 +36,8 @@ export default function Footer() {
           <div className="lg:col-span-6 space-y-7">
             <div className="flex items-center space-x-3">
               <div className="h-[1px] w-12 bg-accent" />
-              <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold">
-                Chapter 12 · Private Concierge & Epilogue
+              <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold font-mono">
+                Haute Terres Private Client Concierge
               </span>
             </div>
 

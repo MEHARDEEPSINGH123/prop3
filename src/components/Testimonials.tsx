@@ -18,8 +18,8 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
         {/* Section Header */}
         <div className="flex items-center space-x-3 mb-4">
           <div className="h-[1px] w-12 bg-accent" />
-          <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold">
-            Chapter 10 · Patronage Testimonials
+          <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold font-mono">
+            Client Endorsements & Patronage
           </span>
         </div>
 

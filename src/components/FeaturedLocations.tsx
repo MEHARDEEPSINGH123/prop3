@@ -24,8 +24,8 @@ export default function FeaturedLocations({
           <div>
             <div className="flex items-center space-x-3 mb-4">
               <div className="h-[1px] w-12 bg-accent" />
-              <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold">
-                Chapter 11 · Enclave Cartography
+              <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold font-mono">
+                Prime Singapore Enclaves & Cartography
               </span>
             </div>
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-normal leading-[1.08]">
