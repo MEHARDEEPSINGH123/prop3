@@ -150,7 +150,7 @@ export default function FinancingSolutions({
                 step="500000"
                 value={propertyPrice}
                 onChange={(e) => setPropertyPrice(Number(e.target.value))}
-                className="w-full accent-accent h-2 bg-neutral-200 rounded-lg cursor-pointer"
+                className="w-full accent-accent h-2 bg-white/15 rounded-lg cursor-pointer"
               />
               <div className="flex justify-between text-[10px] text-neutral-400 font-mono mt-1.5">
                 <span>S$ 3.5M</span>
@@ -162,7 +162,7 @@ export default function FinancingSolutions({
             {/* Input 2: Down Payment % */}
             <div>
               <div className="flex justify-between items-center mb-2.5">
-                <label className="text-xs uppercase font-semibold tracking-wider text-secondary">
+                <label className="text-xs uppercase font-semibold tracking-wider text-neutral-300">
                   Down Payment Ratio ({downPaymentPct}%)
                 </label>
                 <span className="font-serif text-xl font-bold text-accent">
@@ -176,7 +176,7 @@ export default function FinancingSolutions({
                 step="5"
                 value={downPaymentPct}
                 onChange={(e) => setDownPaymentPct(Number(e.target.value))}
-                className="w-full accent-accent h-2 bg-neutral-200 rounded-lg cursor-pointer"
+                className="w-full accent-accent h-2 bg-white/15 rounded-lg cursor-pointer"
               />
               <div className="flex justify-between text-[10px] text-neutral-400 font-mono mt-1.5">
                 <span>25% (Min LTV standard)</span>
@@ -188,10 +188,10 @@ export default function FinancingSolutions({
             {/* Input 3: Loan Tenor */}
             <div>
               <div className="flex justify-between items-center mb-2.5">
-                <label className="text-xs uppercase font-semibold tracking-wider text-secondary">
+                <label className="text-xs uppercase font-semibold tracking-wider text-neutral-300">
                   Loan Tenor (Years)
                 </label>
-                <span className="font-serif text-xl font-bold text-primary">
+                <span className="font-serif text-xl font-bold text-white">
                   {loanTenorYears} Years ({loanTenorYears * 12} Installments)
                 </span>
               </div>
@@ -202,7 +202,7 @@ export default function FinancingSolutions({
                 step="5"
                 value={loanTenorYears}
                 onChange={(e) => setLoanTenorYears(Number(e.target.value))}
-                className="w-full accent-accent h-2 bg-white/10 rounded-lg cursor-pointer"
+                className="w-full accent-accent h-2 bg-white/15 rounded-lg cursor-pointer"
               />
               <div className="flex justify-between text-[10px] text-neutral-400 font-mono mt-1.5">
                 <span>10 Years</span>
@@ -308,55 +308,58 @@ export default function FinancingSolutions({
         <div>
           <div className="flex items-center space-x-3 mb-6">
             <div className="h-[1px] w-8 bg-accent" />
-            <h3 className="font-serif text-2xl sm:text-3xl text-primary font-medium">
+            <h3 className="font-serif text-2xl sm:text-3xl text-white font-medium">
               Institutional Bank Options & Financing Plans
             </h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {financingOptions.map((bankOpt, idx) => (
-              <div
-                key={bankOpt.bank}
-                onClick={() => setSelectedBankIndex(idx)}
-                className={`p-6 rounded-3xl border transition-all cursor-pointer bg-white ${
-                  selectedBankIndex === idx
-                    ? 'border-accent shadow-luxury ring-1 ring-accent'
-                    : 'border-borderSubtle hover:border-neutral-400'
-                }`}
-              >
-                <div className="flex justify-between items-start mb-3">
-                  <div>
-                    <h4 className="font-bold text-primary text-sm font-sans">
-                      {bankOpt.bank_name || bankOpt.bank}
-                    </h4>
-                    <span className="text-[11px] text-accent font-semibold font-mono">
-                      {bankOpt.package_name || 'Premier Facility'}
+            {financingOptions.map((bankOpt, idx) => {
+              const isSelected = selectedBankIndex === idx
+              return (
+                <div
+                  key={bankOpt.bank}
+                  onClick={() => setSelectedBankIndex(idx)}
+                  className={`p-6 rounded-3xl border transition-all duration-300 cursor-pointer backdrop-blur-2xl ${
+                    isSelected
+                      ? 'bg-accent/[0.08] border-accent shadow-[0_0_30px_rgba(223,183,118,0.25)] ring-1 ring-accent'
+                      : 'bg-white/[0.03] border-white/10 hover:border-accent/40 hover:bg-white/[0.06]'
+                  }`}
+                >
+                  <div className="flex justify-between items-start mb-3">
+                    <div>
+                      <h4 className="font-bold text-white text-sm font-sans">
+                        {bankOpt.bank_name || bankOpt.bank}
+                      </h4>
+                      <span className="text-[11px] text-accent font-semibold font-mono block mt-0.5">
+                        {bankOpt.package_name || 'Premier Facility'}
+                      </span>
+                    </div>
+                    <span className="text-xs font-mono font-bold bg-white/10 border border-white/15 px-2.5 py-1 rounded-full text-accent">
+                      {bankOpt.loan_to_value} LTV
                     </span>
                   </div>
-                  <span className="text-xs font-mono font-bold bg-neutral-100 px-2.5 py-1 rounded text-primary">
-                    {bankOpt.loan_to_value} LTV
+
+                  <div className="my-4 py-3 border-y border-white/10">
+                    <span className="text-[10px] uppercase font-mono text-neutral-400 block mb-0.5">
+                      Indicative Facility Rate
+                    </span>
+                    <span className="font-serif text-2xl font-bold text-white">
+                      {bankOpt.interest_rate_display || `${bankOpt.interest_rate_pct}% p.a.`}
+                    </span>
+                  </div>
+
+                  <p className="text-xs text-neutral-300 line-clamp-2 leading-relaxed mb-4 font-sans">
+                    {bankOpt.advisory_notes}
+                  </p>
+
+                  <span className="text-[11px] text-accent font-semibold flex items-center space-x-1.5 font-mono">
+                    <span>{isSelected ? 'Currently Selected' : 'Select this facility'}</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-accent" />
                   </span>
                 </div>
-
-                <div className="my-4 py-3 border-y border-borderSubtle">
-                  <span className="text-[10px] uppercase font-mono text-neutral-400 block mb-0.5">
-                    Indicative Facility Rate
-                  </span>
-                  <span className="font-serif text-2xl font-bold text-primary">
-                    {bankOpt.interest_rate_display || `${bankOpt.interest_rate_pct}% p.a.`}
-                  </span>
-                </div>
-
-                <p className="text-xs text-secondary line-clamp-2 leading-relaxed mb-4">
-                  {bankOpt.advisory_notes}
-                </p>
-
-                <span className="text-[11px] text-accent font-semibold flex items-center space-x-1.5">
-                  <span>{selectedBankIndex === idx ? 'Currently Selected' : 'Select this facility'}</span>
-                  <ArrowRight className="w-3 h-3" />
-                </span>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </div>

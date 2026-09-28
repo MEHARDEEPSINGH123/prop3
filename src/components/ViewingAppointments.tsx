@@ -156,7 +156,7 @@ export default function ViewingAppointments({
 
                 {/* Step 2: Interactive Date Selection */}
                 <div>
-                  <label className="text-xs uppercase font-semibold tracking-wider text-secondary mb-2 flex items-center space-x-1.5">
+                  <label className="text-xs uppercase font-semibold tracking-wider text-neutral-300 mb-2 flex items-center space-x-1.5 font-mono">
                     <CalendarIcon className="w-4 h-4 text-accent" />
                     <span>2. Choose Appointment Date</span>
                   </label>
@@ -173,19 +173,19 @@ export default function ViewingAppointments({
                           key={dateStr}
                           type="button"
                           onClick={() => setSelectedDate(dateStr)}
-                          className={`p-3.5 rounded-2xl border text-center transition-all ${
+                          className={`p-3.5 rounded-2xl border text-center transition-all cursor-pointer ${
                             isSelected
-                              ? 'border-accent bg-primary text-white shadow-luxury'
-                              : 'border-borderSubtle bg-neutral-50 text-secondary hover:bg-neutral-100'
+                              ? 'border-accent bg-accent text-black font-bold shadow-luxury-hover'
+                              : 'border-white/10 bg-white/[0.03] text-neutral-300 hover:border-white/30 hover:bg-white/[0.06]'
                           }`}
                         >
-                          <span className="text-[10px] uppercase font-mono tracking-widest block text-accent">
+                          <span className={`text-[10px] uppercase font-mono tracking-widest block ${isSelected ? 'text-black/80 font-bold' : 'text-accent'}`}>
                             {dayName}
                           </span>
-                          <span className="font-serif text-xl font-bold block my-0.5">
+                          <span className={`font-serif text-xl font-bold block my-0.5 ${isSelected ? 'text-black' : 'text-white'}`}>
                             {dayNum} {monthName}
                           </span>
-                          <span className="text-[10px] opacity-75 font-mono">
+                          <span className={`text-[10px] font-mono ${isSelected ? 'text-black/70' : 'text-neutral-400'}`}>
                             {dateStr}
                           </span>
                         </button>
@@ -196,7 +196,7 @@ export default function ViewingAppointments({
 
                 {/* Step 3: Time Slot Selection (from JSON) */}
                 <div>
-                  <label className="text-xs uppercase font-semibold tracking-wider text-secondary mb-2 flex items-center space-x-1.5">
+                  <label className="text-xs uppercase font-semibold tracking-wider text-neutral-300 mb-2 flex items-center space-x-1.5 font-mono">
                     <Clock className="w-4 h-4 text-accent" />
                     <span>3. Available Private Time Slots</span>
                   </label>
@@ -208,21 +208,21 @@ export default function ViewingAppointments({
                           key={slot.slot_id}
                           type="button"
                           onClick={() => setSelectedSlotId(slot.slot_id)}
-                          className={`p-4 rounded-xl border text-left transition-all ${
+                          className={`p-4 rounded-xl border text-left transition-all cursor-pointer ${
                             isSelected
-                              ? 'border-accent bg-accent/10 ring-1 ring-accent text-primary'
-                              : 'border-borderSubtle bg-neutral-50 text-secondary hover:border-neutral-400'
+                              ? 'border-accent bg-accent/15 ring-1 ring-accent text-white'
+                              : 'border-white/10 bg-white/[0.03] text-neutral-300 hover:border-white/30 hover:bg-white/[0.06]'
                           }`}
                         >
                           <div className="flex justify-between items-center mb-1">
-                            <span className="font-mono text-sm font-bold text-primary">
+                            <span className="font-mono text-sm font-bold text-accent">
                               {slot.time} hrs
                             </span>
-                            <span className="text-[9px] uppercase font-mono px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
+                            <span className="text-[9px] uppercase font-mono px-2.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-bold">
                               {slot.status}
                             </span>
                           </div>
-                          <span className="text-xs text-secondary font-medium block">
+                          <span className="text-xs text-neutral-300 font-medium block">
                             {slot.session_name || 'Bespoke Private Tour'}
                           </span>
                         </button>
@@ -233,7 +233,7 @@ export default function ViewingAppointments({
 
                 {/* Step 4: Preferred Private Client Agent (from JSON) */}
                 <div>
-                  <label className="text-xs uppercase font-semibold tracking-wider text-secondary mb-2 flex items-center space-x-1.5">
+                  <label className="text-xs uppercase font-semibold tracking-wider text-neutral-300 mb-2 flex items-center space-x-1.5 font-mono">
                     <User className="w-4 h-4 text-accent" />
                     <span>4. Select Preferred Advisory Partner</span>
                   </label>
