@@ -2,8 +2,8 @@
   "hero_projects": [
     {
       "id": "HP01",
-      "name": "Marina Crest Signature",
-      "subtitle": "Iconic Waterfront Super-Tower",
+      "name": "Marina Crest Horizon",
+      "subtitle": "Iconic Glass Super-Tower · Level 64 Triplex",
       "location": "Marina Bay, Singapore",
       "district": "District 01",
       "starting_price_sgd": 18500000,
@@ -16,13 +16,13 @@
       "area_sqft": "7,450 - 11,200 sq ft",
       "architect": "WOHA & Kengo Kuma Associates",
       "completion_year": "Q4 2026",
-      "hero_image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85",
-      "tagline": "Sculpted into the horizon of Singapore's premier maritime district with 360° panoramic harbor vistas."
+      "hero_image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=2000&q=85",
+      "tagline": "Sculpted into the horizon of Singapore's premier maritime district with 360° panoramic harbor and skyline vistas."
     },
     {
       "id": "HP02",
-      "name": "The Aurelia Sky Duplex",
-      "subtitle": "Biophilic Haven Above Orchard",
+      "name": "The Aurelia Sky Triplex",
+      "subtitle": "Glass Sky Mansion Above Orchard",
       "location": "Orchard Boulevard, Singapore",
       "district": "District 09",
       "starting_price_sgd": 26800000,
@@ -35,13 +35,13 @@
       "area_sqft": "9,600 sq ft",
       "architect": "Foster + Partners",
       "completion_year": "Ready for Handover",
-      "hero_image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=85",
+      "hero_image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=2000&q=85",
       "tagline": "An architectural monument floating 42 storeys above Singapore's most prestigious shopping boulevard."
     },
     {
       "id": "HP03",
-      "name": "Le Palais Botanique",
-      "subtitle": "Good Class Bungalow Heritage Enclave",
+      "name": "Le Palais Modern Pavilion",
+      "subtitle": "Cantilevered Glass & Basalt Sanctuary",
       "location": "Nassim Hill, Singapore",
       "district": "District 10",
       "starting_price_sgd": 42000000,
@@ -54,12 +54,12 @@
       "area_sqft": "16,400 sq ft",
       "architect": "Kerry Hill Architects",
       "completion_year": "Q2 2027",
-      "hero_image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=2000&q=85",
-      "tagline": "Where ancient rainforest canopies meet timeless brutalist tropical architecture."
+      "hero_image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85",
+      "tagline": "Where ancient rainforest canopies meet timeless brutalist tropical architecture and private reflection pools."
     },
     {
       "id": "HP04",
-      "name": "Solstice Waterfront Cove",
+      "name": "Solstice Oceanfront Berth",
       "subtitle": "Private Berth Oceanfront Sanctuary",
       "location": "Sentosa Cove, Singapore",
       "district": "District 04",
@@ -73,7 +73,7 @@
       "area_sqft": "8,800 sq ft",
       "architect": "Robert A.M. Stern Architects",
       "completion_year": "Completed",
-      "hero_image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85",
+      "hero_image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=2000&q=85",
       "tagline": "Moored directly at Singapore's only gated oceanic residential canal with private superyacht mooring."
     }
   ],
@@ -92,10 +92,14 @@
       "area_sqft": 8800,
       "completion_date": "Completed",
       "investment_potential": "High Capital Growth (8.4% p.a.)",
-      "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1400&q=85",
       "description": "Direct South China Sea facing sanctuary with a 25-meter cantilevered infinity edge pool and private deep-water yacht berth.",
       "architect": "Kerry Hill Architects",
-      "highlights": ["Private Deep-Water Yacht Berth", "Cantilevered Saltwater Lap Pool", "Subterranean Tasting Vault"],
+      "highlights": [
+        "Private Deep-Water Yacht Berth",
+        "Cantilevered Saltwater Lap Pool",
+        "Subterranean Tasting Vault"
+      ],
       "floor": "3 Storeys + Basement"
     },
     {
@@ -112,10 +116,14 @@
       "area_sqft": 6400,
       "completion_date": "Q4 2026",
       "investment_potential": "Ultra-Prime Yield & Capital Preservation",
-      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?auto=format&fit=crop&w=1400&q=85",
       "description": "Perched on level 58, framing unobstructed vistas of Marina Bay fireworks, Gardens by the Bay, and Singapore Strait.",
       "architect": "WOHA",
-      "highlights": ["Private Double-Decker Express Lift", "Observation Terrace", "Boffi Master Kitchen"],
+      "highlights": [
+        "Private Double-Decker Express Lift",
+        "Observation Terrace",
+        "Boffi Master Kitchen"
+      ],
       "floor": "Level 58"
     },
     {
@@ -132,10 +140,14 @@
       "area_sqft": 16400,
       "completion_date": "Q2 2027",
       "investment_potential": "Generational Trophy Asset",
-      "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85",
       "description": "Surrounded by conserved heritage angsana trees, featuring Indonesian volcanic basalt stone and Japanese cedar finishes.",
       "architect": "Kengo Kuma",
-      "highlights": ["30-Car Subterranean Vault", "Private Spa & Onsen", "Helicopter Touchdown Pad"],
+      "highlights": [
+        "30-Car Subterranean Vault",
+        "Private Spa & Onsen",
+        "Helicopter Touchdown Pad"
+      ],
       "floor": "Sprawling Compound"
     },
     {
@@ -152,10 +164,14 @@
       "area_sqft": 9600,
       "completion_date": "Ready for Handover",
       "investment_potential": "Prime Rental Yield 4.8%",
-      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1400&q=85",
       "description": "Three storeys of floor-to-ceiling glass curated with bespoke Poliform millwork and rooftop temperature-regulated plunge pool.",
       "architect": "Foster + Partners",
-      "highlights": ["Rooftop Glass Plunge Pool", "Private Pneumatic Vacuum Elevator", "Sommelier Cellar"],
+      "highlights": [
+        "Rooftop Glass Plunge Pool",
+        "Private Pneumatic Vacuum Elevator",
+        "Sommelier Cellar"
+      ],
       "floor": "Levels 38 to 40"
     },
     {
@@ -172,10 +188,14 @@
       "area_sqft": 4200,
       "completion_date": "Completed",
       "investment_potential": "Strong Expat Rental Demand 4.2%",
-      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1400&q=85",
       "description": "Curved aerodynamic contours designed by Daniel Libeskind overlooking the marina promenade and historic King's Dock.",
       "architect": "Studio Daniel Libeskind",
-      "highlights": ["Marina Boardwalk Access", "Double-Volume Ceilings", "Smart Glass Glazing"],
+      "highlights": [
+        "Marina Boardwalk Access",
+        "Double-Volume Ceilings",
+        "Smart Glass Glazing"
+      ],
       "floor": "Level 14 - 15"
     },
     {
@@ -192,10 +212,14 @@
       "area_sqft": 11500,
       "completion_date": "Q3 2026",
       "investment_potential": "Unmatched Land Scarcity Value",
-      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=85",
       "description": "Bordering Bukit Timah Nature Reserve with cantilevered steel eaves, private stream courtyards, and organic stone masonry.",
       "architect": "SCDA Architects",
-      "highlights": ["Zen Meditation Pavilion", "Natural Spring Water Feature", "Solar Kinetic Roof"],
+      "highlights": [
+        "Zen Meditation Pavilion",
+        "Natural Spring Water Feature",
+        "Solar Kinetic Roof"
+      ],
       "floor": "Multi-Tier Pavilion"
     },
     {
@@ -212,10 +236,14 @@
       "area_sqft": 3100,
       "completion_date": "Completed",
       "investment_potential": "Capital Appreciation 7.1%",
-      "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1400&q=85",
       "description": "Breathtaking panoramic view across the Kallang Basin watercourse into the central financial district skyline.",
       "architect": "Arup Associates",
-      "highlights": ["Wrap-Around Balcony", "Direct Marina Channel Access", "Miele Chef Suite"],
+      "highlights": [
+        "Wrap-Around Balcony",
+        "Direct Marina Channel Access",
+        "Miele Chef Suite"
+      ],
       "floor": "Level 28"
     },
     {
@@ -232,10 +260,14 @@
       "area_sqft": 10200,
       "completion_date": "Q4 2026",
       "investment_potential": "Prime District Trophy Value",
-      "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=85",
       "description": "Floating glass cube architecture with bespoke Hermes interior styling and private cantilevered infinity sky pool.",
       "architect": "Marwan Al-Sayed Architects",
-      "highlights": ["Custom Italian Travertine Cladding", "Private Rooftop Cinema", "Concierge Butler Suite"],
+      "highlights": [
+        "Custom Italian Travertine Cladding",
+        "Private Rooftop Cinema",
+        "Concierge Butler Suite"
+      ],
       "floor": "Levels 32 - 34"
     }
   ],
@@ -247,7 +279,7 @@
       "category": "Aquatics & Wellness",
       "description": "A 50-meter Olympic-length cantilevered glass-bottom pool suspended 180 meters above ground with heated mineralized water.",
       "specs": "Heated Himalayan salt filtration · 50m lap length · Submerged sound system",
-      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1000&q=80"
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85"
     },
     {
       "id": "FAC02",
@@ -256,7 +288,7 @@
       "category": "Fitness & Recovery",
       "description": "Curated with the latest Artis line by Technogym, cryotherapy chambers, and private Pilates reformer pods with personal trainers.",
       "specs": "Artis Technogym AI suite · Cold plunge & infrared sauna · On-demand sports physiology",
-      "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80"
+      "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=85"
     },
     {
       "id": "FAC03",
@@ -265,7 +297,7 @@
       "category": "Social & Entertainment",
       "description": "An intimate aerie offering panoramic city and ocean vistas, climate-controlled humidor cabinets, and sommelier service.",
       "specs": "Walk-in 2,000 bottle wine cellar · Air-purified cigar salon · Private dining for 24",
-      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80"
+      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85"
     },
     {
       "id": "FAC04",
@@ -274,7 +306,7 @@
       "category": "Safety & Privacy",
       "description": "Discreet British-trained security personnel, biometric retina scanners, and encrypted contactless destination control lifts.",
       "specs": "Retina scan verification · Encrypted lift dispatch · Secure private subterranean drop-off",
-      "image": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1000&q=80"
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85"
     },
     {
       "id": "FAC05",
@@ -283,7 +315,7 @@
       "category": "Intelligence & Atmosphere",
       "description": "Intuitive architectural illumination, motorized shade choreography, circadian climate balancing, and voice/haptic controls.",
       "specs": "Lutron Palladiom keypads · Crestron Home OS 4 · Circadian rhythm daylighting",
-      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
+      "image": "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1200&q=85"
     },
     {
       "id": "FAC06",
@@ -292,7 +324,7 @@
       "category": "Automotive Storage",
       "description": "Epoxy showroom flooring, private lockable glass garages with dedicated ultra-fast EV DC chargers, and license plate AI entry.",
       "specs": "Dehumidified 50% RH · 150kW DC chargers · Private glass showcase bays",
-      "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80"
+      "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85"
     },
     {
       "id": "FAC07",
@@ -301,7 +333,7 @@
       "category": "Landscape Architecture",
       "description": "Landscape architecture by Colin K. Okashimo featuring century-old bonsai specimens, waterfall cascades, and reflective granite ponds.",
       "specs": "3-acre biophilic sanctuary · Rare botanical collection · Zen meditation pavilions",
-      "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80"
+      "image": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=85"
     },
     {
       "id": "FAC08",
@@ -310,7 +342,7 @@
       "category": "Executive & Media",
       "description": "Acoustically isolated conference suites with Bloomberg terminal access, Polycom video telepresence, and 4K laser screening room.",
       "specs": "Bang & Olufsen acoustics · Dual Bloomberg terminals · 16-seat Dolby Atmos screening room",
-      "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80"
+      "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
     }
   ],
   "financing_options": [
@@ -335,7 +367,7 @@
       "bank": "OCBC",
       "bank_name": "OCBC Premier Banking",
       "loan_to_value": "75%",
-      "interest_rate_pct": 2.70,
+      "interest_rate_pct": 2.7,
       "interest_rate_display": "2.70% p.a. Fixed (2 Yrs)",
       "package_name": "Prestige Mortgage Privilege",
       "max_tenor_years": 30,
@@ -459,7 +491,11 @@
       "experience": "18 Years",
       "volume": "S$ 1.2B Closed",
       "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80",
-      "languages": ["English", "Mandarin", "French"]
+      "languages": [
+        "English",
+        "Mandarin",
+        "French"
+      ]
     },
     {
       "id": "AG02",
@@ -469,7 +505,11 @@
       "experience": "14 Years",
       "volume": "S$ 890M Closed",
       "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80",
-      "languages": ["English", "German", "Italian"]
+      "languages": [
+        "English",
+        "German",
+        "Italian"
+      ]
     },
     {
       "id": "AG03",
@@ -479,7 +519,11 @@
       "experience": "12 Years",
       "volume": "S$ 750M Closed",
       "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80",
-      "languages": ["English", "Mandarin", "Hokkien"]
+      "languages": [
+        "English",
+        "Mandarin",
+        "Hokkien"
+      ]
     },
     {
       "id": "AG04",
@@ -489,7 +533,11 @@
       "experience": "15 Years",
       "volume": "S$ 980M Closed",
       "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=500&q=80",
-      "languages": ["English", "Russian", "Arabic"]
+      "languages": [
+        "English",
+        "Russian",
+        "Arabic"
+      ]
     }
   ],
   "project_comparisons": [
@@ -509,7 +557,7 @@
       "architect": "WOHA & Kengo Kuma",
       "tenure": "999-Year Equivalent",
       "view_type": "360° Marina Bay & Sea",
-      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=85"
     },
     {
       "comparison_id": "CMP002",
@@ -527,7 +575,7 @@
       "architect": "Kerry Hill Architects",
       "tenure": "99-Year Leasehold",
       "view_type": "Private Oceanfront & Marina Canal",
-      "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80"
+      "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=85"
     },
     {
       "comparison_id": "CMP003",
@@ -545,7 +593,7 @@
       "architect": "Foster + Partners",
       "tenure": "Freehold",
       "view_type": "Orchard Skyline & Botanic Canopy",
-      "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
+      "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=85"
     },
     {
       "comparison_id": "CMP004",
@@ -563,7 +611,7 @@
       "architect": "Kengo Kuma",
       "tenure": "Freehold",
       "view_type": "Botanical Gardens Rainforest",
-      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85"
     }
   ],
   "statistics": [
@@ -633,7 +681,7 @@
       "availability": "8 Exclusive Residences",
       "featured_property": "Marina Crest Signature",
       "character": "Futuristic maritime skyline, financial heart, Michelin-starred fine dining and private yacht marinas.",
-      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=85"
     },
     {
       "id": "LOC02",
@@ -643,7 +691,7 @@
       "availability": "5 Waterfront Villas",
       "featured_property": "Solstice Waterfront Cove",
       "character": "Singapore's sole gated oceanic enclave offering private yacht berths and uninterrupted sea horizon sunrises.",
-      "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80"
+      "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=85"
     },
     {
       "id": "LOC03",
@@ -653,7 +701,7 @@
       "availability": "12 Sky Penthouses",
       "featured_property": "The Aurelia Glass Duplex",
       "character": "The epicentre of haute couture, luxury private medical centers, and Michelin dining wrapped in lush canopy trees.",
-      "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
+      "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=85"
     },
     {
       "id": "LOC04",
@@ -663,7 +711,7 @@
       "availability": "3 Historic GCBs",
       "featured_property": "Le Palais Botanique",
       "character": "The most revered address in the Lion City. Bordering the UNESCO Botanic Gardens with generational family legacies.",
-      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85"
     }
   ],
   "portfolio_gallery": [
@@ -672,7 +720,7 @@
       "title": "Cantilevered Atrium of Light",
       "category": "Architecture & Exterior",
       "aspect": "tall",
-      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85",
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1400&q=85",
       "location": "Marina Bay",
       "architect": "WOHA Architects"
     },
@@ -681,7 +729,7 @@
       "title": "Minimalist Master Bath in Travertine",
       "category": "Interiors & Materials",
       "aspect": "wide",
-      "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=85",
+      "image": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1400&q=85",
       "location": "Paterson Hill",
       "architect": "Marwan Al-Sayed"
     },
@@ -690,7 +738,7 @@
       "title": "Twilight Infinity Edge over South China Sea",
       "category": "Landscape & Ocean",
       "aspect": "wide",
-      "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1400&q=85",
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1400&q=85",
       "location": "Sentosa Cove",
       "architect": "Kerry Hill"
     },
@@ -699,7 +747,7 @@
       "title": "Double-Height Great Salon with Sculpted Fireplace",
       "category": "Living & Volumes",
       "aspect": "tall",
-      "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85",
+      "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1400&q=85",
       "location": "Nassim Hill",
       "architect": "Kengo Kuma"
     },
@@ -708,7 +756,7 @@
       "title": "Curated Wine Vault with Basalt Floating Shelving",
       "category": "Details & Connoisseur",
       "aspect": "square",
-      "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=85",
+      "image": "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=1400&q=85",
       "location": "Orchard Boulevard",
       "architect": "Foster + Partners"
     },
@@ -717,7 +765,7 @@
       "title": "Biophilic Sky Terrace & Private Observatory",
       "category": "Skyline & Sanctuary",
       "aspect": "wide",
-      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=85",
+      "image": "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?auto=format&fit=crop&w=1400&q=85",
       "location": "Keppel Bay",
       "architect": "Daniel Libeskind"
     }

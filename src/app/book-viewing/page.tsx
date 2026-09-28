@@ -165,12 +165,12 @@ function BookViewingContent() {
   const activeSlot = slots.find((s) => s.slot_id === selectedSlotId) || slots[0]
 
   return (
-    <div className="min-h-screen bg-canvas text-primary relative selection:bg-accent selection:text-white">
+    <div className="min-h-screen bg-canvas text-white relative selection:bg-accent selection:text-black">
       {/* Top Architectural Masthead */}
-      <header className="sticky top-0 z-40 bg-[#111111]/95 backdrop-blur-xl border-b border-white/10 text-white py-4 px-6 sm:px-12 lg:px-16 flex items-center justify-between">
+      <header className="sticky top-0 z-40 bg-[#090A0F]/85 backdrop-blur-2xl border-b border-white/10 text-white py-4 px-6 sm:px-12 lg:px-16 flex items-center justify-between">
         <Link
           href="/"
-          className="flex items-center space-x-2 text-xs uppercase tracking-widest text-neutral-300 hover:text-accent transition-colors"
+          className="flex items-center space-x-2 text-xs uppercase tracking-widest text-neutral-400 hover:text-accent transition-colors font-mono"
         >
           <ArrowLeft className="w-4 h-4 text-accent" />
           <span>Return to Portfolio</span>
@@ -187,7 +187,7 @@ function BookViewingContent() {
 
         <a
           href="tel:+6568902888"
-          className="hidden sm:flex items-center space-x-2 text-xs text-neutral-300 hover:text-white bg-white/5 border border-white/15 px-3.5 py-1.5 rounded-full"
+          className="hidden sm:flex items-center space-x-2 text-xs text-neutral-300 hover:text-white bg-white/[0.06] border border-white/15 px-3.5 py-1.5 rounded-full backdrop-blur-md"
         >
           <Phone className="w-3.5 h-3.5 text-accent" />
           <span className="font-mono text-[11px]">+65 6890 2888</span>
@@ -202,14 +202,14 @@ function BookViewingContent() {
             <div className="max-w-3xl mb-14 lg:mb-20">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="h-[1px] w-12 bg-accent" />
-                <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold">
+                <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold font-mono">
                   Chapter 08 · Bespoke Access
                 </span>
               </div>
-              <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl text-primary font-normal leading-[1.06]">
+              <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl text-white font-normal leading-[1.06]">
                 Private Client Viewing Salon
               </h1>
-              <p className="text-base text-secondary mt-4 font-sans leading-relaxed">
+              <p className="text-base text-neutral-400 mt-4 font-sans leading-relaxed">
                 Step inside an unhurried, multisensory inspection orchestrated exclusively for you. Every residence visit includes private chauffeur transport, confidential documentation, and direct representation by our Senior Partners.
               </p>
             </div>
@@ -218,7 +218,7 @@ function BookViewingContent() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
               {/* Left Column: Selected Residence Dossier */}
               <div className="lg:col-span-5 lg:sticky lg:top-28 space-y-6">
-                <div className="bg-white rounded-3xl overflow-hidden border border-borderSubtle shadow-luxury p-6 sm:p-8 space-y-6">
+                <div className="bg-white/[0.04] backdrop-blur-2xl rounded-3xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] p-6 sm:p-8 space-y-6">
                   {/* Property Selector Dropdown */}
                   <div>
                     <label className="text-[11px] uppercase font-mono tracking-widest text-neutral-400 block mb-2">
@@ -233,20 +233,21 @@ function BookViewingContent() {
                         sublabel: p.price_formatted || `S$ ${(p.price_sgd / 1000000).toFixed(1)}M`,
                       }))}
                       fontSerif={true}
+                      theme="dark"
                       className="rounded-2xl text-base sm:text-lg"
                     />
                   </div>
 
                   {/* Residence Image Showcase */}
                   {activeProperty && (
-                    <div className="rounded-2xl overflow-hidden aspect-[16/11] relative bg-neutral-100 shadow-sm">
+                    <div className="rounded-2xl overflow-hidden aspect-[16/11] relative bg-neutral-900 border border-white/10 shadow-sm">
                       <img
                         src={activeProperty.image}
                         alt={activeProperty.title}
                         className="w-full h-full object-cover"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                      <div className="absolute top-3 left-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-mono uppercase text-accent border border-white/20">
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent" />
+                      <div className="absolute top-3 left-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-mono uppercase text-accent border border-white/20">
                         {activeProperty.availability}
                       </div>
                       <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -263,7 +264,7 @@ function BookViewingContent() {
 
                   {/* Architectural Specs Strip */}
                   {activeProperty && (
-                    <div className="grid grid-cols-2 gap-4 py-4 border-y border-borderSubtle text-xs">
+                    <div className="grid grid-cols-2 gap-4 py-4 border-y border-white/10 text-xs">
                       <div>
                         <span className="text-[10px] uppercase font-mono text-neutral-400 block">
                           Acquisition Price
@@ -277,7 +278,7 @@ function BookViewingContent() {
                         <span className="text-[10px] uppercase font-mono text-neutral-400 block">
                           Floor Footprint
                         </span>
-                        <span className="font-serif text-xl font-bold text-primary">
+                        <span className="font-serif text-xl font-bold text-white">
                           {formatNumber(activeProperty.area_sqft)} sq ft
                         </span>
                       </div>
@@ -286,7 +287,7 @@ function BookViewingContent() {
                         <span className="text-[10px] uppercase font-mono text-neutral-400 block">
                           Typology
                         </span>
-                        <span className="font-medium text-secondary">
+                        <span className="font-medium text-neutral-300">
                           {activeProperty.property_type}
                         </span>
                       </div>
@@ -295,7 +296,7 @@ function BookViewingContent() {
                         <span className="text-[10px] uppercase font-mono text-neutral-400 block">
                           Architectural Lead
                         </span>
-                        <span className="font-medium text-secondary">
+                        <span className="font-medium text-neutral-300">
                           {activeProperty.architect || 'Curated Architect'}
                         </span>
                       </div>
@@ -307,14 +308,14 @@ function BookViewingContent() {
                     <span className="text-[10px] uppercase font-mono tracking-widest text-accent font-bold block">
                       The Haute Terres Protocol Inclusions
                     </span>
-                    <div className="space-y-2 text-xs text-secondary">
+                    <div className="space-y-2 text-xs text-neutral-300">
                       <div className="flex items-center space-x-2">
                         <CheckCircle2 className="w-4 h-4 text-accent shrink-0" />
                         <span>Private 1-on-1 walkthrough with Senior Advisory Partner</span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <CheckCircle2 className="w-4 h-4 text-accent shrink-0" />
-                        <span>Leather-bound confidential architectural monograph & title deed deed</span>
+                        <span>Leather-bound confidential architectural monograph & deed</span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <CheckCircle2 className="w-4 h-4 text-accent shrink-0" />
@@ -333,13 +334,13 @@ function BookViewingContent() {
               <div className="lg:col-span-7 space-y-12">
                 <form onSubmit={handleBookingSubmit} className="space-y-12">
                   {/* STEP 1: Viewing Format */}
-                  <div className="bg-white p-7 sm:p-10 rounded-3xl border border-borderSubtle shadow-luxury space-y-6">
+                  <div className="bg-white/[0.04] backdrop-blur-2xl p-7 sm:p-10 rounded-3xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] space-y-6">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
-                        <div className="w-8 h-8 rounded-full bg-accent text-primary font-mono text-xs font-bold flex items-center justify-center">
+                        <div className="w-8 h-8 rounded-full bg-accent text-black font-mono text-xs font-bold flex items-center justify-center">
                           01
                         </div>
-                        <h3 className="font-serif text-2xl text-primary font-medium">
+                        <h3 className="font-serif text-2xl text-white font-medium">
                           Select Viewing Experience Format
                         </h3>
                       </div>
@@ -357,33 +358,33 @@ function BookViewingContent() {
                             onClick={() => setSelectedFormatId(fmt.id)}
                             className={`p-5 rounded-2xl border cursor-pointer transition-all duration-300 relative flex flex-col justify-between ${
                               isSelected
-                                ? 'border-accent bg-accent/5 ring-1 ring-accent shadow-sm'
-                                : 'border-borderSubtle bg-neutral-50/50 hover:border-neutral-400'
+                                ? 'border-accent bg-accent/10 ring-1 ring-accent shadow-sm'
+                                : 'border-white/10 bg-white/[0.02] hover:border-accent/50'
                             }`}
                           >
                             <div>
                               <div className="flex justify-between items-center mb-2">
-                                <span className="text-[10px] font-mono uppercase tracking-wider px-2 py-0.5 rounded bg-accent/20 text-accent-dark font-bold">
+                                <span className="text-[10px] font-mono uppercase tracking-wider px-2 py-0.5 rounded bg-accent/20 text-accent font-bold">
                                   {fmt.badge}
                                 </span>
                                 <span className="text-[11px] font-mono text-neutral-400">
                                   {fmt.duration}
                                 </span>
                               </div>
-                              <h4 className="font-serif text-lg font-bold text-primary mb-1">
+                              <h4 className="font-serif text-lg font-bold text-white mb-1">
                                 {fmt.title}
                               </h4>
-                              <p className="text-xs text-secondary leading-relaxed font-sans">
+                              <p className="text-xs text-neutral-300 leading-relaxed font-sans">
                                 {fmt.description}
                               </p>
                             </div>
-                            <div className="mt-4 pt-3 border-t border-borderSubtle flex items-center justify-end">
+                            <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-end">
                               <div
                                 className={`w-5 h-5 rounded-full flex items-center justify-center ${
-                                  isSelected ? 'bg-accent text-white' : 'border border-neutral-300'
+                                  isSelected ? 'bg-accent text-black' : 'border border-white/30'
                                 }`}
                               >
-                                {isSelected && <Check className="w-3 h-3" />}
+                                {isSelected && <Check className="w-3 h-3 text-black stroke-[3]" />}
                               </div>
                             </div>
                           </div>
@@ -393,12 +394,12 @@ function BookViewingContent() {
                   </div>
 
                   {/* STEP 2: Appointment Date & Time Slots */}
-                  <div className="bg-white p-7 sm:p-10 rounded-3xl border border-borderSubtle shadow-luxury space-y-6">
+                  <div className="bg-white/[0.04] backdrop-blur-2xl p-7 sm:p-10 rounded-3xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] space-y-6">
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 rounded-full bg-accent text-primary font-mono text-xs font-bold flex items-center justify-center">
+                      <div className="w-8 h-8 rounded-full bg-accent text-black font-mono text-xs font-bold flex items-center justify-center">
                         02
                       </div>
-                      <h3 className="font-serif text-2xl text-primary font-medium">
+                      <h3 className="font-serif text-2xl text-white font-medium">
                         Schedule Date & Private Time Slot
                       </h3>
                     </div>
@@ -423,17 +424,17 @@ function BookViewingContent() {
                               onClick={() => setSelectedDate(dateStr)}
                               className={`p-4 rounded-2xl border text-center transition-all ${
                                 isSelected
-                                  ? 'border-accent bg-primary text-white shadow-luxury'
-                                  : 'border-borderSubtle bg-neutral-50 text-secondary hover:bg-neutral-100'
+                                  ? 'border-accent bg-accent text-black font-bold shadow-luxury-hover'
+                                  : 'border-white/10 bg-white/[0.02] text-neutral-300 hover:border-white/30'
                               }`}
                             >
-                              <span className="text-[10px] uppercase font-mono tracking-widest block text-accent">
+                              <span className={`text-[10px] uppercase font-mono tracking-widest block ${isSelected ? 'text-black/80' : 'text-accent'}`}>
                                 {dayName}
                               </span>
                               <span className="font-serif text-2xl font-bold block my-1">
                                 {dayNum} {monthName}
                               </span>
-                              <span className="text-[10px] opacity-70 font-mono">
+                              <span className={`text-[10px] font-mono ${isSelected ? 'text-black/70' : 'opacity-60'}`}>
                                 {dateStr}
                               </span>
                             </button>
@@ -457,19 +458,19 @@ function BookViewingContent() {
                               onClick={() => setSelectedSlotId(slot.slot_id)}
                               className={`p-4 rounded-xl border text-left transition-all ${
                                 isSelected
-                                  ? 'border-accent bg-accent/10 ring-1 ring-accent text-primary'
-                                  : 'border-borderSubtle bg-neutral-50 text-secondary hover:border-neutral-400'
+                                  ? 'border-accent bg-accent/15 ring-1 ring-accent text-white'
+                                  : 'border-white/10 bg-white/[0.02] text-neutral-300 hover:border-white/30'
                               }`}
                             >
                               <div className="flex justify-between items-center mb-1">
-                                <span className="font-mono text-base font-bold text-primary">
+                                <span className="font-mono text-base font-bold text-accent">
                                   {slot.time} hrs
                                 </span>
-                                <span className="text-[9px] uppercase font-mono px-2.5 py-0.5 rounded bg-emerald-100 text-emerald-800 font-bold">
+                                <span className="text-[9px] uppercase font-mono px-2.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 font-bold">
                                   {slot.status}
                                 </span>
                               </div>
-                              <span className="text-xs text-secondary font-medium block">
+                              <span className="text-xs text-neutral-300 font-medium block">
                                 {slot.session_name || 'Bespoke Private Walkthrough'}
                               </span>
                             </button>
@@ -480,12 +481,12 @@ function BookViewingContent() {
                   </div>
 
                   {/* STEP 3: Private Advisory Partner Selection */}
-                  <div className="bg-white p-7 sm:p-10 rounded-3xl border border-borderSubtle shadow-luxury space-y-6">
+                  <div className="bg-white/[0.04] backdrop-blur-2xl p-7 sm:p-10 rounded-3xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] space-y-6">
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 rounded-full bg-accent text-primary font-mono text-xs font-bold flex items-center justify-center">
+                      <div className="w-8 h-8 rounded-full bg-accent text-black font-mono text-xs font-bold flex items-center justify-center">
                         03
                       </div>
-                      <h3 className="font-serif text-2xl text-primary font-medium">
+                      <h3 className="font-serif text-2xl text-white font-medium">
                         Assign Host Private Advisory Partner
                       </h3>
                     </div>
@@ -499,8 +500,8 @@ function BookViewingContent() {
                             onClick={() => setSelectedAgentId(ag.id)}
                             className={`p-5 rounded-2xl border cursor-pointer transition-all duration-300 flex items-center space-x-4 ${
                               isSelected
-                                ? 'border-accent bg-accent/10 ring-1 ring-accent shadow-sm'
-                                : 'border-borderSubtle bg-neutral-50 hover:bg-neutral-100'
+                                ? 'border-accent bg-accent/15 ring-1 ring-accent shadow-sm'
+                                : 'border-white/10 bg-white/[0.02] hover:border-accent/40'
                             }`}
                           >
                             <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-accent shrink-0">
@@ -514,10 +515,10 @@ function BookViewingContent() {
                               <span className="text-xs font-mono uppercase tracking-widest text-accent font-bold block">
                                 {ag.experience} · {ag.volume}
                               </span>
-                              <h4 className="font-serif text-lg font-bold text-primary truncate">
+                              <h4 className="font-serif text-lg font-bold text-white truncate">
                                 {ag.name}
                               </h4>
-                              <p className="text-xs text-secondary truncate">
+                              <p className="text-xs text-neutral-300 truncate">
                                 {ag.title}
                               </p>
                               <span className="text-[10px] text-neutral-400 font-mono block mt-1">
@@ -531,12 +532,12 @@ function BookViewingContent() {
                   </div>
 
                   {/* STEP 4: Bespoke VIP Concierge Preferences */}
-                  <div className="bg-white p-7 sm:p-10 rounded-3xl border border-borderSubtle shadow-luxury space-y-6">
+                  <div className="bg-white/[0.04] backdrop-blur-2xl p-7 sm:p-10 rounded-3xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] space-y-6">
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 rounded-full bg-accent text-primary font-mono text-xs font-bold flex items-center justify-center">
+                      <div className="w-8 h-8 rounded-full bg-accent text-black font-mono text-xs font-bold flex items-center justify-center">
                         04
                       </div>
-                      <h3 className="font-serif text-2xl text-primary font-medium">
+                      <h3 className="font-serif text-2xl text-white font-medium">
                         VIP Concierge & Arrival Preferences
                       </h3>
                     </div>
@@ -552,6 +553,7 @@ function BookViewingContent() {
                           value={chauffeurOption}
                           onChange={setChauffeurOption}
                           options={chauffeurOptions}
+                          theme="dark"
                         />
                       </div>
 
@@ -565,17 +567,18 @@ function BookViewingContent() {
                           value={champagneOption}
                           onChange={setChampagneOption}
                           options={champagneOptions}
+                          theme="dark"
                         />
                       </div>
                     </div>
 
                     <div className="pt-2">
-                      <label className="flex items-center space-x-3 text-xs text-secondary cursor-pointer">
+                      <label className="flex items-center space-x-3 text-xs text-neutral-300 cursor-pointer">
                         <input
                           type="checkbox"
                           checked={requireNda}
                           onChange={(e) => setRequireNda(e.target.checked)}
-                          className="rounded text-accent focus:ring-accent w-4 h-4"
+                          className="rounded text-accent focus:ring-accent w-4 h-4 bg-white/10 border-white/20"
                         />
                         <span className="flex items-center space-x-1.5">
                           <ShieldCheck className="w-4 h-4 text-accent" />
@@ -588,12 +591,12 @@ function BookViewingContent() {
                   </div>
 
                   {/* STEP 5: Patron Credentials & Final Confirmation */}
-                  <div className="bg-white p-7 sm:p-10 rounded-3xl border border-borderSubtle shadow-luxury space-y-6">
+                  <div className="bg-white/[0.04] backdrop-blur-2xl p-7 sm:p-10 rounded-3xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] space-y-6">
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 rounded-full bg-accent text-primary font-mono text-xs font-bold flex items-center justify-center">
+                      <div className="w-8 h-8 rounded-full bg-accent text-black font-mono text-xs font-bold flex items-center justify-center">
                         05
                       </div>
-                      <h3 className="font-serif text-2xl text-primary font-medium">
+                      <h3 className="font-serif text-2xl text-white font-medium">
                         Patron Credentials & Confidential Registration
                       </h3>
                     </div>
@@ -609,7 +612,7 @@ function BookViewingContent() {
                           placeholder="e.g. Lord Julian Sterling / Lady Valerie"
                           value={fullName}
                           onChange={(e) => setFullName(e.target.value)}
-                          className="w-full bg-neutral-50 text-xs rounded-xl px-4 py-3 border border-borderSubtle focus:outline-none focus:border-accent"
+                          className="w-full bg-white/[0.04] text-white placeholder-neutral-500 text-xs rounded-xl px-4 py-3 border border-white/15 focus:outline-none focus:border-accent"
                         />
                       </div>
 
@@ -623,7 +626,7 @@ function BookViewingContent() {
                           placeholder="+65 9876 5432"
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
-                          className="w-full bg-neutral-50 text-xs rounded-xl px-4 py-3 border border-borderSubtle focus:outline-none focus:border-accent"
+                          className="w-full bg-white/[0.04] text-white placeholder-neutral-500 text-xs rounded-xl px-4 py-3 border border-white/15 focus:outline-none focus:border-accent"
                         />
                       </div>
                     </div>
@@ -638,7 +641,7 @@ function BookViewingContent() {
                         placeholder="julian@familyoffice.sg"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="w-full bg-neutral-50 text-xs rounded-xl px-4 py-3 border border-borderSubtle focus:outline-none focus:border-accent"
+                        className="w-full bg-white/[0.04] text-white placeholder-neutral-500 text-xs rounded-xl px-4 py-3 border border-white/15 focus:outline-none focus:border-accent"
                       />
                     </div>
 
@@ -651,15 +654,15 @@ function BookViewingContent() {
                         placeholder="Helipad clearance, specific wing walkthrough, foreign currency advisory, or family trust structuring notes..."
                         value={specialRequests}
                         onChange={(e) => setSpecialRequests(e.target.value)}
-                        className="w-full bg-neutral-50 text-xs rounded-xl px-4 py-3 border border-borderSubtle focus:outline-none focus:border-accent"
+                        className="w-full bg-white/[0.04] text-white placeholder-neutral-500 text-xs rounded-xl px-4 py-3 border border-white/15 focus:outline-none focus:border-accent"
                       />
                     </div>
 
                     <button
                       type="submit"
-                      className="w-full bg-primary hover:bg-secondary text-white font-bold text-xs uppercase tracking-[0.2em] py-5 rounded-2xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-2xl hover:shadow-luxury-hover"
+                      className="w-full bg-accent hover:bg-accent/90 text-black font-bold text-xs uppercase tracking-[0.2em] py-5 rounded-2xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-luxury-hover font-mono cursor-pointer"
                     >
-                      <Sparkles className="w-4 h-4 text-accent" />
+                      <Sparkles className="w-4 h-4 text-black" />
                       <span>Issue Haute Terres VIP Viewing Pass</span>
                     </button>
                   </div>
@@ -673,14 +676,14 @@ function BookViewingContent() {
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto bg-primary text-white p-8 sm:p-14 rounded-3xl border border-accent shadow-2xl relative overflow-hidden"
+            className="max-w-3xl mx-auto bg-[#0C0E17]/95 backdrop-blur-2xl text-white p-8 sm:p-14 rounded-3xl border border-accent/40 shadow-2xl relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-accent/15 rounded-bl-full pointer-events-none" />
 
             {/* Header Badge */}
             <div className="text-center mb-10">
-              <div className="w-20 h-20 rounded-full bg-accent text-primary flex items-center justify-center mx-auto mb-5 shadow-luxury">
-                <CheckCircle2 className="w-10 h-10" />
+              <div className="w-20 h-20 rounded-full bg-accent text-black flex items-center justify-center mx-auto mb-5 shadow-luxury">
+                <CheckCircle2 className="w-10 h-10 text-black" />
               </div>
               <span className="text-xs font-mono uppercase tracking-[0.3em] text-accent font-bold block mb-1">
                 Official VIP Viewing Pass
@@ -688,13 +691,13 @@ function BookViewingContent() {
               <h2 className="font-serif text-3xl sm:text-5xl text-white font-normal">
                 Reservation Confirmed
               </h2>
-              <div className="inline-block mt-3 font-mono text-sm bg-white/10 px-5 py-1.5 rounded-full text-accent-light border border-white/20">
+              <div className="inline-block mt-3 font-mono text-sm bg-accent/10 px-5 py-1.5 rounded-full text-accent border border-accent/30">
                 TOKEN: {bookingPassCode}
               </div>
             </div>
 
             {/* Pass Body Dossier */}
-            <div className="bg-white/5 rounded-2xl p-6 sm:p-8 border border-white/10 space-y-4 text-xs mb-8">
+            <div className="bg-white/[0.04] backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/10 space-y-4 text-xs mb-8">
               <div className="flex justify-between py-2 border-b border-white/10">
                 <span className="text-neutral-400 uppercase font-mono">Designated Residence</span>
                 <span className="font-serif font-bold text-white text-base text-right">{activeProperty?.title}</span>
@@ -747,9 +750,9 @@ function BookViewingContent() {
               <button
                 type="button"
                 onClick={() => window.print()}
-                className="bg-accent hover:bg-accent-light text-primary font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-xl transition-all flex items-center space-x-2"
+                className="bg-accent hover:bg-accent/90 text-black font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-xl transition-all flex items-center space-x-2 font-mono"
               >
-                <Download className="w-4 h-4" />
+                <Download className="w-4 h-4 text-black" />
                 <span>Save Digital Pass</span>
               </button>
             </div>

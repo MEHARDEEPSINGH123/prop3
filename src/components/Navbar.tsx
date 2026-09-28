@@ -69,8 +69,8 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? 'bg-[#111111]/95 backdrop-blur-xl py-3.5 border-b border-white/10 shadow-2xl'
-            : 'bg-gradient-to-b from-black/85 via-black/45 to-transparent py-6'
+            ? 'bg-[#090A0F]/85 backdrop-blur-2xl py-3.5 border-b border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)]'
+            : 'bg-gradient-to-b from-[#090A0F]/90 via-[#090A0F]/50 to-transparent py-6'
         }`}
       >
         <div className="w-full max-w-[1520px] mx-auto px-6 sm:px-10 lg:px-14 flex items-center justify-between">
@@ -107,16 +107,16 @@ export default function Navbar() {
             {/* Dedicated Page Link: Book Viewing */}
             <Link
               href="/book-viewing"
-              className="bg-accent hover:bg-accent-light text-primary font-bold text-xs tracking-[0.16em] uppercase px-5 sm:px-6 py-2.5 rounded-full transition-all duration-300 shadow-md flex items-center space-x-2 hover:scale-[1.02]"
+              className="bg-accent hover:bg-accent-light text-[#090A0F] font-bold text-xs tracking-[0.16em] uppercase px-5 sm:px-6 py-2.5 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(223,183,118,0.3)] flex items-center space-x-2 hover:scale-[1.02]"
             >
-              <Calendar className="w-3.5 h-3.5 text-primary" />
+              <Calendar className="w-3.5 h-3.5 text-[#090A0F]" />
               <span>Book Viewing</span>
             </Link>
 
             {/* Menu Trigger for Full Editorial Drawer */}
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="p-2.5 rounded-full bg-white/5 hover:bg-white/10 text-white hover:text-accent border border-white/15 transition-colors focus:outline-none"
+              className="p-2.5 rounded-full bg-white/5 hover:bg-white/10 text-white hover:text-accent border border-white/15 transition-colors focus:outline-none cursor-pointer"
               aria-label="Open Curated Navigation Drawer"
             >
               <Menu className="w-4 h-4" />
@@ -132,8 +132,8 @@ export default function Navbar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            style={{ backgroundColor: '#0d0d0d' }}
-            className="fixed inset-0 z-50 bg-[#0d0d0d] text-white flex flex-col justify-between p-6 sm:p-12 lg:p-16 overflow-y-auto no-scrollbar"
+            style={{ backgroundColor: '#090A0F' }}
+            className="fixed inset-0 z-50 bg-[#090A0F] text-white flex flex-col justify-between p-6 sm:p-12 lg:p-16 overflow-y-auto no-scrollbar"
           >
             {/* Top Bar of Drawer */}
             <div className="flex items-center justify-between pb-8 border-b border-white/15 max-w-7xl mx-auto w-full">
@@ -163,8 +163,8 @@ export default function Navbar() {
                   key={item.label}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  style={{ backgroundColor: '#181818' }}
-                  className="group p-6 rounded-2xl bg-[#181818] border border-white/10 hover:border-accent hover:bg-[#222222] transition-all duration-300 shadow-xl flex items-start justify-between hover:-translate-y-1 cursor-pointer"
+                  style={{ backgroundColor: 'rgba(255, 255, 255, 0.04)' }}
+                  className="group p-6 rounded-2xl bg-white/[0.04] backdrop-blur-xl border border-white/10 hover:border-accent hover:bg-white/[0.08] transition-all duration-300 shadow-xl flex items-start justify-between hover:-translate-y-1 cursor-pointer"
                 >
                   <div className="pr-4">
                     <span className="text-[11px] font-mono tracking-widest text-accent font-bold block mb-2">

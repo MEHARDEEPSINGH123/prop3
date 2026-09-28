@@ -67,12 +67,12 @@ export default function PropertyDetailModal({
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
           transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="relative z-10 w-full max-w-4xl max-h-[90vh] bg-white rounded-3xl overflow-hidden shadow-2xl border border-borderSubtle flex flex-col"
+          className="relative z-10 w-full max-w-4xl max-h-[90vh] bg-[#0E111A] text-white rounded-3xl overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.85)] border border-white/20 flex flex-col"
         >
           {/* Close Button */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/60 backdrop-blur-md text-white hover:text-accent flex items-center justify-center transition-colors border border-white/20"
+            className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/60 backdrop-blur-md text-white hover:text-accent flex items-center justify-center transition-colors border border-white/20 cursor-pointer"
             aria-label="Close dialog"
           >
             <X className="w-5 h-5" />
@@ -115,9 +115,9 @@ export default function PropertyDetailModal({
             {/* Modal Body */}
             <div className="p-6 sm:p-10 space-y-8">
               {/* Top Stats Strip */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5 rounded-2xl bg-neutral-50 border border-borderSubtle">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5 rounded-2xl bg-white/[0.04] border border-white/10 backdrop-blur-md">
                 <div>
-                  <span className="text-[10px] uppercase font-mono text-neutral-400 block">
+                  <span className="text-[10px] uppercase font-mono text-neutral-400 tracking-wider block">
                     Acquisition Price
                   </span>
                   <span className="font-serif text-2xl font-bold text-accent">
@@ -126,32 +126,32 @@ export default function PropertyDetailModal({
                 </div>
 
                 <div>
-                  <span className="text-[10px] uppercase font-mono text-neutral-400 block">
+                  <span className="text-[10px] uppercase font-mono text-neutral-400 tracking-wider block">
                     Total Footprint
                   </span>
-                  <span className="font-serif text-xl font-bold text-primary flex items-center space-x-1">
+                  <span className="font-serif text-xl font-bold text-white flex items-center space-x-1.5 mt-0.5">
                     <Maximize2 className="w-4 h-4 text-accent" />
                     <span>{formatNumber(property.area_sqft)} sq ft</span>
                   </span>
                 </div>
 
                 <div>
-                  <span className="text-[10px] uppercase font-mono text-neutral-400 block">
+                  <span className="text-[10px] uppercase font-mono text-neutral-400 tracking-wider block">
                     Suites & Baths
                   </span>
-                  <span className="font-serif text-xl font-bold text-primary flex items-center space-x-1">
+                  <span className="font-serif text-xl font-bold text-white flex items-center space-x-1.5 mt-0.5">
                     <Bed className="w-4 h-4 text-accent" />
                     <span>{property.bedrooms} Bed / {property.bathrooms} Bath</span>
                   </span>
                 </div>
 
                 <div>
-                  <span className="text-[10px] uppercase font-mono text-neutral-400 block">
+                  <span className="text-[10px] uppercase font-mono text-neutral-400 tracking-wider block">
                     Handover Status
                   </span>
-                  <span className="font-serif text-lg font-bold text-primary flex items-center space-x-1">
+                  <span className="font-serif text-lg font-bold text-white flex items-center space-x-1.5 mt-0.5">
                     <Calendar className="w-4 h-4 text-accent" />
-                    <span>{property.completion_date || 'Ready'}</span>
+                    <span>{property.completion_date || 'Immediate'}</span>
                   </span>
                 </div>
               </div>
@@ -161,7 +161,7 @@ export default function PropertyDetailModal({
                 <h4 className="text-xs uppercase font-mono tracking-widest text-accent font-bold mb-2">
                   Architectural Narrative & Spatial Philosophy
                 </h4>
-                <p className="text-sm sm:text-base text-secondary font-sans leading-relaxed">
+                <p className="text-sm sm:text-base text-neutral-300 font-sans leading-relaxed">
                   {property.description}
                 </p>
               </div>
@@ -176,10 +176,10 @@ export default function PropertyDetailModal({
                     {property.highlights.map((h, i) => (
                       <div
                         key={i}
-                        className="p-3.5 rounded-xl bg-white border border-borderSubtle flex items-start space-x-2 text-xs text-primary"
+                        className="p-3.5 rounded-xl bg-white/[0.04] border border-white/10 flex items-start space-x-2.5 text-xs text-neutral-200"
                       >
                         <CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-0.5" />
-                        <span className="font-medium">{h}</span>
+                        <span className="font-medium leading-relaxed">{h}</span>
                       </div>
                     ))}
                   </div>
@@ -188,13 +188,13 @@ export default function PropertyDetailModal({
 
               {/* Investment Trajectory */}
               {property.investment_potential && (
-                <div className="p-4 rounded-2xl bg-accent/10 border border-accent/20 flex items-start space-x-3">
+                <div className="p-4 rounded-2xl bg-accent/10 border border-accent/25 flex items-start space-x-3">
                   <TrendingUp className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-[11px] uppercase font-mono text-accent-dark font-bold block">
+                    <span className="text-[11px] uppercase font-mono text-accent font-bold tracking-wider block">
                       Institutional Investment Thesis
                     </span>
-                    <p className="text-xs text-secondary font-medium mt-0.5">
+                    <p className="text-xs text-neutral-300 font-medium mt-1 leading-relaxed">
                       {property.investment_potential}
                     </p>
                   </div>
@@ -204,16 +204,16 @@ export default function PropertyDetailModal({
           </div>
 
           {/* Modal Footer CTA */}
-          <div className="p-6 bg-neutral-50 border-t border-borderSubtle flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="text-xs text-neutral-500 font-sans">
-              Private client representation by <span className="text-primary font-semibold">Haute Terres Partners</span>.
+          <div className="p-6 bg-[#090A0F]/90 border-t border-white/10 backdrop-blur-xl flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="text-xs text-neutral-400 font-sans">
+              Private client representation by <span className="text-white font-semibold">Haute Terres Partners</span>.
             </div>
 
             <div className="flex items-center space-x-3 w-full sm:w-auto">
               <button
                 type="button"
                 onClick={onClose}
-                className="px-5 py-3 rounded-xl border border-borderSubtle text-xs font-semibold uppercase tracking-wider text-secondary hover:bg-neutral-100 transition-colors"
+                className="px-5 py-3 rounded-xl border border-white/15 text-xs font-semibold uppercase tracking-wider text-neutral-300 hover:text-white hover:bg-white/[0.06] transition-colors"
               >
                 Close
               </button>
@@ -221,10 +221,10 @@ export default function PropertyDetailModal({
               <Link
                 href={`/book-viewing?property=${encodeURIComponent(property.title)}`}
                 onClick={onClose}
-                className="flex-1 sm:flex-none bg-primary hover:bg-secondary text-white px-6 py-3 rounded-xl text-xs font-semibold uppercase tracking-wider transition-all flex items-center justify-center space-x-2 shadow-luxury"
+                className="flex-1 sm:flex-none bg-accent hover:bg-accent/90 text-black px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center space-x-2 shadow-luxury-hover font-mono"
               >
                 <span>Enter Viewing Salon</span>
-                <ArrowRight className="w-4 h-4 text-accent" />
+                <ArrowRight className="w-4 h-4 text-black" />
               </Link>
             </div>
           </div>

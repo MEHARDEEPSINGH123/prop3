@@ -29,7 +29,7 @@ export default function LuxuryDropdown({
   className = '',
   dropdownClassName = '',
   fontSerif = false,
-  theme = 'light',
+  theme = 'dark',
 }: LuxuryDropdownProps) {
   const [isOpen, setIsOpen] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -75,11 +75,11 @@ export default function LuxuryDropdown({
         onClick={() => setIsOpen((prev) => !prev)}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
-        className={`w-full flex items-center justify-between text-left rounded-xl px-4 py-3.5 border transition-all duration-300 shadow-sm cursor-pointer select-none ${
+        className={`w-full flex items-center justify-between text-left rounded-xl px-4 py-3.5 border transition-all duration-300 shadow-sm cursor-pointer select-none backdrop-blur-xl ${
           isDark
             ? isOpen
-              ? 'bg-[#1a1a1a] text-white border-accent ring-2 ring-accent/20'
-              : 'bg-[#141414] text-white border-white/15 hover:border-accent/60'
+              ? 'bg-[#181C26] text-white border-accent ring-2 ring-accent/30 shadow-lg'
+              : 'bg-white/[0.06] hover:bg-white/[0.1] text-white border-white/15 hover:border-accent/60'
             : isOpen
               ? 'bg-white text-primary border-accent ring-2 ring-accent/20 shadow-md'
               : 'bg-[#fafaf8] hover:bg-white text-primary border-borderSubtle hover:border-accent/60'
@@ -103,11 +103,11 @@ export default function LuxuryDropdown({
             exit={{ opacity: 0, y: -4, scale: 0.99 }}
             transition={{ duration: 0.15, ease: [0.16, 1, 0.3, 1] }}
             style={{
-              backgroundColor: isDark ? '#141414' : '#FFFFFF',
-              borderColor: isDark ? 'rgba(255,255,255,0.15)' : '#E5E5E0',
-              boxShadow: '0 25px 60px -15px rgba(0, 0, 0, 0.22), 0 0 1px 1px rgba(0, 0, 0, 0.06)',
+              backgroundColor: isDark ? '#111420' : '#FFFFFF',
+              borderColor: isDark ? 'rgba(255,255,255,0.18)' : '#E5E5E0',
+              boxShadow: '0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 1px 1px rgba(255, 255, 255, 0.1)',
             }}
-            className={`absolute left-0 right-0 top-full mt-1.5 z-50 rounded-2xl border py-1.5 overflow-hidden max-h-72 overflow-y-auto no-scrollbar ${
+            className={`absolute left-0 right-0 top-full mt-1.5 z-50 rounded-2xl border py-1.5 overflow-hidden max-h-72 overflow-y-auto no-scrollbar backdrop-blur-2xl ${
               isDark ? 'text-white' : 'text-primary'
             } ${dropdownClassName}`}
             role="listbox"

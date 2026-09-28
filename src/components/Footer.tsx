@@ -25,9 +25,9 @@ export default function Footer() {
   }
 
   return (
-    <footer id="contact" className="bg-primary text-white pt-28 pb-16 relative overflow-hidden border-t border-white/10">
+    <footer id="contact" className="bg-[#06070B] text-white pt-28 pb-16 relative overflow-hidden border-t border-white/10">
       {/* Subtle architectural ambient glow */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[350px] bg-accent/5 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[350px] bg-accent/10 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14 relative z-10">
         {/* Top Contact & VIP Newsletter Grid */}
@@ -66,7 +66,7 @@ export default function Footer() {
           </div>
 
           {/* Right Column: Confidential Off-Market Monograph Subscription */}
-          <div className="lg:col-span-6 bg-neutral-900/80 p-8 sm:p-12 rounded-3xl border border-white/10 shadow-2xl flex flex-col justify-between">
+          <div className="lg:col-span-6 bg-white/[0.04] backdrop-blur-2xl p-8 sm:p-12 rounded-3xl border border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.6)] flex flex-col justify-between">
             <div>
               <span className="text-xs uppercase font-mono tracking-widest text-accent font-bold block mb-2">
                 Off-Market Intelligence Monograph
@@ -88,11 +88,11 @@ export default function Footer() {
                     placeholder="Enter confidential email address..."
                     value={newsletterEmail}
                     onChange={(e) => setNewsletterEmail(e.target.value)}
-                    className="w-full bg-black/60 text-xs text-white rounded-2xl px-5 py-4 pr-32 border border-white/15 focus:outline-none focus:border-accent"
+                    className="w-full bg-white/[0.05] text-xs text-white rounded-2xl px-5 py-4 pr-32 border border-white/15 focus:outline-none focus:border-accent placeholder:text-neutral-500 backdrop-blur-md"
                   />
                   <button
                     type="submit"
-                    className="absolute right-2 top-2 bottom-2 bg-accent hover:bg-accent-light text-primary font-bold text-xs uppercase tracking-wider px-5 rounded-xl transition-colors flex items-center space-x-1"
+                    className="absolute right-2 top-2 bottom-2 bg-accent hover:bg-accent-light text-[#090A0F] font-bold text-xs uppercase tracking-wider px-5 rounded-xl transition-all duration-300 flex items-center space-x-1 cursor-pointer shadow-md"
                   >
                     <span>Request</span>
                     <ArrowRight className="w-3.5 h-3.5" />

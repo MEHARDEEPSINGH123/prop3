@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --background: #F5F5F3;
-  --foreground: #111111;
-  --accent: #B8956A;
-  --accent-light: #CEAE85;
-  --border: #E5E5E5;
+  --background: #090A0F;
+  --foreground: #FFFFFF;
+  --accent: #DFB776;
+  --accent-light: #F3D7A4;
+  --border: rgba(255, 255, 255, 0.12);
 }
 
 html {
   font-size: 90%;
   scroll-behavior: smooth;
-  background-color: #F5F5F3;
-  color: #111111;
+  background-color: #090A0F;
+  color: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -26,14 +26,14 @@ html {
 }
 
 body {
-  background-color: #F5F5F3;
-  color: #111111;
+  background-color: #090A0F;
+  color: #FFFFFF;
   overflow-x: hidden;
 }
 
 ::selection {
-  background-color: #B8956A;
-  color: #FFFFFF;
+  background-color: #DFB776;
+  color: #090A0F;
 }
 
 /* Custom Scrollbar */
@@ -43,16 +43,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F5F5F3;
+  background: #090A0F;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #B8956A;
+  background: #DFB776;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #93744A;
+  background: #B8934A;
 }
 
 /* Hide scrollbar for clean horizontal snap containers */
@@ -64,19 +64,44 @@ body {
   scrollbar-width: none;
 }
 
-/* Editorial Glass Effect */
+/* Ultra-Modern Glassmorphism Effects */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(15, 18, 28, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.015) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.glass-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  border-color: rgba(223, 183, 118, 0.45);
+  box-shadow: 0 20px 45px -12px rgba(0, 0, 0, 0.7), 0 0 25px rgba(223, 183, 118, 0.15);
+  transform: translateY(-3px);
 }
 
 .glass-dark {
-  background: rgba(17, 17, 17, 0.75);
+  background: rgba(12, 15, 23, 0.78);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 /* Subtle image zoom transition */

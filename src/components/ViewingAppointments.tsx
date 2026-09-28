@@ -97,7 +97,7 @@ export default function ViewingAppointments({
   }
 
   return (
-    <section id="appointments" className="py-28 md:py-40 bg-canvas text-primary relative overflow-hidden">
+    <section id="appointments" className="py-28 md:py-40 bg-[#090A0F] text-white relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 lg:mb-20 gap-8">
@@ -108,17 +108,17 @@ export default function ViewingAppointments({
                 Chapter 08 · Private Access
               </span>
             </div>
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-primary font-normal leading-[1.08]">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-normal leading-[1.08]">
               Curated Viewing Appointments
             </h2>
           </div>
           <div className="space-y-3">
-            <p className="text-sm text-secondary max-w-lg font-sans leading-relaxed">
+            <p className="text-sm text-neutral-400 max-w-lg font-sans leading-relaxed">
               By private arrangement only. Every walkthrough is hosted with discreet chauffeured arrival, confidential documentation, and architectural advisory.
             </p>
             <a
               href="/book-viewing"
-              className="inline-flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-accent hover:text-primary font-bold transition-colors"
+              className="inline-flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-accent hover:text-white font-bold transition-colors"
             >
               <span>Launch Dedicated Multi-Step Viewing Salon →</span>
             </a>
@@ -135,10 +135,10 @@ export default function ViewingAppointments({
               className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
             >
               {/* Left Column: Interactive Booking Step Selection */}
-              <div className="lg:col-span-7 bg-white p-6 sm:p-10 rounded-3xl border border-borderSubtle shadow-luxury space-y-8">
+              <div className="lg:col-span-7 bg-white/[0.04] backdrop-blur-2xl p-6 sm:p-10 rounded-3xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] space-y-8 text-white">
                 {/* Step 1: Property Selection (from JSON) */}
                 <div>
-                  <label className="text-xs uppercase font-semibold tracking-wider text-secondary mb-2 flex items-center space-x-1.5">
+                  <label className="text-xs uppercase font-semibold tracking-wider text-neutral-300 mb-2 flex items-center space-x-1.5">
                     <Building className="w-4 h-4 text-accent" />
                     <span>1. Select Desired Residence</span>
                   </label>
@@ -245,10 +245,10 @@ export default function ViewingAppointments({
                           key={ag.id}
                           type="button"
                           onClick={() => setSelectedAgentId(ag.id)}
-                          className={`p-3 rounded-2xl border text-center transition-all ${
+                          className={`p-3 rounded-2xl border text-center transition-all cursor-pointer ${
                             isSelected
-                              ? 'border-accent bg-primary text-white shadow-md'
-                              : 'border-borderSubtle bg-neutral-50 text-secondary hover:bg-neutral-100'
+                              ? 'border-accent bg-accent/20 text-white shadow-[0_0_15px_rgba(223,183,118,0.4)]'
+                              : 'border-white/10 bg-white/[0.03] text-neutral-300 hover:bg-white/[0.07] hover:border-white/25'
                           }`}
                         >
                           <div className="w-12 h-12 rounded-full overflow-hidden mx-auto mb-2 border-2 border-accent/40">
@@ -271,14 +271,14 @@ export default function ViewingAppointments({
                 </div>
 
                 {/* Step 5: Contact Information Form */}
-                <form onSubmit={handleBookingSubmit} className="space-y-4 pt-4 border-t border-borderSubtle">
+                <form onSubmit={handleBookingSubmit} className="space-y-4 pt-4 border-t border-white/10">
                   <h4 className="text-xs uppercase font-mono tracking-widest text-accent font-bold">
                     5. Patron Credentials & Confidential Contact
                   </h4>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="text-[11px] uppercase font-medium text-neutral-500 block mb-1">
+                      <label className="text-[11px] uppercase font-medium text-neutral-400 block mb-1">
                         Full Name & Salutation
                       </label>
                       <input
@@ -287,12 +287,12 @@ export default function ViewingAppointments({
                         placeholder="e.g. Baron Christopher Wright"
                         value={fullName}
                         onChange={(e) => setFullName(e.target.value)}
-                        className="w-full bg-neutral-50 text-xs text-primary rounded-xl px-3.5 py-2.5 border border-borderSubtle focus:outline-none focus:border-accent"
+                        className="w-full bg-white/[0.05] text-xs text-white rounded-xl px-3.5 py-2.5 border border-white/15 focus:outline-none focus:border-accent placeholder:text-neutral-500 backdrop-blur-md"
                       />
                     </div>
 
                     <div>
-                      <label className="text-[11px] uppercase font-medium text-neutral-500 block mb-1">
+                      <label className="text-[11px] uppercase font-medium text-neutral-400 block mb-1">
                         Private Contact Number
                       </label>
                       <input
@@ -301,13 +301,13 @@ export default function ViewingAppointments({
                         placeholder="+65 9123 4567"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
-                        className="w-full bg-neutral-50 text-xs text-primary rounded-xl px-3.5 py-2.5 border border-borderSubtle focus:outline-none focus:border-accent"
+                        className="w-full bg-white/[0.05] text-xs text-white rounded-xl px-3.5 py-2.5 border border-white/15 focus:outline-none focus:border-accent placeholder:text-neutral-500 backdrop-blur-md"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="text-[11px] uppercase font-medium text-neutral-500 block mb-1">
+                    <label className="text-[11px] uppercase font-medium text-neutral-400 block mb-1">
                       Direct Email Address
                     </label>
                     <input
@@ -316,18 +316,18 @@ export default function ViewingAppointments({
                       placeholder="christopher@familyoffice.sg"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="w-full bg-neutral-50 text-xs text-primary rounded-xl px-3.5 py-2.5 border border-borderSubtle focus:outline-none focus:border-accent"
+                      className="w-full bg-white/[0.05] text-xs text-white rounded-xl px-3.5 py-2.5 border border-white/15 focus:outline-none focus:border-accent placeholder:text-neutral-500 backdrop-blur-md"
                     />
                   </div>
 
                   {/* VIP Experience Checkboxes */}
                   <div className="space-y-2 pt-2">
-                    <label className="flex items-center space-x-2.5 text-xs text-secondary cursor-pointer">
+                    <label className="flex items-center space-x-2.5 text-xs text-neutral-300 cursor-pointer">
                       <input
                         type="checkbox"
                         checked={requestLimousine}
                         onChange={(e) => setRequestLimousine(e.target.checked)}
-                        className="rounded text-accent focus:ring-accent w-4 h-4"
+                        className="rounded text-accent focus:ring-accent w-4 h-4 bg-white/10 border-white/20"
                       />
                       <span className="flex items-center space-x-1.5">
                         <Car className="w-3.5 h-3.5 text-accent" />
@@ -335,12 +335,12 @@ export default function ViewingAppointments({
                       </span>
                     </label>
 
-                    <label className="flex items-center space-x-2.5 text-xs text-secondary cursor-pointer">
+                    <label className="flex items-center space-x-2.5 text-xs text-neutral-300 cursor-pointer">
                       <input
                         type="checkbox"
                         checked={champagneTasting}
                         onChange={(e) => setChampagneTasting(e.target.checked)}
-                        className="rounded text-accent focus:ring-accent w-4 h-4"
+                        className="rounded text-accent focus:ring-accent w-4 h-4 bg-white/10 border-white/20"
                       />
                       <span className="flex items-center space-x-1.5">
                         <Wine className="w-3.5 h-3.5 text-accent" />
@@ -350,7 +350,7 @@ export default function ViewingAppointments({
                   </div>
 
                   <div>
-                    <label className="text-[11px] uppercase font-medium text-neutral-500 block mb-1">
+                    <label className="text-[11px] uppercase font-medium text-neutral-400 block mb-1">
                       Special Architectural Inquiries or Confidentiality Notes
                     </label>
                     <textarea
@@ -358,15 +358,15 @@ export default function ViewingAppointments({
                       placeholder="Specify private aircraft touchdown, non-disclosure agreements, or specific wing inspections..."
                       value={specialRequests}
                       onChange={(e) => setSpecialRequests(e.target.value)}
-                      className="w-full bg-neutral-50 text-xs text-primary rounded-xl px-3.5 py-2.5 border border-borderSubtle focus:outline-none focus:border-accent"
+                      className="w-full bg-white/[0.05] text-xs text-white rounded-xl px-3.5 py-2.5 border border-white/15 focus:outline-none focus:border-accent placeholder:text-neutral-500 backdrop-blur-md"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-primary hover:bg-secondary text-white font-semibold text-xs uppercase tracking-widest py-4 rounded-2xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-luxury"
+                    className="w-full bg-accent hover:bg-accent-light text-[#090A0F] font-bold text-xs uppercase tracking-widest py-4 rounded-2xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-[0_0_20px_rgba(223,183,118,0.3)] cursor-pointer"
                   >
-                    <Sparkles className="w-4 h-4 text-accent" />
+                    <Sparkles className="w-4 h-4 text-[#090A0F]" />
                     <span>Confirm Private Viewing Reservation</span>
                   </button>
                 </form>
@@ -374,7 +374,7 @@ export default function ViewingAppointments({
 
               {/* Right Column: Dynamic Preview Card of the Appointment */}
               <div className="lg:col-span-5 space-y-6">
-                <div className="bg-primary text-white p-8 rounded-3xl border border-white/10 shadow-2xl relative overflow-hidden">
+                <div className="bg-white/[0.04] backdrop-blur-2xl text-white p-8 rounded-3xl border border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.6)] relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-bl-full pointer-events-none" />
 
                   <span className="text-[10px] uppercase font-mono tracking-widest text-accent block mb-2">
@@ -455,21 +455,21 @@ export default function ViewingAppointments({
                 </div>
 
                 {/* Direct Phone Support Card */}
-                <div className="p-6 rounded-2xl bg-white border border-borderSubtle shadow-sm flex items-center justify-between">
+                <div className="p-6 rounded-2xl bg-white/[0.04] backdrop-blur-xl border border-white/10 shadow-lg flex items-center justify-between text-white">
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center text-accent">
+                    <div className="w-10 h-10 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center text-accent">
                       <Phone className="w-4 h-4" />
                     </div>
                     <div>
                       <span className="text-[10px] uppercase font-mono tracking-widest text-neutral-400 block">
                         Direct Private Desk
                       </span>
-                      <span className="text-xs font-bold text-primary font-mono">
+                      <span className="text-xs font-bold text-white font-mono">
                         +65 6890 2888
                       </span>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono uppercase bg-neutral-100 text-secondary px-2.5 py-1 rounded">
+                  <span className="text-[10px] font-mono uppercase bg-accent/20 text-accent border border-accent/30 px-2.5 py-1 rounded-full">
                     24/7 Available
                   </span>
                 </div>
@@ -482,12 +482,12 @@ export default function ViewingAppointments({
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              className="max-w-2xl mx-auto bg-primary text-white p-8 sm:p-12 rounded-3xl border border-accent shadow-2xl relative overflow-hidden"
+              className="max-w-2xl mx-auto bg-[#0F121C] text-white p-8 sm:p-12 rounded-3xl border border-accent shadow-2xl relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-48 h-48 bg-accent/15 rounded-bl-full pointer-events-none" />
 
               <div className="text-center mb-8">
-                <div className="w-16 h-16 rounded-full bg-accent text-primary flex items-center justify-center mx-auto mb-4 shadow-luxury">
+                <div className="w-16 h-16 rounded-full bg-accent text-[#090A0F] flex items-center justify-center mx-auto mb-4 shadow-luxury">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
                 <span className="text-xs font-mono uppercase tracking-widest text-accent font-bold block mb-1">

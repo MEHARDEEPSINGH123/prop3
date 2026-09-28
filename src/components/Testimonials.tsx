@@ -13,7 +13,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
   if (!testimonials || testimonials.length === 0) return null
 
   return (
-    <section id="testimonials" className="py-28 md:py-40 bg-canvas text-primary relative overflow-hidden">
+    <section id="testimonials" className="py-28 md:py-40 bg-[#090A0F] text-white relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14">
         {/* Section Header */}
         <div className="flex items-center space-x-3 mb-4">
@@ -24,10 +24,10 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
         </div>
 
         <div className="max-w-3xl mb-16 lg:mb-20">
-          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-primary font-normal leading-[1.08]">
+          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-normal leading-[1.08]">
             Voices of Discerning Patrons
           </h2>
-          <p className="text-sm text-secondary mt-3 font-sans leading-relaxed">
+          <p className="text-sm text-neutral-400 mt-3 font-sans leading-relaxed">
             Reflections from international collectors, private offices, and families who acquired their generational residences with Haute Terres.
           </p>
         </div>
@@ -41,21 +41,21 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.12 }}
-              className="bg-white p-8 sm:p-10 rounded-3xl border border-borderSubtle shadow-luxury hover:border-accent/40 transition-all duration-300 flex flex-col justify-between relative"
+              className="bg-white/[0.04] backdrop-blur-2xl p-8 sm:p-10 rounded-3xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] hover:border-accent/50 transition-all duration-300 flex flex-col justify-between relative text-white"
             >
               <div>
-                <Quote className="w-10 h-10 text-accent/30 mb-6" />
+                <Quote className="w-10 h-10 text-accent/40 mb-6" />
 
-                <blockquote className="font-serif text-xl sm:text-2xl text-primary italic leading-relaxed mb-8">
+                <blockquote className="font-serif text-xl sm:text-2xl text-neutral-200 italic leading-relaxed mb-8">
                   &ldquo;{test.quote}&rdquo;
                 </blockquote>
               </div>
 
-              <div className="pt-6 border-t border-borderSubtle">
-                <h4 className="font-bold text-primary text-sm font-sans">
+              <div className="pt-6 border-t border-white/10">
+                <h4 className="font-bold text-white text-sm font-sans">
                   {test.author}
                 </h4>
-                <p className="text-xs text-neutral-500 font-sans mt-0.5">
+                <p className="text-xs text-neutral-400 font-sans mt-0.5">
                   {test.title}
                 </p>
                 <div className="mt-3 flex items-center justify-between text-[11px] font-mono text-accent">

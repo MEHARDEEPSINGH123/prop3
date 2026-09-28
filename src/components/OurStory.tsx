@@ -65,7 +65,7 @@ export default function OurStory({ story }: OurStoryProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="hidden sm:block absolute -bottom-10 -right-6 md:-right-10 w-60 md:w-72 rounded-2xl overflow-hidden shadow-luxury border-4 border-canvas bg-white p-3.5"
+                className="hidden sm:block absolute -bottom-10 -right-6 md:-right-10 w-60 md:w-72 rounded-2xl overflow-hidden shadow-2xl border border-white/20 bg-[#0F121C]/90 backdrop-blur-2xl p-4 text-white"
               >
                 <div className="aspect-[4/3] rounded-xl overflow-hidden mb-3">
                   <img
@@ -78,14 +78,14 @@ export default function OurStory({ story }: OurStoryProps) {
                   <span className="text-[9px] uppercase tracking-widest text-accent font-bold block">
                     Material Integrity
                   </span>
-                  <span className="text-xs text-secondary font-medium">
+                  <span className="text-xs text-neutral-300 font-medium">
                     Hand-chiselled Roman travertine & aged bronze accents
                   </span>
                 </div>
               </motion.div>
 
               {/* Experience Badge */}
-              <div className="absolute -top-6 -left-4 sm:-left-6 bg-primary text-white py-3.5 px-6 rounded-2xl shadow-xl border border-white/10 flex items-center space-x-3.5">
+              <div className="absolute -top-6 -left-4 sm:-left-6 bg-[#0F121C]/90 backdrop-blur-xl text-white py-3.5 px-6 rounded-2xl shadow-xl border border-white/15 flex items-center space-x-3.5">
                 <Award className="w-5 h-5 text-accent" />
                 <div>
                   <div className="font-hero text-2xl tracking-wider text-accent leading-none">
@@ -107,7 +107,7 @@ export default function OurStory({ story }: OurStoryProps) {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl text-primary leading-[1.08] font-normal tracking-tight">
+              <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl text-white leading-[1.08] font-normal tracking-tight">
                 {story.title}
               </h2>
               <p className="text-xs uppercase tracking-[0.25em] text-accent font-semibold mt-4">
@@ -123,7 +123,7 @@ export default function OurStory({ story }: OurStoryProps) {
               transition={{ duration: 0.8, delay: 0.15 }}
               className="border-l-2 border-accent pl-6 py-2"
             >
-              <p className="font-serif text-xl sm:text-2xl text-secondary italic leading-relaxed">
+              <p className="font-serif text-xl sm:text-2xl text-neutral-300 italic leading-relaxed">
                 &ldquo;{story.lead_quote}&rdquo;
               </p>
             </motion.blockquote>
@@ -134,48 +134,48 @@ export default function OurStory({ story }: OurStoryProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.25 }}
-              className="space-y-7 pt-2"
+              className="space-y-4 pt-2"
             >
               {/* Pillar 1: Vision */}
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 p-4 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-accent/40 transition-all">
                 <div className="w-11 h-11 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center shrink-0 mt-1">
                   <Compass className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-xs uppercase tracking-wider font-bold text-primary mb-1.5">
+                  <h3 className="text-xs uppercase tracking-wider font-bold text-white mb-1.5">
                     Company Vision
                   </h3>
-                  <p className="text-sm text-secondary leading-relaxed font-sans">
+                  <p className="text-sm text-neutral-400 leading-relaxed font-sans">
                     {story.company_vision}
                   </p>
                 </div>
               </div>
 
               {/* Pillar 2: Expertise */}
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 p-4 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-accent/40 transition-all">
                 <div className="w-11 h-11 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center shrink-0 mt-1">
                   <ShieldCheck className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-xs uppercase tracking-wider font-bold text-primary mb-1.5">
+                  <h3 className="text-xs uppercase tracking-wider font-bold text-white mb-1.5">
                     Property Expertise
                   </h3>
-                  <p className="text-sm text-secondary leading-relaxed font-sans">
+                  <p className="text-sm text-neutral-400 leading-relaxed font-sans">
                     {story.property_expertise}
                   </p>
                 </div>
               </div>
 
               {/* Pillar 3: Philosophy */}
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 p-4 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-accent/40 transition-all">
                 <div className="w-11 h-11 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center shrink-0 mt-1">
                   <Eye className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-xs uppercase tracking-wider font-bold text-primary mb-1.5">
+                  <h3 className="text-xs uppercase tracking-wider font-bold text-white mb-1.5">
                     Luxury Living Philosophy
                   </h3>
-                  <p className="text-sm text-secondary leading-relaxed font-sans">
+                  <p className="text-sm text-neutral-400 leading-relaxed font-sans">
                     {story.luxury_philosophy}
                   </p>
                 </div>

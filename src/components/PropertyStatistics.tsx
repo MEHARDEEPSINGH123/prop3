@@ -63,7 +63,7 @@ export default function PropertyStatistics({ statistics }: PropertyStatisticsPro
   if (!statistics || statistics.length === 0) return null
 
   return (
-    <section id="statistics" className="py-28 md:py-40 bg-primary text-white relative overflow-hidden">
+    <section id="statistics" className="py-28 md:py-40 bg-[#090A0F] text-white relative overflow-hidden">
       {/* Background Architectural Grid Lines */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="w-full h-full border-t border-b border-white grid grid-cols-2 md:grid-cols-6 divide-x divide-white" />
@@ -97,7 +97,7 @@ export default function PropertyStatistics({ statistics }: PropertyStatisticsPro
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="group p-8 sm:p-10 rounded-3xl bg-neutral-900/70 border border-white/10 hover:border-accent/50 transition-all duration-500 shadow-luxury hover:bg-neutral-900 relative overflow-hidden"
+              className="group p-8 sm:p-10 rounded-3xl bg-white/[0.04] backdrop-blur-2xl border border-white/10 hover:border-accent/50 transition-all duration-500 shadow-2xl hover:bg-white/[0.07] relative overflow-hidden hover:-translate-y-1.5"
             >
               <div className="absolute top-0 right-0 w-28 h-28 bg-accent/5 rounded-bl-full pointer-events-none group-hover:bg-accent/10 transition-colors" />
 

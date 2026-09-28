@@ -46,7 +46,7 @@ export default function PortfolioGallery({ galleryItems }: PortfolioGalleryProps
   }
 
   return (
-    <section id="gallery" className="py-28 md:py-40 bg-canvas text-primary relative overflow-hidden">
+    <section id="gallery" className="py-28 md:py-40 bg-[#090A0F] text-white relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 lg:mb-20 gap-8">
@@ -57,11 +57,11 @@ export default function PortfolioGallery({ galleryItems }: PortfolioGalleryProps
                 Chapter 09 · Visual Anthology
               </span>
             </div>
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-primary font-normal leading-[1.08]">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-normal leading-[1.08]">
               Portfolio & Architectural Gallery
             </h2>
           </div>
-          <p className="text-sm text-secondary max-w-lg font-sans leading-relaxed">
+          <p className="text-sm text-neutral-400 max-w-lg font-sans leading-relaxed">
             Capturing the spatial poetry of pure concrete, travertine volumes, cantilevered steel, and reflections over water.
           </p>
         </div>
@@ -72,10 +72,10 @@ export default function PortfolioGallery({ galleryItems }: PortfolioGalleryProps
             <button
               key={cat}
               onClick={() => setFilterCategory(cat)}
-              className={`px-4 py-2 rounded-full text-xs uppercase tracking-wider font-semibold transition-all ${
+              className={`px-4 py-2 rounded-full text-xs uppercase tracking-wider font-semibold transition-all cursor-pointer backdrop-blur-xl ${
                 filterCategory === cat
-                  ? 'bg-primary text-white shadow-sm'
-                  : 'bg-white text-secondary hover:bg-neutral-100 border border-borderSubtle'
+                  ? 'bg-accent text-[#090A0F] shadow-[0_0_15px_rgba(223,183,118,0.4)]'
+                  : 'bg-white/[0.04] text-neutral-300 hover:text-white hover:bg-white/[0.08] border border-white/10'
               }`}
             >
               {cat}
@@ -103,7 +103,7 @@ export default function PortfolioGallery({ galleryItems }: PortfolioGalleryProps
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: idx * 0.08 }}
                 onClick={() => openLightbox(idx)}
-                className={`group relative rounded-3xl overflow-hidden cursor-pointer bg-neutral-200 border border-borderSubtle shadow-luxury ${rowSpanClass}`}
+                className={`group relative rounded-3xl overflow-hidden cursor-pointer bg-neutral-900 border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] hover:border-accent/50 transition-all ${rowSpanClass}`}
               >
                 {/* Large Photography with Zoom */}
                 <img

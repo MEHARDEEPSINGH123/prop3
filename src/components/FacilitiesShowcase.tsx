@@ -38,9 +38,9 @@ export default function FacilitiesShowcase({ facilities }: FacilitiesShowcasePro
   if (!facilities || facilities.length === 0) return null
 
   return (
-    <section id="facilities" className="py-28 md:py-40 bg-primary text-white relative overflow-hidden">
+    <section id="facilities" className="py-28 md:py-40 bg-[#090A0F] text-white relative overflow-hidden">
       {/* Background Graphic Lines */}
-      <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-accent/5 blur-3xl pointer-events-none" />
+      <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-accent/10 blur-3xl pointer-events-none" />
 
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14 relative z-10">
         {/* Section Header */}
@@ -63,7 +63,7 @@ export default function FacilitiesShowcase({ facilities }: FacilitiesShowcasePro
 
         {/* Feature Spotlight Banner (Interactive Hero of Facilities) */}
         {selectedFacility && (
-          <div className="mb-16 bg-neutral-900 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+          <div className="mb-16 bg-white/[0.04] backdrop-blur-2xl rounded-3xl overflow-hidden border border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
             <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
               {/* Image Left */}
               <div className="lg:col-span-7 relative h-72 sm:h-96 lg:h-[480px] overflow-hidden">
@@ -134,10 +134,10 @@ export default function FacilitiesShowcase({ facilities }: FacilitiesShowcasePro
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.05 }}
-                className={`group cursor-pointer rounded-2xl overflow-hidden border transition-all duration-300 relative flex flex-col justify-between ${
+                className={`group cursor-pointer rounded-2xl overflow-hidden border transition-all duration-300 relative flex flex-col justify-between backdrop-blur-xl ${
                   isSelected
-                    ? 'border-accent bg-neutral-900 shadow-luxury ring-1 ring-accent'
-                    : 'border-white/10 bg-neutral-900/60 hover:border-white/30 hover:bg-neutral-900/90'
+                    ? 'border-accent bg-white/[0.08] shadow-[0_0_20px_rgba(223,183,118,0.3)] ring-1 ring-accent'
+                    : 'border-white/10 bg-white/[0.03] hover:border-white/30 hover:bg-white/[0.06]'
                 }`}
               >
                 {/* Large Card Image */}

@@ -66,7 +66,7 @@ export default function FinancingSolutions({
   if (!financingOptions || financingOptions.length === 0) return null
 
   return (
-    <section id="financing" className="py-28 md:py-40 bg-canvas text-primary relative overflow-hidden">
+    <section id="financing" className="py-28 md:py-40 bg-[#090A0F] text-white relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 lg:mb-20 gap-8">
@@ -77,11 +77,11 @@ export default function FinancingSolutions({
                 Chapter 06 · Capital Advisory
               </span>
             </div>
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-primary font-normal leading-[1.08]">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-normal leading-[1.08]">
               Financing Solutions & Private Banking
             </h2>
           </div>
-          <p className="text-sm text-secondary max-w-lg font-sans leading-relaxed">
+          <p className="text-sm text-neutral-400 max-w-lg font-sans leading-relaxed">
             Structuring bespoke credit facilities, Lombard linkages, and sovereign loan-to-value solutions with Singapore&apos;s premier private banking institutions.
           </p>
         </div>
@@ -92,10 +92,10 @@ export default function FinancingSolutions({
             <button
               key={opt.bank}
               onClick={() => setSelectedBankIndex(idx)}
-              className={`px-5 py-3 rounded-2xl text-xs uppercase tracking-wider font-semibold transition-all duration-300 flex items-center space-x-2 shrink-0 border ${
+              className={`px-5 py-3 rounded-2xl text-xs uppercase tracking-wider font-semibold transition-all duration-300 flex items-center space-x-2 shrink-0 border cursor-pointer backdrop-blur-xl ${
                 selectedBankIndex === idx
-                  ? 'bg-primary text-white border-primary shadow-luxury'
-                  : 'bg-white text-secondary hover:bg-neutral-100 border-borderSubtle'
+                  ? 'bg-accent text-[#090A0F] border-accent shadow-[0_0_15px_rgba(223,183,118,0.4)]'
+                  : 'bg-white/[0.04] text-neutral-300 hover:text-white hover:bg-white/[0.08] border-white/10'
               }`}
             >
               <Landmark className="w-3.5 h-3.5 text-accent" />
@@ -110,14 +110,14 @@ export default function FinancingSolutions({
         {/* Main Calculator Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-20">
           {/* Left Column: Interactive Controls */}
-          <div className="lg:col-span-7 bg-white p-7 sm:p-10 lg:p-12 rounded-3xl border border-borderSubtle shadow-luxury space-y-9">
-            <div className="flex items-center justify-between border-b border-borderSubtle pb-5">
+          <div className="lg:col-span-7 bg-white/[0.04] backdrop-blur-2xl p-7 sm:p-10 lg:p-12 rounded-3xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] space-y-9">
+            <div className="flex items-center justify-between border-b border-white/10 pb-5">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent">
                   <Calculator className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-2xl text-primary font-medium">
+                  <h3 className="font-serif text-2xl text-white font-medium">
                     Mortgage Calculator
                   </h3>
                   <span className="text-[10px] text-neutral-400 font-mono uppercase tracking-widest block">
@@ -133,10 +133,10 @@ export default function FinancingSolutions({
             {/* Input 1: Property Acquisition Value */}
             <div>
               <div className="flex justify-between items-center mb-2.5">
-                <label className="text-xs uppercase font-semibold tracking-wider text-secondary">
+                <label className="text-xs uppercase font-semibold tracking-wider text-neutral-300">
                   Target Acquisition Price
                 </label>
-                <span className="font-serif text-2xl font-bold text-primary">
+                <span className="font-serif text-2xl font-bold text-accent">
                   S$ {(propertyPrice / 1000000).toFixed(2)}M
                   <span className="text-xs font-mono text-neutral-400 ml-1.5 font-normal">
                     ({formatCurrency(propertyPrice)})
@@ -202,7 +202,7 @@ export default function FinancingSolutions({
                 step="5"
                 value={loanTenorYears}
                 onChange={(e) => setLoanTenorYears(Number(e.target.value))}
-                className="w-full accent-accent h-2 bg-neutral-200 rounded-lg cursor-pointer"
+                className="w-full accent-accent h-2 bg-white/10 rounded-lg cursor-pointer"
               />
               <div className="flex justify-between text-[10px] text-neutral-400 font-mono mt-1.5">
                 <span>10 Years</span>
@@ -212,16 +212,16 @@ export default function FinancingSolutions({
             </div>
 
             {/* Bank Perks & Advisory Notes */}
-            <div className="pt-4 border-t border-borderSubtle bg-neutral-50 p-5 rounded-2xl">
+            <div className="pt-4 border-t border-white/10 bg-white/[0.03] p-5 rounded-2xl">
               <span className="text-[11px] font-mono uppercase tracking-widest text-accent block mb-2 font-bold">
                 {activeBank.package_name || 'Private Banking Package'}
               </span>
-              <p className="text-xs text-secondary mb-3 leading-relaxed">
+              <p className="text-xs text-neutral-300 mb-3 leading-relaxed">
                 {activeBank.advisory_notes}
               </p>
               <div className="space-y-2">
                 {(activeBank.perks || []).map((perk, i) => (
-                  <div key={i} className="flex items-center space-x-2 text-xs text-primary">
+                  <div key={i} className="flex items-center space-x-2 text-xs text-white">
                     <CheckCircle2 className="w-3.5 h-3.5 text-accent shrink-0" />
                     <span>{perk}</span>
                   </div>
@@ -231,7 +231,7 @@ export default function FinancingSolutions({
           </div>
 
           {/* Right Column: Dynamic Output Display Card */}
-          <div className="lg:col-span-5 bg-primary text-white p-8 sm:p-10 lg:p-12 rounded-3xl border border-white/10 shadow-2xl flex flex-col justify-between space-y-8 relative overflow-hidden">
+          <div className="lg:col-span-5 bg-white/[0.05] backdrop-blur-2xl text-white p-8 sm:p-10 lg:p-12 rounded-3xl border border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.6)] flex flex-col justify-between space-y-8 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-36 h-36 bg-accent/10 rounded-bl-full pointer-events-none" />
 
             <div>
@@ -292,7 +292,7 @@ export default function FinancingSolutions({
             <div>
               <Link
                 href="/book-viewing"
-                className="w-full bg-accent hover:bg-accent-light text-primary font-bold text-xs uppercase tracking-widest py-4 rounded-2xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg"
+                className="w-full bg-accent hover:bg-accent-light text-[#090A0F] font-bold text-xs uppercase tracking-widest py-4 rounded-2xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-[0_0_20px_rgba(223,183,118,0.3)] cursor-pointer"
               >
                 <span>Request Private Banking Term Sheet</span>
                 <ArrowRight className="w-4 h-4" />
