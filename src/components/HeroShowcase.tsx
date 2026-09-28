@@ -12,12 +12,12 @@ import {
   Calendar,
   Layers,
   Building,
-  Maximize2,
   DollarSign,
   ArrowDown,
   Compass,
   ArrowUpRight,
-  ShieldCheck
+  ShieldCheck,
+  Maximize2
 } from 'lucide-react'
 import type { HeroProject } from '../types/database'
 import LuxuryDropdown from './LuxuryDropdown'
@@ -58,6 +58,29 @@ const bedroomOptions = [
   { value: '6', label: '6+ Palatial Wings' },
 ]
 
+const telemetryMap: Record<string, { coords: string; elevation: string; release: string }> = {
+  HP01: {
+    coords: '1°16\'55" N · 103°51\'14" E',
+    elevation: 'ELEV. +280M (LEVEL 64)',
+    release: 'MARINA BAY SKYLINE',
+  },
+  HP02: {
+    coords: '1°18\'19" N · 103°49\'44" E',
+    elevation: 'ELEV. +190M (LEVEL 42)',
+    release: 'ORCHARD BOULEVARD SKYLINE',
+  },
+  HP03: {
+    coords: '1°18\'32" N · 103°49\'12" E',
+    elevation: 'ELEV. +95M (CANOPY)',
+    release: 'NASSIM HILL SANCTUARY',
+  },
+  HP04: {
+    coords: '1°14\'45" N · 103°50\'18" E',
+    elevation: 'ELEV. +18M (OCEAN BERTH)',
+    release: 'SENTOSA COVE WATERCOURSE',
+  },
+}
+
 interface HeroShowcaseProps {
   heroProjects: HeroProject[]
   onSearchFilter?: (filters: {
@@ -79,6 +102,7 @@ export default function HeroShowcase({
   const [searchBedrooms, setSearchBedrooms] = useState('All')
 
   const activeProject = heroProjects[currentIndex] || heroProjects[0]
+  const telemetry = telemetryMap[activeProject?.id || 'HP01'] || telemetryMap.HP01
 
   const timerRef = useRef<NodeJS.Timeout | null>(null)
   const isNavigatingRef = useRef(false)
@@ -105,7 +129,7 @@ export default function HeroShowcase({
     startTimer()
     setTimeout(() => {
       isNavigatingRef.current = false
-    }, 450)
+    }, 500)
   }, [heroProjects, startTimer])
 
   const handleNext = useCallback(() => {
@@ -115,7 +139,7 @@ export default function HeroShowcase({
     startTimer()
     setTimeout(() => {
       isNavigatingRef.current = false
-    }, 450)
+    }, 500)
   }, [heroProjects, startTimer])
 
   const handleSelectIndex = (idx: number) => {
@@ -139,24 +163,40 @@ export default function HeroShowcase({
     }
   }
 
+  const renderEditorialTitle = (title: string) => {
+    const parts = title.split(' ')
+    if (parts.length <= 1) return title
+    const last = parts.pop()
+    const first = parts.join(' ')
+    return (
+      <>
+        <span>{first}</span>{' '}
+        <span className="font-serif italic font-light text-accent">{last}</span>
+      </>
+    )
+  }
+
   if (!activeProject) return null
 
   return (
     <>
-      {/* Split-Screen Hero Showcase with Floating Glass Spec Sheet */}
+      {/* =========================================================
+          CHAPTER 01: ULTRA-EDITORIAL ARCHITECTURAL MONOGRAPH
+          Full-Bleed Edge-to-Edge Canvas with Floating Telemetry
+      ========================================================= */}
       <section
         id="hero"
-        className="relative w-full min-h-screen lg:h-screen lg:min-h-[720px] lg:max-h-[1100px] bg-[#090A0F] text-white flex flex-col justify-between overflow-hidden"
+        className="relative w-full min-h-screen bg-[#07080C] text-white flex flex-col justify-between overflow-hidden"
       >
-        {/* Cinematic Backdrop with Subtle Radial Vignette */}
+        {/* Full-Bleed Edge-to-Edge Cinematic Canvas Backdrop */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeProject.id}
-              initial={{ opacity: 0, scale: 1.05 }}
+              initial={{ opacity: 0, scale: 1.08 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.3, ease: [0.16, 1, 0.3, 1] }}
+              exit={{ opacity: 0, scale: 0.98 }}
+              transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1] }}
               className="absolute inset-0 bg-cover bg-center"
               style={{
                 backgroundImage: `url(${
@@ -165,268 +205,220 @@ export default function HeroShowcase({
                 })`,
               }}
             >
-              {/* Ultra-Modern Glassmorphic Dark Gradients */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#090A0F] via-[#090A0F]/65 to-black/40" />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#090A0F]/90 via-[#090A0F]/50 to-transparent" />
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-black/60 pointer-events-none" />
+              {/* Luxury Monograph Radial & Linear Vignettes */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#07080C] via-[#07080C]/50 to-black/60" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#07080C]/90 via-[#07080C]/40 to-transparent" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_35%,rgba(7,8,12,0.85)_100%)] pointer-events-none" />
             </motion.div>
           </AnimatePresence>
         </div>
 
-        {/* Hero Content Container - Split-Screen Layout */}
-        <div className="relative z-10 w-full max-w-[1520px] mx-auto px-6 sm:px-10 lg:px-14 flex flex-col justify-between h-full pt-28 sm:pt-32 pb-8 sm:pb-12">
-          {/* Top Bar with Micro Status Badges & Slide Indicator */}
-          <div className="flex flex-wrap items-center justify-between gap-4 pt-1 sm:pt-2">
+        {/* Architectural Drafting Corner Markings */}
+        <div className="absolute top-28 left-6 sm:left-12 text-white/20 font-mono text-[10px] pointer-events-none select-none z-10 hidden lg:block tracking-widest">
+          + 01.GEO.REG
+        </div>
+        <div className="absolute top-28 right-6 sm:right-12 text-white/20 font-mono text-[10px] pointer-events-none select-none z-10 hidden lg:block tracking-widest">
+          + {telemetry.coords}
+        </div>
+
+        {/* Top Editorial Telemetry Bar */}
+        <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-14 pt-28 sm:pt-32">
+          <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-4 backdrop-blur-md">
+            {/* Monograph Tag & Live GPS Coordinates */}
             <motion.div
-              key={`badge-${activeProject.id}`}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
+              key={`telemetry-${activeProject.id}`}
+              initial={{ opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="flex items-center space-x-3"
+              className="flex items-center space-x-3 text-xs font-mono"
             >
-              <span className="inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-white/10 backdrop-blur-xl border border-white/20 text-accent shadow-sm">
-                <Sparkles className="w-3.5 h-3.5 text-accent" />
-                <span>{activeProject.availability || 'Curated Skyline Release'}</span>
+              <span className="text-accent font-bold tracking-[0.25em] uppercase">
+                Chapter 01 // Monograph
               </span>
-
-              <span className="hidden sm:inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full text-xs uppercase tracking-wider bg-white/5 backdrop-blur-xl border border-white/10 text-neutral-300">
-                <MapPin className="w-3.5 h-3.5 text-accent" />
-                <span>{activeProject.location}</span>
+              <span className="text-white/20 hidden sm:inline">|</span>
+              <span className="text-neutral-300 tracking-wider hidden sm:inline">
+                {telemetry.coords}
               </span>
-
-              <span className="hidden lg:inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider bg-white/5 backdrop-blur-xl border border-white/10 text-neutral-300">
-                <span className="text-accent font-semibold">01</span>
-                <span>// Architectural Masthead</span>
+              <span className="text-white/20 hidden md:inline">|</span>
+              <span className="hidden md:inline-flex items-center space-x-1.5 px-3 py-0.5 rounded-full bg-accent/15 border border-accent/30 text-accent text-[10px] font-bold tracking-wider uppercase">
+                <span className="w-1.5 h-1.5 rounded-full bg-accent animate-ping" />
+                <span>{telemetry.elevation}</span>
               </span>
             </motion.div>
 
-            {/* Slide Navigation Controls */}
-            <div className="flex items-center space-x-3 bg-white/10 backdrop-blur-xl px-4 py-1.5 rounded-full border border-white/15 shadow-lg">
-              <span className="text-xs font-mono tracking-widest text-accent font-bold">
-                0{currentIndex + 1}
+            {/* Slide Index Counter & Minimal Kinetic Controls */}
+            <div className="flex items-center space-x-4">
+              <span className="text-[11px] font-mono tracking-widest text-neutral-400">
+                <span className="text-white font-bold text-sm">0{currentIndex + 1}</span>
+                <span className="text-white/30 mx-2">—</span>
+                <span>0{heroProjects.length}</span>
               </span>
-              <span className="text-xs text-neutral-500">/</span>
-              <span className="text-xs font-mono text-neutral-400">
-                0{heroProjects.length}
-              </span>
-              <div className="h-3 w-[1px] bg-white/20 mx-1" />
-              <button
-                type="button"
-                onClick={handlePrev}
-                className="p-1 hover:text-accent transition-colors focus:outline-none cursor-pointer"
-                aria-label="Previous Project"
-              >
-                <ChevronLeft className="w-4 h-4" />
-              </button>
-              <button
-                type="button"
-                onClick={handleNext}
-                className="p-1 hover:text-accent transition-colors focus:outline-none cursor-pointer"
-                aria-label="Next Project"
-              >
-                <ChevronRight className="w-4 h-4" />
-              </button>
+
+              <div className="flex items-center space-x-1.5">
+                <button
+                  type="button"
+                  onClick={handlePrev}
+                  className="w-8 h-8 rounded-full border border-white/20 bg-white/5 hover:bg-accent hover:text-black hover:border-accent text-white flex items-center justify-center transition-all duration-300 cursor-pointer backdrop-blur-md"
+                  aria-label="Previous Monograph Residence"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </button>
+                <button
+                  type="button"
+                  onClick={handleNext}
+                  className="w-8 h-8 rounded-full border border-white/20 bg-white/5 hover:bg-accent hover:text-black hover:border-accent text-white flex items-center justify-center transition-all duration-300 cursor-pointer backdrop-blur-md"
+                  aria-label="Next Monograph Residence"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
             </div>
           </div>
+        </div>
 
-          {/* Center Main Split: Left Showcase + Right Floating Spec Sheet */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center my-auto py-6 sm:py-8">
-            {/* Left Column: Typographic Grandeur & CTAs */}
-            <div className="lg:col-span-7 space-y-5 sm:space-y-6">
-              <motion.div
-                key={`sub-${activeProject.id}`}
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
+        {/* Centerstage Editorial Hero Typography & Poetic Narrative */}
+        <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-14 my-auto py-10 lg:py-16">
+          <div className="max-w-4xl space-y-6 sm:space-y-8">
+            {/* Category Monogram Pill */}
+            <motion.div
+              key={`sub-${activeProject.id}`}
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="flex items-center space-x-3"
+            >
+              <div className="h-[1px] w-12 bg-accent" />
+              <span className="font-mono text-xs sm:text-sm uppercase tracking-[0.35em] text-accent font-semibold">
+                {activeProject.subtitle}
+              </span>
+            </motion.div>
+
+            {/* Editorial Title: Roman Serif with Italicized Flourish */}
+            <motion.h1
+              key={`title-${activeProject.id}`}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.85, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+              className="font-serif text-5xl sm:text-7xl md:text-8xl xl:text-9xl font-normal tracking-tight text-white leading-[0.93] drop-shadow-[0_20px_40px_rgba(0,0,0,0.85)]"
+            >
+              {renderEditorialTitle(activeProject.name)}
+            </motion.h1>
+
+            {/* Poetic Narrative Tagline */}
+            <motion.p
+              key={`tag-${activeProject.id}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.25 }}
+              className="font-serif text-lg sm:text-xl md:text-2xl text-neutral-300/95 italic max-w-2xl leading-relaxed"
+            >
+              &ldquo;{activeProject.tagline}&rdquo;
+            </motion.p>
+
+            {/* Editorial Action CTAs */}
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              <Link
+                href={`/book-viewing?property=${encodeURIComponent(activeProject.name)}`}
+                className="bg-accent hover:bg-accent-light text-[#07080C] font-mono font-bold text-xs uppercase tracking-[0.2em] px-8 py-4 rounded-full transition-all duration-300 flex items-center space-x-2.5 shadow-[0_0_30px_rgba(223,183,118,0.35)] hover:scale-[1.03] cursor-pointer"
               >
-                <span className="text-xs md:text-sm uppercase tracking-[0.25em] text-accent font-semibold flex items-center space-x-2">
-                  <span className="w-2 h-2 rounded-full bg-accent animate-ping" />
-                  <span>{activeProject.subtitle || 'Monumental Architecture · Private Collection'}</span>
+                <span>Enter Private Salon</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
+
+              <a
+                href="#monograph-telemetry"
+                className="bg-white/[0.06] hover:bg-white/[0.12] text-white border border-white/20 hover:border-accent font-mono text-xs uppercase tracking-[0.2em] px-8 py-4 rounded-full backdrop-blur-xl transition-all duration-300 flex items-center space-x-2.5 cursor-pointer"
+              >
+                <span>Architectural Spec Sheet</span>
+                <ArrowDown className="w-4 h-4 text-accent" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Floating Architectural Telemetry Bar */}
+        <div
+          id="monograph-telemetry"
+          className="relative z-10 w-full max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-14 pb-8 sm:pb-12"
+        >
+          <div className="bg-[#0A0D15]/85 backdrop-blur-2xl rounded-3xl border border-white/15 p-6 sm:p-7 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6 items-center">
+              {/* Column 1: Valuation */}
+              <div className="border-r border-white/10 pr-4">
+                <span className="text-[10px] uppercase font-mono tracking-widest text-neutral-400 block mb-1">
+                  Acquisition Valuation
                 </span>
-              </motion.div>
-
-              <motion.h1
-                key={`title-${activeProject.id}`}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.2 }}
-                className="font-hero text-4xl sm:text-6xl md:text-7xl xl:text-8xl tracking-wider leading-[0.92] uppercase text-white drop-shadow-xl"
-              >
-                {activeProject.name}
-              </motion.h1>
-
-              <motion.p
-                key={`tag-${activeProject.id}`}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.7, delay: 0.3 }}
-                className="text-sm sm:text-base md:text-lg text-neutral-300 font-serif italic max-w-2xl leading-relaxed"
-              >
-                &ldquo;{activeProject.tagline || 'Sculpted into the horizon of Singapore with private harbor vistas.'}&rdquo;
-              </motion.p>
-
-              {/* Action Buttons */}
-              <div className="flex flex-wrap items-center gap-4 pt-2">
-                <a
-                  href="#search-panel"
-                  className="bg-accent hover:bg-accent-light text-[#090A0F] font-bold text-xs tracking-[0.16em] uppercase px-8 py-3.5 rounded-full transition-all duration-300 shadow-[0_0_25px_rgba(223,183,118,0.3)] flex items-center space-x-2 hover:scale-[1.02] cursor-pointer"
-                >
-                  <span>Explore Residences</span>
-                  <ArrowDown className="w-4 h-4" />
-                </a>
-
-                <Link
-                  href="/book-viewing"
-                  className="bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-xl font-semibold text-xs tracking-[0.16em] uppercase px-8 py-3.5 rounded-full transition-all duration-300 flex items-center space-x-2 hover:border-accent cursor-pointer"
-                >
-                  <Calendar className="w-4 h-4 text-accent" />
-                  <span>Book Private Viewing</span>
-                </Link>
+                <span className="font-serif text-2xl font-bold text-accent">
+                  {activeProject.price_formatted}
+                </span>
               </div>
 
-              {/* Slide Switcher Indicator Pills */}
-              <div className="flex items-center space-x-2.5 pt-4">
+              {/* Column 2: Footprint */}
+              <div className="border-r border-white/10 pr-4">
+                <span className="text-[10px] uppercase font-mono tracking-widest text-neutral-400 block mb-1">
+                  Enclosed Footprint
+                </span>
+                <span className="font-mono text-base font-bold text-white">
+                  {activeProject.area_sqft}
+                </span>
+              </div>
+
+              {/* Column 3: Master Architect */}
+              <div className="border-r border-white/10 pr-4 hidden md:block">
+                <span className="text-[10px] uppercase font-mono tracking-widest text-neutral-400 block mb-1">
+                  Master Architect
+                </span>
+                <span className="font-sans text-xs font-semibold text-neutral-200 truncate block">
+                  {activeProject.architect}
+                </span>
+              </div>
+
+              {/* Column 4: Typology & District */}
+              <div className="border-r border-white/10 pr-4 hidden md:block">
+                <span className="text-[10px] uppercase font-mono tracking-widest text-neutral-400 block mb-1">
+                  Typology & District
+                </span>
+                <span className="font-mono text-xs text-neutral-300 truncate block">
+                  {activeProject.property_type} · {activeProject.district}
+                </span>
+              </div>
+
+              {/* Column 5: Interactive Slide Switcher Capsules */}
+              <div className="col-span-2 md:col-span-1 flex items-center justify-between md:justify-end space-x-2">
                 {heroProjects.map((p, idx) => (
                   <button
                     key={p.id}
                     onClick={() => handleSelectIndex(idx)}
-                    className={`h-1.5 transition-all duration-500 rounded-full cursor-pointer ${
+                    className={`px-3 py-1.5 rounded-xl font-mono text-xs transition-all duration-300 cursor-pointer ${
                       currentIndex === idx
-                        ? 'w-10 bg-accent shadow-[0_0_12px_rgba(223,183,118,0.8)]'
-                        : 'w-3 bg-white/20 hover:bg-white/40'
+                        ? 'bg-accent text-black font-bold shadow-[0_0_15px_rgba(223,183,118,0.5)] scale-105'
+                        : 'text-neutral-400 hover:text-white bg-white/5 border border-white/10'
                     }`}
-                    aria-label={`Go to slide ${idx + 1}`}
-                  />
+                  >
+                    0{idx + 1}
+                  </button>
                 ))}
               </div>
-            </div>
-
-            {/* Right Column: Floating Frosted Glass Architectural Spec Sheet */}
-            <div className="lg:col-span-5">
-              <motion.div
-                key={`spec-card-${activeProject.id}`}
-                initial={{ opacity: 0, y: 30, scale: 0.98 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="relative rounded-3xl p-6 sm:p-7 backdrop-blur-2xl bg-white/[0.06] border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.6)] overflow-hidden"
-              >
-                {/* Ambient Soft Gold Orb Behind Glass */}
-                <div className="absolute top-0 right-0 w-48 h-48 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
-
-                {/* Spec Sheet Header */}
-                <div className="flex items-center justify-between pb-5 border-b border-white/15">
-                  <div>
-                    <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-accent font-bold block">
-                      Live Architectural Spec Sheet
-                    </span>
-                    <span className="text-xs text-neutral-300 font-sans mt-0.5 block">
-                      {activeProject.district || 'District 01'} · Ultra-Prime Collection
-                    </span>
-                  </div>
-                  <span className="px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-wider bg-emerald-500/15 border border-emerald-500/30 text-emerald-300">
-                    {activeProject.availability_status || 'Available'}
-                  </span>
-                </div>
-
-                {/* Quick Interactive Project Switcher (Thumbnails) */}
-                <div className="py-4 border-b border-white/15">
-                  <span className="text-[10px] uppercase font-mono tracking-widest text-neutral-400 block mb-2.5">
-                    Select Curated Sky Residence:
-                  </span>
-                  <div className="grid grid-cols-4 gap-2">
-                    {heroProjects.map((p, idx) => (
-                      <button
-                        key={p.id}
-                        type="button"
-                        onClick={() => handleSelectIndex(idx)}
-                        className={`relative rounded-xl overflow-hidden aspect-[4/3] border transition-all duration-300 cursor-pointer ${
-                          currentIndex === idx
-                            ? 'border-accent shadow-[0_0_15px_rgba(223,183,118,0.5)] scale-105'
-                            : 'border-white/10 opacity-60 hover:opacity-100 hover:border-white/30'
-                        }`}
-                      >
-                        <img
-                          src={p.hero_image}
-                          alt={p.name}
-                          className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-black/30" />
-                        <span className="absolute bottom-1 right-1 text-[9px] font-mono text-white font-bold bg-black/60 px-1 rounded">
-                          0{idx + 1}
-                        </span>
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Key Spec Grid */}
-                <div className="grid grid-cols-2 gap-3.5 pt-5 pb-5">
-                  <div className="p-3.5 rounded-2xl bg-white/[0.04] border border-white/10">
-                    <span className="text-[10px] uppercase tracking-wider text-neutral-400 font-mono block">
-                      Starting Price
-                    </span>
-                    <span className="text-base sm:text-lg font-serif font-bold text-accent block mt-0.5">
-                      {activeProject.price_formatted || 'S$ 18,500,000'}
-                    </span>
-                  </div>
-
-                  <div className="p-3.5 rounded-2xl bg-white/[0.04] border border-white/10">
-                    <span className="text-[10px] uppercase tracking-wider text-neutral-400 font-mono block">
-                      Floor Area
-                    </span>
-                    <span className="text-xs sm:text-sm font-semibold text-white block mt-1 truncate">
-                      {activeProject.area_sqft || '7,450 sq ft'}
-                    </span>
-                  </div>
-
-                  <div className="p-3.5 rounded-2xl bg-white/[0.04] border border-white/10">
-                    <span className="text-[10px] uppercase tracking-wider text-neutral-400 font-mono block">
-                      Typology & Suites
-                    </span>
-                    <span className="text-xs sm:text-sm font-semibold text-white block mt-1 truncate">
-                      {activeProject.bedrooms || '5 Grand Suites'}
-                    </span>
-                  </div>
-
-                  <div className="p-3.5 rounded-2xl bg-white/[0.04] border border-white/10">
-                    <span className="text-[10px] uppercase tracking-wider text-neutral-400 font-mono block">
-                      Architectural Lead
-                    </span>
-                    <span className="text-xs sm:text-sm font-semibold text-neutral-200 block mt-1 truncate">
-                      {activeProject.architect || 'WOHA Architects'}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Spec Sheet Footer Action */}
-                <div className="pt-2">
-                  <Link
-                    href="/book-viewing"
-                    className="w-full py-3 px-4 rounded-xl bg-accent/20 hover:bg-accent hover:text-[#090A0F] text-accent border border-accent/40 font-semibold text-xs tracking-wider uppercase transition-all duration-300 flex items-center justify-center space-x-2 shadow-md cursor-pointer group"
-                  >
-                    <span>Inquire On {activeProject.name.split(' ')[0]}</span>
-                    <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                  </Link>
-                </div>
-              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Floating Dark Glass Search Console Panel */}
+      {/* =========================================================
+          CURATED RESIDENCE SEARCH CONSOLE (Floating Ambient Drawer)
+      ========================================================= */}
       <section
         id="search-panel"
-        className="relative z-30 max-w-[1520px] mx-auto px-6 sm:px-10 lg:px-14 -mt-10 sm:-mt-14 mb-16 sm:mb-24"
+        className="relative z-30 max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-14 -mt-6 sm:-mt-8 mb-20 sm:mb-28"
       >
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="w-full bg-[#0d1017]/90 backdrop-blur-2xl text-white rounded-3xl p-6 sm:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.7)] border border-white/15"
+          className="w-full bg-[#0A0D15]/95 backdrop-blur-2xl text-white rounded-3xl p-6 sm:p-8 shadow-[0_25px_60px_rgba(0,0,0,0.85)] border border-white/15"
         >
-          {/* Panel Top Label */}
+          {/* Header Bar */}
           <div className="flex items-center justify-between pb-4 mb-5 border-b border-white/10">
             <div className="flex items-center space-x-2.5">
               <Compass className="w-4 h-4 text-accent" />
@@ -442,7 +434,7 @@ export default function HeroShowcase({
           <form onSubmit={handleSearchSubmit} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-end">
             {/* Field 1: Location */}
             <div>
-              <label className="block text-[11px] font-semibold uppercase tracking-wider text-neutral-300 mb-1.5 flex items-center space-x-1.5">
+              <label className="block text-[11px] font-semibold uppercase tracking-wider text-neutral-300 mb-1.5 flex items-center space-x-1.5 font-mono">
                 <MapPin className="w-3.5 h-3.5 text-accent" />
                 <span>Location</span>
               </label>
@@ -451,12 +443,13 @@ export default function HeroShowcase({
                 value={searchLocation}
                 onChange={setSearchLocation}
                 placeholder="All Singapore Enclaves"
+                theme="dark"
               />
             </div>
 
             {/* Field 2: Property Type */}
             <div>
-              <label className="block text-[11px] font-semibold uppercase tracking-wider text-neutral-300 mb-1.5 flex items-center space-x-1.5">
+              <label className="block text-[11px] font-semibold uppercase tracking-wider text-neutral-300 mb-1.5 flex items-center space-x-1.5 font-mono">
                 <Building className="w-3.5 h-3.5 text-accent" />
                 <span>Property Type</span>
               </label>
@@ -465,12 +458,13 @@ export default function HeroShowcase({
                 value={searchType}
                 onChange={setSearchType}
                 placeholder="All Architectural Types"
+                theme="dark"
               />
             </div>
 
-            {/* Field 3: Price Tier */}
+            {/* Field 3: Price Range */}
             <div>
-              <label className="block text-[11px] font-semibold uppercase tracking-wider text-neutral-300 mb-1.5 flex items-center space-x-1.5">
+              <label className="block text-[11px] font-semibold uppercase tracking-wider text-neutral-300 mb-1.5 flex items-center space-x-1.5 font-mono">
                 <DollarSign className="w-3.5 h-3.5 text-accent" />
                 <span>Price Range</span>
               </label>
@@ -479,12 +473,13 @@ export default function HeroShowcase({
                 value={searchPrice}
                 onChange={setSearchPrice}
                 placeholder="Any Price Tier"
+                theme="dark"
               />
             </div>
 
             {/* Field 4: Bedrooms */}
             <div>
-              <label className="block text-[11px] font-semibold uppercase tracking-wider text-neutral-300 mb-1.5 flex items-center space-x-1.5">
+              <label className="block text-[11px] font-semibold uppercase tracking-wider text-neutral-300 mb-1.5 flex items-center space-x-1.5 font-mono">
                 <Layers className="w-3.5 h-3.5 text-accent" />
                 <span>Bedrooms</span>
               </label>
@@ -493,6 +488,7 @@ export default function HeroShowcase({
                 value={searchBedrooms}
                 onChange={setSearchBedrooms}
                 placeholder="Any Bedroom Count"
+                theme="dark"
               />
             </div>
 
@@ -500,9 +496,9 @@ export default function HeroShowcase({
             <div>
               <button
                 type="submit"
-                className="w-full bg-accent hover:bg-accent-light text-[#090A0F] font-bold text-xs tracking-wider uppercase py-3.5 px-4 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-[0_0_20px_rgba(223,183,118,0.25)] hover:shadow-[0_0_30px_rgba(223,183,118,0.4)] cursor-pointer hover:scale-[1.02]"
+                className="w-full bg-accent hover:bg-accent-light text-[#07080C] font-mono font-bold text-xs tracking-wider uppercase py-3.5 px-4 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-[0_0_20px_rgba(223,183,118,0.3)] hover:shadow-[0_0_30px_rgba(223,183,118,0.5)] cursor-pointer hover:scale-[1.02]"
               >
-                <Search className="w-4 h-4 text-[#090A0F]" />
+                <Search className="w-4 h-4 text-[#07080C]" />
                 <span>Find Residence</span>
               </button>
             </div>
