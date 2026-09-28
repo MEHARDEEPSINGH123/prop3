@@ -58,29 +58,6 @@ const bedroomOptions = [
   { value: '6', label: '6+ Palatial Wings' },
 ]
 
-const telemetryMap: Record<string, { coords: string; elevation: string; release: string }> = {
-  HP01: {
-    coords: '1°16\'55" N · 103°51\'14" E',
-    elevation: 'ELEV. +280M (LEVEL 64)',
-    release: 'MARINA BAY SKYLINE',
-  },
-  HP02: {
-    coords: '1°18\'19" N · 103°49\'44" E',
-    elevation: 'ELEV. +190M (LEVEL 42)',
-    release: 'ORCHARD BOULEVARD SKYLINE',
-  },
-  HP03: {
-    coords: '1°18\'32" N · 103°49\'12" E',
-    elevation: 'ELEV. +95M (CANOPY)',
-    release: 'NASSIM HILL SANCTUARY',
-  },
-  HP04: {
-    coords: '1°14\'45" N · 103°50\'18" E',
-    elevation: 'ELEV. +18M (OCEAN BERTH)',
-    release: 'SENTOSA COVE WATERCOURSE',
-  },
-}
-
 interface HeroShowcaseProps {
   heroProjects: HeroProject[]
   onSearchFilter?: (filters: {
@@ -102,7 +79,6 @@ export default function HeroShowcase({
   const [searchBedrooms, setSearchBedrooms] = useState('All')
 
   const activeProject = heroProjects[currentIndex] || heroProjects[0]
-  const telemetry = telemetryMap[activeProject?.id || 'HP01'] || telemetryMap.HP01
 
   const timerRef = useRef<NodeJS.Timeout | null>(null)
   const isNavigatingRef = useRef(false)
@@ -213,36 +189,24 @@ export default function HeroShowcase({
           </AnimatePresence>
         </div>
 
-        {/* Architectural Drafting Corner Markings */}
-        <div className="absolute top-28 left-6 sm:left-12 text-white/20 font-mono text-[10px] pointer-events-none select-none z-10 hidden lg:block tracking-widest">
-          + 01.GEO.REG
-        </div>
-        <div className="absolute top-28 right-6 sm:right-12 text-white/20 font-mono text-[10px] pointer-events-none select-none z-10 hidden lg:block tracking-widest">
-          + {telemetry.coords}
-        </div>
-
-        {/* Top Editorial Telemetry Bar */}
+        {/* Top Editorial Bar */}
         <div className="relative z-10 w-full max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-14 pt-28 sm:pt-32">
           <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-4 backdrop-blur-md">
-            {/* Monograph Tag & Live GPS Coordinates */}
+            {/* Residence Location & Status */}
             <motion.div
-              key={`telemetry-${activeProject.id}`}
+              key={`status-${activeProject.id}`}
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="flex items-center space-x-3 text-xs font-mono"
+              className="flex items-center space-x-2.5 text-xs font-mono"
             >
-              <span className="text-accent font-bold tracking-[0.25em] uppercase">
-                Signature Monograph Collection
+              <span className="inline-block w-2 h-2 rounded-full bg-accent" />
+              <span className="text-neutral-200 tracking-wider uppercase font-semibold">
+                {activeProject.location}
               </span>
-              <span className="text-white/20 hidden sm:inline">|</span>
-              <span className="text-neutral-300 tracking-wider hidden sm:inline">
-                {telemetry.coords}
-              </span>
-              <span className="text-white/20 hidden md:inline">|</span>
-              <span className="hidden md:inline-flex items-center space-x-1.5 px-3 py-0.5 rounded-full bg-accent/15 border border-accent/30 text-accent text-[10px] font-bold tracking-wider uppercase">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent animate-ping" />
-                <span>{telemetry.elevation}</span>
+              <span className="text-white/20 hidden sm:inline">·</span>
+              <span className="text-accent hidden sm:inline tracking-wider font-semibold">
+                {activeProject.availability || 'Curated Private Collection'}
               </span>
             </motion.div>
 
