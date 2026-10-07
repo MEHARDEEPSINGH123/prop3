@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Bebas_Neue, Cormorant_Garamond, Inter } from 'next/font/google'
 import './globals.css'
+import Chatbot from '../components/Chatbot'
 
 const bebasNeue = Bebas_Neue({
   weight: '400',
@@ -38,6 +39,7 @@ export default function RootLayout({
     <html lang="en" className={`${bebasNeue.variable} ${cormorantGaramond.variable} ${inter.variable} scroll-smooth`}>
       <body className="bg-canvas text-primary font-sans antialiased selection:bg-accent selection:text-white">
         {children}
+        <Chatbot />
       </body>
     </html>
   )
