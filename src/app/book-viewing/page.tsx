@@ -177,8 +177,8 @@ function BookViewingContent() {
         </Link>
 
         <div className="flex flex-col items-center">
-          <span className="font-hero text-2xl tracking-[0.25em] text-white">
-            HAUTE TERRES
+          <span className="font-hero text-xl sm:text-2xl tracking-[0.2em] text-white">
+            DAGSIS PROPERTY 3 DUMMY
           </span>
           <span className="text-[8px] tracking-[0.4em] text-accent uppercase font-mono -mt-1">
             Private Client Viewing Salon
@@ -186,11 +186,11 @@ function BookViewingContent() {
         </div>
 
         <a
-          href="tel:+6568902888"
+          href="tel:+65XXXXXXXXX"
           className="hidden sm:flex items-center space-x-2 text-xs text-neutral-300 hover:text-white bg-white/[0.06] border border-white/15 px-3.5 py-1.5 rounded-full backdrop-blur-md"
         >
           <Phone className="w-3.5 h-3.5 text-accent" />
-          <span className="font-mono text-[11px]">+65 6890 2888</span>
+          <span className="font-mono text-[11px]">+65 XXXXXXXXX</span>
         </a>
       </header>
 
@@ -306,7 +306,7 @@ function BookViewingContent() {
                   {/* Protocol Inclusions */}
                   <div className="space-y-3 pt-2">
                     <span className="text-[10px] uppercase font-mono tracking-widest text-accent font-bold block">
-                      The Haute Terres Protocol Inclusions
+                      The Dagsis Property 3 Dummy Protocol Inclusions
                     </span>
                     <div className="space-y-2 text-xs text-neutral-300">
                       <div className="flex items-center space-x-2">
@@ -663,7 +663,7 @@ function BookViewingContent() {
                       className="w-full bg-accent hover:bg-accent/90 text-black font-bold text-xs uppercase tracking-[0.2em] py-5 rounded-2xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-luxury-hover font-mono cursor-pointer"
                     >
                       <Sparkles className="w-4 h-4 text-black" />
-                      <span>Issue Haute Terres VIP Viewing Pass</span>
+                      <span>Issue Dagsis Property 3 Dummy VIP Viewing Pass</span>
                     </button>
                   </div>
                 </form>

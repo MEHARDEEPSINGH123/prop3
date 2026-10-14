@@ -206,7 +206,7 @@ export default function PropertyDetailModal({
           {/* Modal Footer CTA */}
           <div className="p-6 bg-[#090A0F]/90 border-t border-white/10 backdrop-blur-xl flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-xs text-neutral-400 font-sans">
-              Private client representation by <span className="text-white font-semibold">Haute Terres Partners</span>.
+              Private client representation by <span className="text-white font-semibold">Dagsis Property 3 Dummy Partners</span>.
             </div>
 
             <div className="flex items-center space-x-3 w-full sm:w-auto">

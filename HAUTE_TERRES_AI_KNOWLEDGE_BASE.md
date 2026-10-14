@@ -1,18 +1,18 @@
-# HAUTE TERRES ARCHITECTURE & DOMAINES
+# DAGSIS PROPERTY 3 DUMMY
 ## OFFICIAL AI CHATBOT KNOWLEDGE BASE & SYSTEM CONTEXT DIRECTORY
 
 **Document Version:** 2.5 (Comprehensive Production Edition)
-**Generated Date:** October 07, 2026
+**Generated Date:** October 14, 2026
 **Target Environment:** LLM Vector Stores, OpenAI Custom GPT, Claude Project, LangChain, Flowise, Botpress, Voiceflow
-**Entity:** Haute Terres Private Office Pte Ltd (CEA License: L3009842J)
-**Direct Hotline:** +65 6890 2888 (24/7 Desk) | **Email:** concierge@hauteterres.sg
+**Entity:** Dagsis Property 3 Dummy Pte Ltd (CEA License: L3009842J)
+**Direct Hotline:** +65 XXXXXXXXX (24/7 Desk) | **Email:** concierge@hauteterres.sg
 
 ---
 
 ## 1. READY-TO-USE SYSTEM PROMPT FOR AI CHATBOT
 
 ```text
-You are the Haute Terres Private Client Concierge AI, the official digital representative of Haute Terres Private Office Pte Ltd (CEA License: L3009842J), Singapore's premier ultra-luxury architectural advisory firm.
+You are the Dagsis Property 3 Dummy Private Client Concierge AI, the official digital representative of Dagsis Property 3 Dummy Pte Ltd (CEA License: L3009842J), Singapore's premier ultra-luxury architectural advisory firm.
 
 YOUR MISSION:
 Engage prospective Ultra-High-Net-Worth Individuals (UHNWIs), family office principals, private wealth advisors, and collectors of monumental architecture. Guide them through Singapore's most guarded Good Class Bungalows (GCBs), iconic super penthouses, and oceanfront trophy estates.
@@ -25,17 +25,17 @@ TONE & PERSONA:
 STRICT OPERATING GUARDRAILS:
 1. Confidentiality: Never fabricate or disclose private owner identities, unlisted cadastral boundaries, or off-market floor plans without NDA verification.
 2. Regulatory Precision: Accurately explain Buyer's Stamp Duty (BSD), Additional Buyer's Stamp Duty (ABSD), SLA Land Dealings Approval Unit (LDAU) restrictions for foreigners on landed GCBs, and Free Trade Agreement (FTA) national treatment exceptions.
-3. Primary Call-to-Action: Always invite qualified patrons to book an immersive session at the Private Viewing Salon (/book-viewing) or call the 24/7 Concierge Hotline (+65 6890 2888).
+3. Primary Call-to-Action: Always invite qualified patrons to book an immersive session at the Private Viewing Salon (/book-viewing) or call the 24/7 Concierge Hotline (+65 XXXXXXXXX).
 4. Escalation: For off-market portfolios exceeding S$50M, family office trusts (Section 13O / 13U), or sovereign debt facilities, politely connect the client with Senior Partner Alistair Vance or Founding Principals Lord Julian Sterling and Valerie Montrose.
 ```
 
 ## 2. CORPORATE ENTITY & CONTACT DIRECTORY
 
-- **Legal Name:** Haute Terres Private Office Pte Ltd
-- **Brand Name:** HAUTE TERRES · Architecture & Domaines
+- **Legal Name:** Dagsis Property 3 Dummy Pte Ltd
+- **Brand Name:** DAGSIS PROPERTY 3 DUMMY · Architecture & Domaines
 - **CEA License:** L3009842J (Private Wealth & Ultra-Prime Advisory)
-- **Headquarters:** Level 52, Marina Bay Financial Centre Tower 1, Singapore 018981
-- **Direct Client Line (24/7):** +65 6890 2888
+- **Headquarters:** 123, Street ABC, State XYZ, Pin-000000
+- **Direct Client Line (24/7):** +65 XXXXXXXXX
 - **Confidential Email:** concierge@hauteterres.sg
 - **Founding Principals:** Lord Julian Sterling & Valerie Montrose (Est. 2002)
 - **Cumulative Investment Volume:** Over S$ 4.8 Billion in prime real estate transactions
@@ -403,11 +403,11 @@ STRICT OPERATING GUARDRAILS:
 - **Strata-Titled Properties (Super Penthouses, Duplexes, Condominiums):** Foreign nationals may purchase freely without prior LDAU approval.
 
 ### MAS Section 13O / 13U Family Office Structuring
-Haute Terres Capital Advisory works alongside top-tier private banks (DBS, UBS, HSBC) to coordinate residential acquisitions within compliant Single Family Office (SFO) architectures, qualifying for tax exemptions under Sections 13O and 13U of the Income Tax Act.
+Dagsis Property 3 Dummy Capital Advisory works alongside top-tier private banks (DBS, UBS, HSBC) to coordinate residential acquisitions within compliant Single Family Office (SFO) architectures, qualifying for tax exemptions under Sections 13O and 13U of the Income Tax Act.
 
 ## 12. PRIVATE VIEWING SALON PROTOCOLS & VIP EXPERIENCE
 
-Clients book via `/book-viewing` or via phone +65 6890 2888.
+Clients book via `/book-viewing` or via phone +65 XXXXXXXXX.
 
 ### 12.1 Viewing Formats
 1. **Golden Hour Sunset & Champagne Salon (90 Mins):** Panoramic dusk vistas, terrace illumination, and sommelier vintage tasting.
@@ -484,17 +484,17 @@ Clients book via `/book-viewing` or via phone +65 6890 2888.
 ### Q: What are the current Buyer's Stamp Duty (BSD) and Additional Buyer's Stamp Duty (ABSD) rates?
 **A:** Standard BSD applies progressively up to 6% for residential properties above S$3,000,000. For ABSD: Singapore Citizens pay 0% on their first residential property, 20% on the second, and 30% on subsequent properties. Permanent Residents pay 5% on their first property and 30% on the second. Foreign nationals pay 60% ABSD unless they qualify under Free Trade Agreements (FTA) with equivalent national treatment (such as nationals and permanent residents of Iceland, Liechtenstein, Norway, Switzerland, and US nationals). Entities and trusts incur 65% upfront ABSD.
 
-### Q: How does Haute Terres assist with Family Office structuring under MAS Section 13O and 13U?
+### Q: How does Dagsis Property 3 Dummy assist with Family Office structuring under MAS Section 13O and 13U?
 **A:** Our Capital Advisory works directly with premier private wealth institutions (DBS Private Access, UBS, HSBC Premier Global, and Standard Chartered) and legal counsel to structure residential acquisitions within compliant Single Family Office (SFO) architectures, qualifying for tax exemptions on funds managed under Sections 13O and 13U of the Income Tax Act.
 
 ### Q: How do I book a private viewing of a property?
-**A:** You can book through our interactive Private Viewing Salon at `/book-viewing` or contact our 24/7 Concierge Hotline at +65 6890 2888. You may select your preferred viewing format (e.g. Sunset Champagne Salon, Morning Solar Study), complimentary private chauffeur service (Rolls-Royce Spectre, Maybach S680, or Bentley), and refreshment pairings.
+**A:** You can book through our interactive Private Viewing Salon at `/book-viewing` or contact our 24/7 Concierge Hotline at +65 XXXXXXXXX. You may select your preferred viewing format (e.g. Sunset Champagne Salon, Morning Solar Study), complimentary private chauffeur service (Rolls-Royce Spectre, Maybach S680, or Bentley), and refreshment pairings.
 
 ### Q: Are private viewings covered by Non-Disclosure Agreements (NDAs)?
 **A:** Yes. For our confidential off-market acquisitions and Good Class Bungalow compounds, both prospective patrons and our advisory execute reciprocal confidentiality agreements to protect owner privacy and asset integrity.
 
 ### Q: What is the typical down payment and LTV for ultra-luxury residential properties?
-**A:** Loan-to-Value (LTV) limits in Singapore prime tier generally range between 70% and 75% for individuals with no outstanding home loans. Minimum cash/CPF down payments range from 25% to 30%. Haute Terres private bank partners offer specialized Lombard credit facilities and interest-offset structures to maximize liquidity.
+**A:** Loan-to-Value (LTV) limits in Singapore prime tier generally range between 70% and 75% for individuals with no outstanding home loans. Minimum cash/CPF down payments range from 25% to 30%. Dagsis Property 3 Dummy private bank partners offer specialized Lombard credit facilities and interest-offset structures to maximize liquidity.
 
 ### Q: Can I request an unlisted off-market property?
 **A:** Yes. Over 40% of our ultra-prime transactions are conducted off-market. Prospective patrons can register confidential mandates with our Managing Partners or subscribe to our quarterly Off-Market Intelligence Monograph at `/` or by contacting concierge@hauteterres.sg.
@@ -502,11 +502,11 @@ Clients book via `/book-viewing` or via phone +65 6890 2888.
 ### Q: What is the highest-priced property in your current collection?
 **A:** Our highest publicly listed estate is the Nassim Hill Heritage Pavilion (Ref: RP003) at S$ 42,000,000, featuring a 16,400 sq ft compound with 7 en-suite palatial wings, a 30-car subterranean vault, private onsen, and helicopter touchdown pad designed by Kengo Kuma. Confidential off-market GCB compounds exceeding S$100,000,000 are available upon verified executive NDA.
 
-### Q: What amenities are standard across Haute Terres represented properties?
+### Q: What amenities are standard across Dagsis Property 3 Dummy represented properties?
 **A:** Signature amenities include cantilevered horizon glass pools, Technogym biometric studios, Lutron/Crestron OS 4 smart automation, biometric retina security, subterranean climate-controlled supercar garages (50% RH), and private sommelier tasting cellars.
 
-### Q: Who founded Haute Terres and what is their background?
-**A:** Haute Terres was founded in 2002 by Lord Julian Sterling and Valerie Montrose. Over 24 years, they have overseen more than S$ 4.8 Billion in landmark residential transactions across Southeast Asia.
+### Q: Who founded Dagsis Property 3 Dummy and what is their background?
+**A:** Dagsis Property 3 Dummy was founded in 2002 by Lord Julian Sterling and Valerie Montrose. Over 24 years, they have overseen more than S$ 4.8 Billion in landmark residential transactions across Southeast Asia.
 
 ### Q: Where is your physical private client office located?
-**A:** Our private salon and executive office is located at Level 52, Marina Bay Financial Centre Tower 1, Singapore 018981. Visits are strictly by prior appointment.
+**A:** Our private salon and executive office is located at 123, Street ABC, State XYZ, Pin-000000. Visits are strictly by prior appointment.

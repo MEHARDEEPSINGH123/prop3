@@ -28,7 +28,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
             Voices of Discerning Patrons
           </h2>
           <p className="text-sm text-neutral-400 mt-3 font-sans leading-relaxed">
-            Reflections from international collectors, private offices, and families who acquired their generational residences with Haute Terres.
+            Reflections from international collectors, private offices, and families who acquired their generational residences with Dagsis Property 3 Dummy.
           </p>
         </div>
 

@@ -79,7 +79,7 @@ export default function ViewingAppointments({
       return
     }
 
-    const ref = `HT-VIP-${Math.floor(100000 + Math.random() * 900000)}`
+    const ref = `DP-VIP-${Math.floor(100000 + Math.random() * 900000)}`
     setBookingReference(ref)
     setIsBooked(true)
 
@@ -465,7 +465,7 @@ export default function ViewingAppointments({
                         Direct Private Desk
                       </span>
                       <span className="text-xs font-bold text-white font-mono">
-                        +65 6890 2888
+                        +65 XXXXXXXXX
                       </span>
                     </div>
                   </div>
@@ -494,7 +494,7 @@ export default function ViewingAppointments({
                   Private Viewing Confirmed
                 </span>
                 <h3 className="font-serif text-3xl sm:text-4xl text-white font-normal">
-                  Haute Terres VIP Pass Issued
+                  Dagsis Property 3 Dummy VIP Pass Issued
                 </h3>
                 <span className="inline-block mt-2 font-mono text-sm bg-white/10 px-4 py-1 rounded-full text-accent-light border border-white/20">
                   REF: {bookingReference}

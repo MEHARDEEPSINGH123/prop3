@@ -391,7 +391,7 @@ export default function HeroShowcase({
               </span>
             </div>
             <span className="hidden sm:inline-block text-[10px] font-mono text-neutral-400 uppercase tracking-wider">
-              Haute Terres Real Estate Registry
+              Dagsis Property 3 Dummy Real Estate Registry
             </span>
           </div>
 

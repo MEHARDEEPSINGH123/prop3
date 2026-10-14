@@ -84,14 +84,14 @@ export default function Navbar() {
           {/* Left: Brandmark with Architectural Crest Monogram */}
           <Link href="/" className="group flex items-center space-x-3 focus:outline-none">
             <div className="w-8 h-8 rounded-full border border-accent/40 bg-accent/10 flex items-center justify-center shrink-0 group-hover:border-accent group-hover:bg-accent/20 transition-all duration-300">
-              <span className="font-serif text-accent text-xs font-semibold tracking-tighter">HT</span>
+              <span className="font-serif text-accent text-xs font-semibold tracking-tighter">DP</span>
             </div>
             <div className="flex flex-col">
-              <span className="font-hero text-xl sm:text-2xl tracking-[0.24em] text-white group-hover:text-accent transition-colors leading-none">
-                HAUTE TERRES
+              <span className="font-hero text-lg sm:text-2xl tracking-[0.2em] text-white group-hover:text-accent transition-colors leading-none">
+                DAGSIS PROPERTY 3 DUMMY
               </span>
               <span className="text-[8px] sm:text-[9px] tracking-[0.38em] text-neutral-400 uppercase font-mono mt-0.5">
-                Atelier & Domaines
+                Architecture & Domaines
               </span>
             </div>
           </Link>
@@ -172,11 +172,11 @@ export default function Navbar() {
             <div className="flex items-center justify-between pb-8 border-b border-white/15 max-w-7xl mx-auto w-full">
               <div className="flex items-center space-x-4">
                 <div className="w-10 h-10 rounded-full border border-accent/40 bg-accent/10 flex items-center justify-center shrink-0">
-                  <span className="font-serif text-accent text-base font-semibold">HT</span>
+                  <span className="font-serif text-accent text-base font-semibold">DP</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-hero text-2xl sm:text-4xl tracking-[0.25em] text-white">
-                    HAUTE TERRES
+                  <span className="font-hero text-2xl sm:text-4xl tracking-[0.2em] text-white">
+                    DAGSIS PROPERTY 3 DUMMY
                   </span>
                   <span className="text-[9px] sm:text-[10px] tracking-[0.4em] text-accent uppercase font-mono font-semibold mt-1">
                     Architectural Monograph Index
@@ -238,14 +238,14 @@ export default function Navbar() {
               <div className="flex items-center space-x-3">
                 <div className="w-2.5 h-2.5 rounded-full bg-accent" />
                 <span className="font-medium text-neutral-300">
-                  Private Client Advisory · Level 52, Marina Bay Financial Centre, Singapore
+                  Private Client Advisory · 123, Street ABC, State XYZ, Pin-000000
                 </span>
               </div>
 
               <div className="flex items-center space-x-5">
                 <span className="font-mono text-white tracking-wider flex items-center space-x-2">
                   <Phone className="w-3.5 h-3.5 text-accent" />
-                  <span>+65 6890 2888</span>
+                  <span>+65 XXXXXXXXX</span>
                 </span>
                 <Link
                   href="/book-viewing"

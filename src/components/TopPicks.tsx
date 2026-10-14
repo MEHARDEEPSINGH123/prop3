@@ -124,7 +124,7 @@ export default function TopPicks({
               Top Picks & Signature Acquisitions
             </h2>
             <p className="text-xs uppercase tracking-widest text-secondary mt-3 font-mono">
-              Live Data Sourced From Haute Terres Dataset · {filteredProperties.length} Residences Rendered
+              Live Data Sourced From Dagsis Property 3 Dummy Dataset · {filteredProperties.length} Residences Rendered
             </p>
           </div>
 

@@ -25,9 +25,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'HAUTE TERRES · Architecture & Domaines | Editorial Luxury Real Estate',
-  description: 'An editorial portfolio of rare architectural masterpieces, waterfront sanctuaries, and super penthouses curated for discerning patrons of architecture.',
-  keywords: ['Luxury Real Estate', 'Singapore Penthouses', 'Waterfront Villas', 'Architecture Magazine', 'Architectural Digest', 'High Net Worth Properties'],
+  title: 'Dagsis Property 3 Dummy · Architecture & Domaines | Editorial Luxury Real Estate',
+  description: 'An editorial portfolio of rare architectural masterpieces, waterfront sanctuaries, and super penthouses curated by Dagsis Property 3 Dummy.',
+  keywords: ['Luxury Real Estate', 'Singapore Penthouses', 'Waterfront Villas', 'Architecture Magazine', 'Architectural Digest', 'High Net Worth Properties', 'Dagsis Property 3 Dummy'],
 }
 
 export default function RootLayout({

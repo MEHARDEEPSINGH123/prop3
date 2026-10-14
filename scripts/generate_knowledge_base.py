@@ -41,7 +41,7 @@ class NumberedCanvas(canvas.Canvas):
         # Running Top Header
         self.setFont("Helvetica-Bold", 7.5)
         self.setFillColor(colors.HexColor("#B8934A"))
-        self.drawString(40, 808, "HAUTE TERRES ARCHITECTURE & DOMAINES")
+        self.drawString(40, 808, "DAGSIS PROPERTY 3 DUMMY")
         
         self.setFont("Helvetica", 7.5)
         self.setFillColor(colors.HexColor("#64748B"))
@@ -88,18 +88,18 @@ def create_markdown_knowledge_base(data, output_md_path):
     gallery = data.get("portfolio_gallery", [])
 
     md = []
-    md.append("# HAUTE TERRES ARCHITECTURE & DOMAINES")
+    md.append("# DAGSIS PROPERTY 3 DUMMY")
     md.append("## OFFICIAL AI CHATBOT KNOWLEDGE BASE & SYSTEM CONTEXT DIRECTORY\n")
     md.append("**Document Version:** 2.5 (Comprehensive Production Edition)")
     md.append(f"**Generated Date:** {datetime.now().strftime('%B %d, %Y')}")
     md.append("**Target Environment:** LLM Vector Stores, OpenAI Custom GPT, Claude Project, LangChain, Flowise, Botpress, Voiceflow")
-    md.append("**Entity:** Haute Terres Private Office Pte Ltd (CEA License: L3009842J)")
-    md.append("**Direct Hotline:** +65 6890 2888 (24/7 Desk) | **Email:** concierge@hauteterres.sg\n")
+    md.append("**Entity:** Dagsis Property 3 Dummy Pte Ltd (CEA License: L3009842J)")
+    md.append("**Direct Hotline:** +65 XXXXXXXXX (24/7 Desk) | **Email:** concierge@hauteterres.sg\n")
     md.append("---\n")
 
     md.append("## 1. READY-TO-USE SYSTEM PROMPT FOR AI CHATBOT\n")
     md.append("```text")
-    md.append("You are the Haute Terres Private Client Concierge AI, the official digital representative of Haute Terres Private Office Pte Ltd (CEA License: L3009842J), Singapore's premier ultra-luxury architectural advisory firm.")
+    md.append("You are the Dagsis Property 3 Dummy Private Client Concierge AI, the official digital representative of Dagsis Property 3 Dummy Pte Ltd (CEA License: L3009842J), Singapore's premier ultra-luxury architectural advisory firm.")
     md.append("")
     md.append("YOUR MISSION:")
     md.append("Engage prospective Ultra-High-Net-Worth Individuals (UHNWIs), family office principals, private wealth advisors, and collectors of monumental architecture. Guide them through Singapore's most guarded Good Class Bungalows (GCBs), iconic super penthouses, and oceanfront trophy estates.")
@@ -112,16 +112,16 @@ def create_markdown_knowledge_base(data, output_md_path):
     md.append("STRICT OPERATING GUARDRAILS:")
     md.append("1. Confidentiality: Never fabricate or disclose private owner identities, unlisted cadastral boundaries, or off-market floor plans without NDA verification.")
     md.append("2. Regulatory Precision: Accurately explain Buyer's Stamp Duty (BSD), Additional Buyer's Stamp Duty (ABSD), SLA Land Dealings Approval Unit (LDAU) restrictions for foreigners on landed GCBs, and Free Trade Agreement (FTA) national treatment exceptions.")
-    md.append("3. Primary Call-to-Action: Always invite qualified patrons to book an immersive session at the Private Viewing Salon (/book-viewing) or call the 24/7 Concierge Hotline (+65 6890 2888).")
+    md.append("3. Primary Call-to-Action: Always invite qualified patrons to book an immersive session at the Private Viewing Salon (/book-viewing) or call the 24/7 Concierge Hotline (+65 XXXXXXXXX).")
     md.append("4. Escalation: For off-market portfolios exceeding S$50M, family office trusts (Section 13O / 13U), or sovereign debt facilities, politely connect the client with Senior Partner Alistair Vance or Founding Principals Lord Julian Sterling and Valerie Montrose.")
     md.append("```\n")
 
     md.append("## 2. CORPORATE ENTITY & CONTACT DIRECTORY\n")
-    md.append("- **Legal Name:** Haute Terres Private Office Pte Ltd")
-    md.append("- **Brand Name:** HAUTE TERRES · Architecture & Domaines")
+    md.append("- **Legal Name:** Dagsis Property 3 Dummy Pte Ltd")
+    md.append("- **Brand Name:** DAGSIS PROPERTY 3 DUMMY · Architecture & Domaines")
     md.append("- **CEA License:** L3009842J (Private Wealth & Ultra-Prime Advisory)")
-    md.append("- **Headquarters:** Level 52, Marina Bay Financial Centre Tower 1, Singapore 018981")
-    md.append("- **Direct Client Line (24/7):** +65 6890 2888")
+    md.append("- **Headquarters:** 123, Street ABC, State XYZ, Pin-000000")
+    md.append("- **Direct Client Line (24/7):** +65 XXXXXXXXX")
     md.append("- **Confidential Email:** concierge@hauteterres.sg")
     md.append("- **Founding Principals:** Lord Julian Sterling & Valerie Montrose (Est. 2002)")
     md.append("- **Cumulative Investment Volume:** Over S$ 4.8 Billion in prime real estate transactions\n")
@@ -231,10 +231,10 @@ def create_markdown_knowledge_base(data, output_md_path):
     md.append("- **Strata-Titled Properties (Super Penthouses, Duplexes, Condominiums):** Foreign nationals may purchase freely without prior LDAU approval.\n")
 
     md.append("### MAS Section 13O / 13U Family Office Structuring")
-    md.append("Haute Terres Capital Advisory works alongside top-tier private banks (DBS, UBS, HSBC) to coordinate residential acquisitions within compliant Single Family Office (SFO) architectures, qualifying for tax exemptions under Sections 13O and 13U of the Income Tax Act.\n")
+    md.append("Dagsis Property 3 Dummy Capital Advisory works alongside top-tier private banks (DBS, UBS, HSBC) to coordinate residential acquisitions within compliant Single Family Office (SFO) architectures, qualifying for tax exemptions under Sections 13O and 13U of the Income Tax Act.\n")
 
     md.append("## 12. PRIVATE VIEWING SALON PROTOCOLS & VIP EXPERIENCE\n")
-    md.append("Clients book via `/book-viewing` or via phone +65 6890 2888.\n")
+    md.append("Clients book via `/book-viewing` or via phone +65 XXXXXXXXX.\n")
     md.append("### 12.1 Viewing Formats")
     md.append("1. **Golden Hour Sunset & Champagne Salon (90 Mins):** Panoramic dusk vistas, terrace illumination, and sommelier vintage tasting.")
     md.append("2. **Morning Solar Light & Architectural Study (75 Mins):** Natural daylight penetration, acoustic analysis, and structural finishes.")
@@ -280,24 +280,24 @@ def create_markdown_knowledge_base(data, output_md_path):
          "Yes. Sentosa Cove (District 04) is Singapore's only designated oceanic enclave where foreign buyers and non-residents can obtain LDAU approval to acquire 99-year leasehold landed waterfront villas and berths on an expedited basis."),
         ("What are the current Buyer's Stamp Duty (BSD) and Additional Buyer's Stamp Duty (ABSD) rates?",
          "Standard BSD applies progressively up to 6% for residential properties above S$3,000,000. For ABSD: Singapore Citizens pay 0% on their first residential property, 20% on the second, and 30% on subsequent properties. Permanent Residents pay 5% on their first property and 30% on the second. Foreign nationals pay 60% ABSD unless they qualify under Free Trade Agreements (FTA) with equivalent national treatment (such as nationals and permanent residents of Iceland, Liechtenstein, Norway, Switzerland, and US nationals). Entities and trusts incur 65% upfront ABSD."),
-        ("How does Haute Terres assist with Family Office structuring under MAS Section 13O and 13U?",
+        ("How does Dagsis Property 3 Dummy assist with Family Office structuring under MAS Section 13O and 13U?",
          "Our Capital Advisory works directly with premier private wealth institutions (DBS Private Access, UBS, HSBC Premier Global, and Standard Chartered) and legal counsel to structure residential acquisitions within compliant Single Family Office (SFO) architectures, qualifying for tax exemptions on funds managed under Sections 13O and 13U of the Income Tax Act."),
         ("How do I book a private viewing of a property?",
-         "You can book through our interactive Private Viewing Salon at `/book-viewing` or contact our 24/7 Concierge Hotline at +65 6890 2888. You may select your preferred viewing format (e.g. Sunset Champagne Salon, Morning Solar Study), complimentary private chauffeur service (Rolls-Royce Spectre, Maybach S680, or Bentley), and refreshment pairings."),
+         "You can book through our interactive Private Viewing Salon at `/book-viewing` or contact our 24/7 Concierge Hotline at +65 XXXXXXXXX. You may select your preferred viewing format (e.g. Sunset Champagne Salon, Morning Solar Study), complimentary private chauffeur service (Rolls-Royce Spectre, Maybach S680, or Bentley), and refreshment pairings."),
         ("Are private viewings covered by Non-Disclosure Agreements (NDAs)?",
          "Yes. For our confidential off-market acquisitions and Good Class Bungalow compounds, both prospective patrons and our advisory execute reciprocal confidentiality agreements to protect owner privacy and asset integrity."),
         ("What is the typical down payment and LTV for ultra-luxury residential properties?",
-         "Loan-to-Value (LTV) limits in Singapore prime tier generally range between 70% and 75% for individuals with no outstanding home loans. Minimum cash/CPF down payments range from 25% to 30%. Haute Terres private bank partners offer specialized Lombard credit facilities and interest-offset structures to maximize liquidity."),
+         "Loan-to-Value (LTV) limits in Singapore prime tier generally range between 70% and 75% for individuals with no outstanding home loans. Minimum cash/CPF down payments range from 25% to 30%. Dagsis Property 3 Dummy private bank partners offer specialized Lombard credit facilities and interest-offset structures to maximize liquidity."),
         ("Can I request an unlisted off-market property?",
          "Yes. Over 40% of our ultra-prime transactions are conducted off-market. Prospective patrons can register confidential mandates with our Managing Partners or subscribe to our quarterly Off-Market Intelligence Monograph at `/` or by contacting concierge@hauteterres.sg."),
         ("What is the highest-priced property in your current collection?",
          "Our highest publicly listed estate is the Nassim Hill Heritage Pavilion (Ref: RP003) at S$ 42,000,000, featuring a 16,400 sq ft compound with 7 en-suite palatial wings, a 30-car subterranean vault, private onsen, and helicopter touchdown pad designed by Kengo Kuma. Confidential off-market GCB compounds exceeding S$100,000,000 are available upon verified executive NDA."),
-        ("What amenities are standard across Haute Terres represented properties?",
+        ("What amenities are standard across Dagsis Property 3 Dummy represented properties?",
          "Signature amenities include cantilevered horizon glass pools, Technogym biometric studios, Lutron/Crestron OS 4 smart automation, biometric retina security, subterranean climate-controlled supercar garages (50% RH), and private sommelier tasting cellars."),
-        ("Who founded Haute Terres and what is their background?",
-         "Haute Terres was founded in 2002 by Lord Julian Sterling and Valerie Montrose. Over 24 years, they have overseen more than S$ 4.8 Billion in landmark residential transactions across Southeast Asia."),
+        ("Who founded Dagsis Property 3 Dummy and what is their background?",
+         "Dagsis Property 3 Dummy was founded in 2002 by Lord Julian Sterling and Valerie Montrose. Over 24 years, they have overseen more than S$ 4.8 Billion in landmark residential transactions across Southeast Asia."),
         ("Where is your physical private client office located?",
-         "Our private salon and executive office is located at Level 52, Marina Bay Financial Centre Tower 1, Singapore 018981. Visits are strictly by prior appointment.")
+         "Our private salon and executive office is located at 123, Street ABC, State XYZ, Pin-000000. Visits are strictly by prior appointment.")
     ]
 
     for q, a in faqs:
@@ -459,7 +459,7 @@ def build_pdf_document(data, output_pdf_path):
 
     # ================= PAGE 1: EXECUTIVE COVER PAGE =================
     story.append(Spacer(1, 35))
-    story.append(Paragraph("HAUTE TERRES", title_style))
+    story.append(Paragraph("DAGSIS PROPERTY 3 DUMMY", title_style))
     story.append(Paragraph("ARCHITECTURE & DOMAINES · ATELIER PRIVÉ", subtitle_style))
     story.append(HRFlowable(width="55%", thickness=1.5, color=c_gold, spaceBefore=4, spaceAfter=20))
     
@@ -476,9 +476,9 @@ def build_pdf_document(data, output_pdf_path):
     meta_data = [
         [Paragraph("<b>Target Integration:</b>", td_bold), Paragraph("LLM RAG Vector Stores, OpenAI GPT-4o, Claude 3.5, LangChain, Flowise, Botpress", td_style)],
         [Paragraph("<b>Regulatory Authority:</b>", td_bold), Paragraph("Council for Estate Agencies (CEA) License: L3009842J", td_style)],
-        [Paragraph("<b>Corporate Entity:</b>", td_bold), Paragraph("Haute Terres Private Office Pte Ltd", td_style)],
-        [Paragraph("<b>Headquarters:</b>", td_bold), Paragraph("Level 52, Marina Bay Financial Centre Tower 1, Singapore 018981", td_style)],
-        [Paragraph("<b>Concierge Direct Line:</b>", td_bold), Paragraph("+65 6890 2888 (24/7 Global Client Desk) | concierge@hauteterres.sg", td_style)],
+        [Paragraph("<b>Corporate Entity:</b>", td_bold), Paragraph("Dagsis Property 3 Dummy Pte Ltd", td_style)],
+        [Paragraph("<b>Headquarters:</b>", td_bold), Paragraph("123, Street ABC, State XYZ, Pin-000000", td_style)],
+        [Paragraph("<b>Concierge Direct Line:</b>", td_bold), Paragraph("+65 XXXXXXXXX (24/7 Global Client Desk) | concierge@hauteterres.sg", td_style)],
         [Paragraph("<b>Founding Principals:</b>", td_bold), Paragraph("Lord Julian Sterling & Valerie Montrose (Established 2002)", td_style)],
         [Paragraph("<b>Cumulative Volume:</b>", td_bold), Paragraph("S$ 4.8 Billion+ in Curated Ultra-Prime Residential Transactions", td_style)],
         [Paragraph("<b>Document Edition:</b>", td_bold), Paragraph("Version 2.5 (Complete Production Knowledge Base)", td_style)]
@@ -505,13 +505,13 @@ def build_pdf_document(data, output_pdf_path):
 
     prompt_box_content = (
         "<b>SYSTEM PROMPT TEMPLATE (COPY INTO LLM / CHATBOT ENGINE):</b><br/>"
-        "You are the <b>Haute Terres Private Client Concierge AI</b> representing Haute Terres Private Office Pte Ltd (CEA: L3009842J).<br/><br/>"
+        "You are the <b>Dagsis Property 3 Dummy Private Client Concierge AI</b> representing Dagsis Property 3 Dummy Pte Ltd (CEA: L3009842J).<br/><br/>"
         "<b>Persona:</b> Sophisticated, discreet, erudite, and highly articulate. You specialize in Singapore's most prestigious Good Class Bungalows, super penthouses, and waterfront estates across Districts 01, 04, 09, 10, 11, and 15.<br/><br/>"
         "<b>Primary Directives:</b><br/>"
         "1. <b>Understated Luxury:</b> Respond with architectural literacy, mentioning spatial volumes, architects (WOHA, Kengo Kuma, Foster + Partners, Kerry Hill), and high craftsmanship.<br/>"
         "2. <b>Discretion:</b> Guard owner privacy. Do not disclose exact residential addresses or unverified cadastral maps without an active NDA.<br/>"
         "3. <b>Legal Accuracy:</b> Provide accurate breakdowns of Buyer's Stamp Duty (BSD), Additional Buyer's Stamp Duty (ABSD), and Singapore Land Authority LDAU regulations for foreign buyers.<br/>"
-        "4. <b>Action Orientation:</b> Proactively guide prospective buyers to book the Private Viewing Salon (`/book-viewing`) or dial the 24/7 Concierge Hotline (`+65 6890 2888`).<br/>"
+        "4. <b>Action Orientation:</b> Proactively guide prospective buyers to book the Private Viewing Salon (`/book-viewing`) or dial the 24/7 Concierge Hotline (`+65 XXXXXXXXX`).<br/>"
         "5. <b>Human Escalation:</b> Seamlessly route mandates above S$50M or bespoke family office trusts (Section 13O/13U) to Managing Partners Lord Julian Sterling, Valerie Montrose, or Senior Partner Alistair Vance."
     )
     prompt_table = Table([[Paragraph(prompt_box_content, code_style)]], colWidths=[519])
@@ -763,7 +763,7 @@ def build_pdf_document(data, output_pdf_path):
     story.append(HRFlowable(width="100%", thickness=1, color=c_gold, spaceBefore=2, spaceAfter=8))
 
     viewing_summary = (
-        "Clients book through `/book-viewing` or via phone +65 6890 2888.<br/>"
+        "Clients book through `/book-viewing` or via phone +65 XXXXXXXXX.<br/>"
         "<b>Viewing Formats:</b> (1) Golden Hour Sunset & Champagne (90m), (2) Morning Solar Light & Architectural Study (75m), (3) Executive Fast-Track & Structural Vault (60m), (4) Helicopter & Deep Ocean Berth Tour (120m).<br/>"
         "<b>Chauffeur Fleet:</b> Rolls-Royce Spectre (Electric), Rolls-Royce Ghost Extended, Mercedes-Maybach S 680, Bentley Flying Spur Mulliner, or Self-Arrival with reserved subterranean supercar charging bay.<br/>"
         "<b>Sommelier Pairings:</b> Dom Pérignon Vintage 2015, Krug Grande Cuvée 171ème, Louis Roederer Cristal 2014, or Artisanal Rare Botanical Tea Pairing."
@@ -803,24 +803,24 @@ def build_pdf_document(data, output_pdf_path):
          "Yes. Sentosa Cove (District 04) is Singapore's only designated oceanic enclave where foreign buyers and non-residents can obtain LDAU approval to acquire 99-year leasehold landed waterfront villas and berths on an expedited basis."),
         ("What are the current Buyer's Stamp Duty (BSD) and Additional Buyer's Stamp Duty (ABSD) rates?",
          "Standard BSD applies progressively up to 6% for residential properties above S$3,000,000. For ABSD: Singapore Citizens pay 0% on their first residential property, 20% on the second, and 30% on subsequent properties. Permanent Residents pay 5% on their first property and 30% on the second. Foreign nationals pay 60% ABSD unless they qualify under Free Trade Agreements (FTA) with equivalent national treatment (such as nationals and permanent residents of Iceland, Liechtenstein, Norway, Switzerland, and US nationals). Entities and trusts incur 65% upfront ABSD."),
-        ("How does Haute Terres assist with Family Office structuring under MAS Section 13O and 13U?",
+        ("How does Dagsis Property 3 Dummy assist with Family Office structuring under MAS Section 13O and 13U?",
          "Our Capital Advisory works directly with premier private wealth institutions (DBS Private Access, UBS, HSBC Premier Global, and Standard Chartered) and legal counsel to structure residential acquisitions within compliant Single Family Office (SFO) architectures, qualifying for tax exemptions on funds managed under Sections 13O and 13U of the Income Tax Act."),
         ("How do I book a private viewing of a property?",
-         "You can book through our interactive Private Viewing Salon at `/book-viewing` or contact our 24/7 Concierge Hotline at +65 6890 2888. You may select your preferred viewing format (e.g. Sunset Champagne Salon, Morning Solar Study), complimentary private chauffeur service (Rolls-Royce Spectre, Maybach S680, or Bentley), and refreshment pairings."),
+         "You can book through our interactive Private Viewing Salon at `/book-viewing` or contact our 24/7 Concierge Hotline at +65 XXXXXXXXX. You may select your preferred viewing format (e.g. Sunset Champagne Salon, Morning Solar Study), complimentary private chauffeur service (Rolls-Royce Spectre, Maybach S680, or Bentley), and refreshment pairings."),
         ("Are private viewings covered by Non-Disclosure Agreements (NDAs)?",
          "Yes. For our confidential off-market acquisitions and Good Class Bungalow compounds, both prospective patrons and our advisory execute reciprocal confidentiality agreements to protect owner privacy and asset integrity."),
         ("What is the typical down payment and LTV for ultra-luxury residential properties?",
-         "Loan-to-Value (LTV) limits in Singapore prime tier generally range between 70% and 75% for individuals with no outstanding home loans. Minimum cash/CPF down payments range from 25% to 30%. Haute Terres private bank partners offer specialized Lombard credit facilities and interest-offset structures to maximize liquidity."),
+         "Loan-to-Value (LTV) limits in Singapore prime tier generally range between 70% and 75% for individuals with no outstanding home loans. Minimum cash/CPF down payments range from 25% to 30%. Dagsis Property 3 Dummy private bank partners offer specialized Lombard credit facilities and interest-offset structures to maximize liquidity."),
         ("Can I request an unlisted off-market property?",
          "Yes. Over 40% of our ultra-prime transactions are conducted off-market. Prospective patrons can register confidential mandates with our Managing Partners or subscribe to our quarterly Off-Market Intelligence Monograph at `/` or by contacting concierge@hauteterres.sg."),
         ("What is the highest-priced property in your current collection?",
          "Our highest publicly listed estate is the Nassim Hill Heritage Pavilion (Ref: RP003) at S$ 42,000,000, featuring a 16,400 sq ft compound with 7 en-suite palatial wings, a 30-car subterranean vault, private onsen, and helicopter touchdown pad designed by Kengo Kuma. Confidential off-market GCB compounds exceeding S$100,000,000 are available upon verified executive NDA."),
-        ("What amenities are standard across Haute Terres represented properties?",
+        ("What amenities are standard across Dagsis Property 3 Dummy represented properties?",
          "Signature amenities include cantilevered horizon glass pools, Technogym biometric studios, Lutron/Crestron OS 4 smart automation, biometric retina security, subterranean climate-controlled supercar garages (50% RH), and private sommelier tasting cellars."),
-        ("Who founded Haute Terres and what is their background?",
-         "Haute Terres was founded in 2002 by Lord Julian Sterling and Valerie Montrose. Over 24 years, they have overseen more than S$ 4.8 Billion in landmark residential transactions across Southeast Asia."),
+        ("Who founded Dagsis Property 3 Dummy and what is their background?",
+         "Dagsis Property 3 Dummy was founded in 2002 by Lord Julian Sterling and Valerie Montrose. Over 24 years, they have overseen more than S$ 4.8 Billion in landmark residential transactions across Southeast Asia."),
         ("Where is your physical private client office located?",
-         "Our private salon and executive office is located at Level 52, Marina Bay Financial Centre Tower 1, Singapore 018981. Visits are strictly by prior appointment.")
+         "Our private salon and executive office is located at 123, Street ABC, State XYZ, Pin-000000. Visits are strictly by prior appointment.")
     ]
 
     for q, a in qa_list:
@@ -852,10 +852,10 @@ def build_pdf_document(data, output_pdf_path):
         "• Requests for helicopter touchdown or private yacht transfers to viewing sites.<br/>"
         "• Execution of bilateral non-disclosure agreements (NDAs) prior to architectural file release.<br/><br/>"
         "<b>Immediate Contact Routing:</b><br/>"
-        "• <b>24/7 Client Desk Hotline:</b> +65 6890 2888<br/>"
+        "• <b>24/7 Client Desk Hotline:</b> +65 XXXXXXXXX<br/>"
         "• <b>Confidential Advisory Inquiries:</b> concierge@hauteterres.sg<br/>"
         "• <b>Managing Principals:</b> Lord Julian Sterling & Valerie Montrose<br/>"
-        "• <b>Executive Address:</b> Level 52, Marina Bay Financial Centre Tower 1, Singapore 018981"
+        "• <b>Executive Address:</b> 123, Street ABC, State XYZ, Pin-000000"
     )
     story.append(Paragraph(escalation_text, body_style))
     story.append(Spacer(1, 10))
@@ -910,7 +910,7 @@ def build_pdf_document(data, output_pdf_path):
     comp_box = [
         [Paragraph(
             "<b>DOCUMENT INTEGRITY & COMPLIANCE NOTICE:</b><br/>"
-            "This document constitutes the proprietary and confidential knowledge base of Haute Terres Private Office Pte Ltd (CEA Reg: L3009842J). "
+            "This document constitutes the proprietary and confidential knowledge base of Dagsis Property 3 Dummy Pte Ltd (CEA Reg: L3009842J). "
             "Prepared strictly for authorized artificial intelligence model grounding, semantic retrieval (RAG), and digital concierge operations. "
             "All property specifications, architectural attributions, and pricing representations are verified as of October 2026.",
             callout_style

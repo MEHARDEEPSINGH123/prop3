@@ -10,7 +10,7 @@ export default function Chatbot() {
   // Official Dagsis AI Agent Credentials
   const agentId = "78d05ef2-f033-4c19-a1f5-acc4da29b4d4"
   const apiKey = "906196fc-9a06-4988-87dd-6e10f7f68df8"
-  const agentName = "HAUTE TERRES AI"
+  const agentName = "Dagsis Property 3 Dummy AI"
 
   // Direct Live Dagsis AI Production Embed Endpoint (Just like Horizon)
   const embedUrl = `https://dagsis.ai/embed/${agentId}?name=${encodeURIComponent(agentName)}#apiKey=${encodeURIComponent(apiKey)}`
@@ -34,18 +34,18 @@ export default function Chatbot() {
           type="button"
           onClick={() => setIsOpen(true)}
           className="fixed bottom-6 right-6 z-50 bg-[#090A0F] hover:bg-[#121624] text-white rounded-full p-3.5 sm:px-5 sm:py-3.5 shadow-[0_10px_35px_rgba(0,0,0,0.85),0_0_20px_rgba(223,183,118,0.3)] border-2 border-[#DFB776] flex items-center space-x-2.5 transition-all duration-300 hover:scale-105 group cursor-pointer"
-          title="Open HAUTE TERRES AI Concierge"
-          aria-label="Open HAUTE TERRES AI Concierge"
+          title="Open Dagsis Property 3 Dummy AI Concierge"
+          aria-label="Open Dagsis Property 3 Dummy AI Concierge"
         >
           <div className="w-6 h-6 rounded-full bg-[#DFB776]/20 flex items-center justify-center text-[#DFB776] group-hover:scale-110 transition-transform">
             <Sparkles className="w-4 h-4 text-[#DFB776] animate-spin-slow" />
           </div>
           <div className="hidden sm:flex flex-col text-left">
             <span className="font-serif text-sm font-semibold tracking-wide text-[#DFB776] leading-none">
-              Ask HAUTE AI
+              Ask Dagsis AI
             </span>
             <span className="text-[9px] font-mono text-neutral-400 uppercase tracking-widest mt-0.5">
-              Private Concierge
+              Property Concierge
             </span>
           </div>
         </button>
@@ -63,7 +63,7 @@ export default function Chatbot() {
               <div>
                 <div className="flex items-center space-x-2">
                   <h3 className="font-serif text-sm font-bold text-white tracking-wide">
-                    HAUTE TERRES
+                    DAGSIS PROPERTY 3 DUMMY
                   </h3>
                   <span className="flex items-center space-x-1 text-[9px] bg-[#DFB776]/20 text-[#DFB776] border border-[#DFB776]/30 px-2 py-0.5 rounded-full font-medium uppercase tracking-wider">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
@@ -71,7 +71,7 @@ export default function Chatbot() {
                   </span>
                 </div>
                 <p className="text-[10px] text-neutral-400">
-                  Singapore Private Office Intelligence
+                  Private Client Advisory & Architectural Intelligence
                 </p>
               </div>
             </div>
@@ -112,7 +112,7 @@ export default function Chatbot() {
               onLoad={() => setIframeLoaded(true)}
               className="w-full h-full border-none"
               allow="clipboard-write; microphone"
-              title="HAUTE TERRES Dagsis AI Agent"
+              title="Dagsis Property 3 Dummy AI Agent"
             />
           </div>
         </div>

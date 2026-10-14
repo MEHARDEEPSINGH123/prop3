@@ -37,7 +37,7 @@ export default function Footer() {
             <div className="flex items-center space-x-3">
               <div className="h-[1px] w-12 bg-accent" />
               <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold font-mono">
-                Haute Terres Private Client Concierge
+                Dagsis Property 3 Dummy Private Client Concierge
               </span>
             </div>
 
@@ -52,7 +52,7 @@ export default function Footer() {
             <div className="space-y-4 pt-3 text-sm">
               <div className="flex items-center space-x-3.5 text-neutral-300">
                 <Phone className="w-4 h-4 text-accent shrink-0" />
-                <span className="font-mono text-xs">+65 6890 2888 (24/7 Private Client Direct)</span>
+                <span className="font-mono text-xs">+65 XXXXXXXXX (24/7 Private Client Direct)</span>
               </div>
               <div className="flex items-center space-x-3.5 text-neutral-300">
                 <Mail className="w-4 h-4 text-accent shrink-0" />
@@ -60,7 +60,7 @@ export default function Footer() {
               </div>
               <div className="flex items-start space-x-3.5 text-neutral-300">
                 <MapPin className="w-4 h-4 text-accent shrink-0 mt-1" />
-                <span className="text-xs">Level 52, Marina Bay Financial Centre Tower 1, Singapore 018981</span>
+                <span className="text-xs">123, Street ABC, State XYZ, Pin-000000</span>
               </div>
             </div>
           </div>
@@ -114,8 +114,8 @@ export default function Footer() {
 
         {/* Massive Editorial Headline / Brand Display */}
         <div className="py-20 text-center border-b border-white/10">
-          <h2 className="font-hero text-6xl sm:text-8xl md:text-9xl lg:text-[150px] tracking-widest uppercase text-white/90 select-none leading-none">
-            HAUTE TERRES
+          <h2 className="font-hero text-5xl sm:text-7xl md:text-8xl lg:text-[110px] tracking-widest uppercase text-white/90 select-none leading-none">
+            DAGSIS PROPERTY 3 DUMMY
           </h2>
           <p className="text-xs sm:text-sm tracking-mega uppercase text-accent font-sans mt-4">
             Architecture · Sanctuaire · Domaines Privés
@@ -125,7 +125,7 @@ export default function Footer() {
         {/* Footer Navigation & Copyright */}
         <div className="pt-10 flex flex-col md:flex-row items-center justify-between text-xs text-neutral-400 gap-6">
           <p className="font-sans">
-            © 2026 Haute Terres Private Office Pte Ltd. All rights reserved.
+            © 2026 Dagsis Property 3 Dummy. All rights reserved.
           </p>
 
           <div className="flex flex-wrap items-center space-x-8 text-[11px] font-mono uppercase tracking-wider">
