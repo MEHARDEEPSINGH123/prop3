@@ -56,7 +56,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3.5 text-neutral-300">
                 <Mail className="w-4 h-4 text-accent shrink-0" />
-                <span className="font-mono text-xs">concierge@hauteterres.sg</span>
+                <span className="font-mono text-xs">contact@dagsisproperty3dummy.com</span>
               </div>
               <div className="flex items-start space-x-3.5 text-neutral-300">
                 <MapPin className="w-4 h-4 text-accent shrink-0 mt-1" />

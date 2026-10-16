@@ -28,7 +28,7 @@ export default function Chatbot() {
 
   return (
     <>
-      {/* 1. Floating 'Ask HAUTE AI' Button (Exact Horizon Luxury Design) */}
+      {/* 1. Floating 'Ask AI' Button */}
       {!isOpen && (
         <button
           type="button"

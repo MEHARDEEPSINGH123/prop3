@@ -2,17 +2,17 @@
 ## OFFICIAL AI CHATBOT KNOWLEDGE BASE & SYSTEM CONTEXT DIRECTORY
 
 **Document Version:** 2.5 (Comprehensive Production Edition)
-**Generated Date:** October 14, 2026
+**Generated Date:** October 16, 2026
 **Target Environment:** LLM Vector Stores, OpenAI Custom GPT, Claude Project, LangChain, Flowise, Botpress, Voiceflow
-**Entity:** Dagsis Property 3 Dummy Pte Ltd (CEA License: L3009842J)
-**Direct Hotline:** +65 XXXXXXXXX (24/7 Desk) | **Email:** concierge@hauteterres.sg
+**Portfolio / Platform:** Dagsis Property 3 Dummy
+**Direct Hotline:** +65 XXXXXXXXX (24/7 Desk) | **Email:** contact@dagsisproperty3dummy.com
 
 ---
 
 ## 1. READY-TO-USE SYSTEM PROMPT FOR AI CHATBOT
 
 ```text
-You are the Dagsis Property 3 Dummy Private Client Concierge AI, the official digital representative of Dagsis Property 3 Dummy Pte Ltd (CEA License: L3009842J), Singapore's premier ultra-luxury architectural advisory firm.
+You are the Dagsis Property 3 Dummy Private Client Concierge AI, the official digital representative of Dagsis Property 3 Dummy, Singapore's premier ultra-luxury architectural advisory.
 
 YOUR MISSION:
 Engage prospective Ultra-High-Net-Worth Individuals (UHNWIs), family office principals, private wealth advisors, and collectors of monumental architecture. Guide them through Singapore's most guarded Good Class Bungalows (GCBs), iconic super penthouses, and oceanfront trophy estates.
@@ -26,18 +26,17 @@ STRICT OPERATING GUARDRAILS:
 1. Confidentiality: Never fabricate or disclose private owner identities, unlisted cadastral boundaries, or off-market floor plans without NDA verification.
 2. Regulatory Precision: Accurately explain Buyer's Stamp Duty (BSD), Additional Buyer's Stamp Duty (ABSD), SLA Land Dealings Approval Unit (LDAU) restrictions for foreigners on landed GCBs, and Free Trade Agreement (FTA) national treatment exceptions.
 3. Primary Call-to-Action: Always invite qualified patrons to book an immersive session at the Private Viewing Salon (/book-viewing) or call the 24/7 Concierge Hotline (+65 XXXXXXXXX).
-4. Escalation: For off-market portfolios exceeding S$50M, family office trusts (Section 13O / 13U), or sovereign debt facilities, politely connect the client with Senior Partner Alistair Vance or Founding Principals Lord Julian Sterling and Valerie Montrose.
+4. Escalation: For off-market portfolios exceeding S$50M, family office trusts (Section 13O / 13U), or sovereign debt facilities, politely connect the client with Senior Advisory Partners or the Private Client Desk (+65 XXXXXXXXX | contact@dagsisproperty3dummy.com).
 ```
 
-## 2. CORPORATE ENTITY & CONTACT DIRECTORY
+## 2. PORTFOLIO DIRECTORY & CONTACT SPECIFICATIONS
 
-- **Legal Name:** Dagsis Property 3 Dummy Pte Ltd
-- **Brand Name:** DAGSIS PROPERTY 3 DUMMY · Architecture & Domaines
-- **CEA License:** L3009842J (Private Wealth & Ultra-Prime Advisory)
-- **Headquarters:** 123, Street ABC, State XYZ, Pin-000000
-- **Direct Client Line (24/7):** +65 XXXXXXXXX
-- **Confidential Email:** concierge@hauteterres.sg
-- **Founding Principals:** Lord Julian Sterling & Valerie Montrose (Est. 2002)
+- **Name:** Dagsis Property 3 Dummy
+- **Portfolio Scope:** Curated Architectural Residences & Ultra-Prime Estates
+- **Address:** 123, Street ABC, State XYZ, Pin-000000
+- **Mobile Number / Hotline (24/7):** +65 XXXXXXXXX
+- **Email ID:** contact@dagsisproperty3dummy.com
+- **Advisory Leadership:** Senior Advisory Partners & Private Client Desk
 - **Cumulative Investment Volume:** Over S$ 4.8 Billion in prime real estate transactions
 
 ## 3. ATELIER MANIFESTO & PHILOSOPHY
@@ -77,7 +76,7 @@ STRICT OPERATING GUARDRAILS:
 - **Average Price:** S$ 4,100 / sq ft (S$ 26.8M Avg)
 - **Current Availability:** 12 Sky Penthouses
 - **Flagship Monograph:** The Aurelia Glass Duplex
-- **Enclave Character:** The epicentre of haute couture, luxury private medical centers, and Michelin dining wrapped in lush canopy trees.
+- **Enclave Character:** The epicentre of luxury couture, luxury private medical centers, and Michelin dining wrapped in lush canopy trees.
 
 ### Nassim Hill / District 10
 - **Average Price:** S$ 5,200 / sq ft (S$ 42.0M Avg)
@@ -497,7 +496,7 @@ Clients book via `/book-viewing` or via phone +65 XXXXXXXXX.
 **A:** Loan-to-Value (LTV) limits in Singapore prime tier generally range between 70% and 75% for individuals with no outstanding home loans. Minimum cash/CPF down payments range from 25% to 30%. Dagsis Property 3 Dummy private bank partners offer specialized Lombard credit facilities and interest-offset structures to maximize liquidity.
 
 ### Q: Can I request an unlisted off-market property?
-**A:** Yes. Over 40% of our ultra-prime transactions are conducted off-market. Prospective patrons can register confidential mandates with our Managing Partners or subscribe to our quarterly Off-Market Intelligence Monograph at `/` or by contacting concierge@hauteterres.sg.
+**A:** Yes. Over 40% of our ultra-prime transactions are conducted off-market. Prospective patrons can register confidential mandates with our Senior Advisory Partners or subscribe to our quarterly Off-Market Intelligence Monograph at `/` or by contacting contact@dagsisproperty3dummy.com.
 
 ### Q: What is the highest-priced property in your current collection?
 **A:** Our highest publicly listed estate is the Nassim Hill Heritage Pavilion (Ref: RP003) at S$ 42,000,000, featuring a 16,400 sq ft compound with 7 en-suite palatial wings, a 30-car subterranean vault, private onsen, and helicopter touchdown pad designed by Kengo Kuma. Confidential off-market GCB compounds exceeding S$100,000,000 are available upon verified executive NDA.
@@ -505,8 +504,8 @@ Clients book via `/book-viewing` or via phone +65 XXXXXXXXX.
 ### Q: What amenities are standard across Dagsis Property 3 Dummy represented properties?
 **A:** Signature amenities include cantilevered horizon glass pools, Technogym biometric studios, Lutron/Crestron OS 4 smart automation, biometric retina security, subterranean climate-controlled supercar garages (50% RH), and private sommelier tasting cellars.
 
-### Q: Who founded Dagsis Property 3 Dummy and what is their background?
-**A:** Dagsis Property 3 Dummy was founded in 2002 by Lord Julian Sterling and Valerie Montrose. Over 24 years, they have overseen more than S$ 4.8 Billion in landmark residential transactions across Southeast Asia.
+### Q: What is the history and track record of Dagsis Property 3 Dummy?
+**A:** Dagsis Property 3 Dummy was established in 2002. Over 24 years, our senior advisory team has overseen more than S$ 4.8 Billion in landmark residential transactions across Southeast Asia.
 
 ### Q: Where is your physical private client office located?
 **A:** Our private salon and executive office is located at 123, Street ABC, State XYZ, Pin-000000. Visits are strictly by prior appointment.

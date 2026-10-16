@@ -56,7 +56,7 @@ class NumberedCanvas(canvas.Canvas):
         
         self.setFont("Helvetica", 7.5)
         self.setFillColor(colors.HexColor("#94A3B8"))
-        self.drawString(40, 34, "CONFIDENTIAL & PROPRIETARY · CEA REG: L3009842J · PRIVATE CLIENT DESK")
+        self.drawString(40, 34, "CONFIDENTIAL & PROPRIETARY · PRIVATE CLIENT DESK")
         
         page_str = f"Page {self._pageNumber} of {page_count}"
         self.setFont("Helvetica-Bold", 7.5)
@@ -93,13 +93,13 @@ def create_markdown_knowledge_base(data, output_md_path):
     md.append("**Document Version:** 2.5 (Comprehensive Production Edition)")
     md.append(f"**Generated Date:** {datetime.now().strftime('%B %d, %Y')}")
     md.append("**Target Environment:** LLM Vector Stores, OpenAI Custom GPT, Claude Project, LangChain, Flowise, Botpress, Voiceflow")
-    md.append("**Entity:** Dagsis Property 3 Dummy Pte Ltd (CEA License: L3009842J)")
-    md.append("**Direct Hotline:** +65 XXXXXXXXX (24/7 Desk) | **Email:** concierge@hauteterres.sg\n")
+    md.append("**Portfolio / Platform:** Dagsis Property 3 Dummy")
+    md.append("**Direct Hotline:** +65 XXXXXXXXX (24/7 Desk) | **Email:** contact@dagsisproperty3dummy.com\n")
     md.append("---\n")
 
     md.append("## 1. READY-TO-USE SYSTEM PROMPT FOR AI CHATBOT\n")
     md.append("```text")
-    md.append("You are the Dagsis Property 3 Dummy Private Client Concierge AI, the official digital representative of Dagsis Property 3 Dummy Pte Ltd (CEA License: L3009842J), Singapore's premier ultra-luxury architectural advisory firm.")
+    md.append("You are the Dagsis Property 3 Dummy Private Client Concierge AI, the official digital representative of Dagsis Property 3 Dummy, Singapore's premier ultra-luxury architectural advisory.")
     md.append("")
     md.append("YOUR MISSION:")
     md.append("Engage prospective Ultra-High-Net-Worth Individuals (UHNWIs), family office principals, private wealth advisors, and collectors of monumental architecture. Guide them through Singapore's most guarded Good Class Bungalows (GCBs), iconic super penthouses, and oceanfront trophy estates.")
@@ -113,17 +113,16 @@ def create_markdown_knowledge_base(data, output_md_path):
     md.append("1. Confidentiality: Never fabricate or disclose private owner identities, unlisted cadastral boundaries, or off-market floor plans without NDA verification.")
     md.append("2. Regulatory Precision: Accurately explain Buyer's Stamp Duty (BSD), Additional Buyer's Stamp Duty (ABSD), SLA Land Dealings Approval Unit (LDAU) restrictions for foreigners on landed GCBs, and Free Trade Agreement (FTA) national treatment exceptions.")
     md.append("3. Primary Call-to-Action: Always invite qualified patrons to book an immersive session at the Private Viewing Salon (/book-viewing) or call the 24/7 Concierge Hotline (+65 XXXXXXXXX).")
-    md.append("4. Escalation: For off-market portfolios exceeding S$50M, family office trusts (Section 13O / 13U), or sovereign debt facilities, politely connect the client with Senior Partner Alistair Vance or Founding Principals Lord Julian Sterling and Valerie Montrose.")
+    md.append("4. Escalation: For off-market portfolios exceeding S$50M, family office trusts (Section 13O / 13U), or sovereign debt facilities, politely connect the client with Senior Advisory Partners or the Private Client Desk (+65 XXXXXXXXX | contact@dagsisproperty3dummy.com).")
     md.append("```\n")
 
-    md.append("## 2. CORPORATE ENTITY & CONTACT DIRECTORY\n")
-    md.append("- **Legal Name:** Dagsis Property 3 Dummy Pte Ltd")
-    md.append("- **Brand Name:** DAGSIS PROPERTY 3 DUMMY · Architecture & Domaines")
-    md.append("- **CEA License:** L3009842J (Private Wealth & Ultra-Prime Advisory)")
-    md.append("- **Headquarters:** 123, Street ABC, State XYZ, Pin-000000")
-    md.append("- **Direct Client Line (24/7):** +65 XXXXXXXXX")
-    md.append("- **Confidential Email:** concierge@hauteterres.sg")
-    md.append("- **Founding Principals:** Lord Julian Sterling & Valerie Montrose (Est. 2002)")
+    md.append("## 2. PORTFOLIO DIRECTORY & CONTACT SPECIFICATIONS\n")
+    md.append("- **Name:** Dagsis Property 3 Dummy")
+    md.append("- **Portfolio Scope:** Curated Architectural Residences & Ultra-Prime Estates")
+    md.append("- **Address:** 123, Street ABC, State XYZ, Pin-000000")
+    md.append("- **Mobile Number / Hotline (24/7):** +65 XXXXXXXXX")
+    md.append("- **Email ID:** contact@dagsisproperty3dummy.com")
+    md.append("- **Advisory Leadership:** Senior Advisory Partners & Private Client Desk")
     md.append("- **Cumulative Investment Volume:** Over S$ 4.8 Billion in prime real estate transactions\n")
 
     md.append("## 3. ATELIER MANIFESTO & PHILOSOPHY\n")
@@ -289,13 +288,13 @@ def create_markdown_knowledge_base(data, output_md_path):
         ("What is the typical down payment and LTV for ultra-luxury residential properties?",
          "Loan-to-Value (LTV) limits in Singapore prime tier generally range between 70% and 75% for individuals with no outstanding home loans. Minimum cash/CPF down payments range from 25% to 30%. Dagsis Property 3 Dummy private bank partners offer specialized Lombard credit facilities and interest-offset structures to maximize liquidity."),
         ("Can I request an unlisted off-market property?",
-         "Yes. Over 40% of our ultra-prime transactions are conducted off-market. Prospective patrons can register confidential mandates with our Managing Partners or subscribe to our quarterly Off-Market Intelligence Monograph at `/` or by contacting concierge@hauteterres.sg."),
+         "Yes. Over 40% of our ultra-prime transactions are conducted off-market. Prospective patrons can register confidential mandates with our Senior Advisory Partners or subscribe to our quarterly Off-Market Intelligence Monograph at `/` or by contacting contact@dagsisproperty3dummy.com."),
         ("What is the highest-priced property in your current collection?",
          "Our highest publicly listed estate is the Nassim Hill Heritage Pavilion (Ref: RP003) at S$ 42,000,000, featuring a 16,400 sq ft compound with 7 en-suite palatial wings, a 30-car subterranean vault, private onsen, and helicopter touchdown pad designed by Kengo Kuma. Confidential off-market GCB compounds exceeding S$100,000,000 are available upon verified executive NDA."),
         ("What amenities are standard across Dagsis Property 3 Dummy represented properties?",
          "Signature amenities include cantilevered horizon glass pools, Technogym biometric studios, Lutron/Crestron OS 4 smart automation, biometric retina security, subterranean climate-controlled supercar garages (50% RH), and private sommelier tasting cellars."),
-        ("Who founded Dagsis Property 3 Dummy and what is their background?",
-         "Dagsis Property 3 Dummy was founded in 2002 by Lord Julian Sterling and Valerie Montrose. Over 24 years, they have overseen more than S$ 4.8 Billion in landmark residential transactions across Southeast Asia."),
+        ("What is the history and track record of Dagsis Property 3 Dummy?",
+         "Dagsis Property 3 Dummy was established in 2002. Over 24 years, our senior advisory team has overseen more than S$ 4.8 Billion in landmark residential transactions across Southeast Asia."),
         ("Where is your physical private client office located?",
          "Our private salon and executive office is located at 123, Street ABC, State XYZ, Pin-000000. Visits are strictly by prior appointment.")
     ]
@@ -475,11 +474,11 @@ def build_pdf_document(data, output_pdf_path):
     # Executive Metadata Box
     meta_data = [
         [Paragraph("<b>Target Integration:</b>", td_bold), Paragraph("LLM RAG Vector Stores, OpenAI GPT-4o, Claude 3.5, LangChain, Flowise, Botpress", td_style)],
-        [Paragraph("<b>Regulatory Authority:</b>", td_bold), Paragraph("Council for Estate Agencies (CEA) License: L3009842J", td_style)],
-        [Paragraph("<b>Corporate Entity:</b>", td_bold), Paragraph("Dagsis Property 3 Dummy Pte Ltd", td_style)],
-        [Paragraph("<b>Headquarters:</b>", td_bold), Paragraph("123, Street ABC, State XYZ, Pin-000000", td_style)],
-        [Paragraph("<b>Concierge Direct Line:</b>", td_bold), Paragraph("+65 XXXXXXXXX (24/7 Global Client Desk) | concierge@hauteterres.sg", td_style)],
-        [Paragraph("<b>Founding Principals:</b>", td_bold), Paragraph("Lord Julian Sterling & Valerie Montrose (Established 2002)", td_style)],
+        [Paragraph("<b>Name:</b>", td_bold), Paragraph("Dagsis Property 3 Dummy", td_style)],
+        [Paragraph("<b>Address:</b>", td_bold), Paragraph("123, Street ABC, State XYZ, Pin-000000", td_style)],
+        [Paragraph("<b>Mobile Number / Hotline:</b>", td_bold), Paragraph("+65 XXXXXXXXX (24/7 Global Client Desk)", td_style)],
+        [Paragraph("<b>Email ID:</b>", td_bold), Paragraph("contact@dagsisproperty3dummy.com", td_style)],
+        [Paragraph("<b>Advisory Leadership:</b>", td_bold), Paragraph("Senior Advisory Partners & Private Client Desk", td_style)],
         [Paragraph("<b>Cumulative Volume:</b>", td_bold), Paragraph("S$ 4.8 Billion+ in Curated Ultra-Prime Residential Transactions", td_style)],
         [Paragraph("<b>Document Edition:</b>", td_bold), Paragraph("Version 2.5 (Complete Production Knowledge Base)", td_style)]
     ]
@@ -505,14 +504,14 @@ def build_pdf_document(data, output_pdf_path):
 
     prompt_box_content = (
         "<b>SYSTEM PROMPT TEMPLATE (COPY INTO LLM / CHATBOT ENGINE):</b><br/>"
-        "You are the <b>Dagsis Property 3 Dummy Private Client Concierge AI</b> representing Dagsis Property 3 Dummy Pte Ltd (CEA: L3009842J).<br/><br/>"
+        "You are the <b>Dagsis Property 3 Dummy Private Client Concierge AI</b> representing Dagsis Property 3 Dummy.<br/><br/>"
         "<b>Persona:</b> Sophisticated, discreet, erudite, and highly articulate. You specialize in Singapore's most prestigious Good Class Bungalows, super penthouses, and waterfront estates across Districts 01, 04, 09, 10, 11, and 15.<br/><br/>"
         "<b>Primary Directives:</b><br/>"
         "1. <b>Understated Luxury:</b> Respond with architectural literacy, mentioning spatial volumes, architects (WOHA, Kengo Kuma, Foster + Partners, Kerry Hill), and high craftsmanship.<br/>"
         "2. <b>Discretion:</b> Guard owner privacy. Do not disclose exact residential addresses or unverified cadastral maps without an active NDA.<br/>"
         "3. <b>Legal Accuracy:</b> Provide accurate breakdowns of Buyer's Stamp Duty (BSD), Additional Buyer's Stamp Duty (ABSD), and Singapore Land Authority LDAU regulations for foreign buyers.<br/>"
         "4. <b>Action Orientation:</b> Proactively guide prospective buyers to book the Private Viewing Salon (`/book-viewing`) or dial the 24/7 Concierge Hotline (`+65 XXXXXXXXX`).<br/>"
-        "5. <b>Human Escalation:</b> Seamlessly route mandates above S$50M or bespoke family office trusts (Section 13O/13U) to Managing Partners Lord Julian Sterling, Valerie Montrose, or Senior Partner Alistair Vance."
+        "5. <b>Human Escalation:</b> Seamlessly route mandates above S$50M or bespoke family office trusts (Section 13O/13U) to Senior Advisory Partners or the Private Client Desk (`+65 XXXXXXXXX` | `contact@dagsisproperty3dummy.com`)."
     )
     prompt_table = Table([[Paragraph(prompt_box_content, code_style)]], colWidths=[519])
     prompt_table.setStyle(TableStyle([
@@ -812,13 +811,13 @@ def build_pdf_document(data, output_pdf_path):
         ("What is the typical down payment and LTV for ultra-luxury residential properties?",
          "Loan-to-Value (LTV) limits in Singapore prime tier generally range between 70% and 75% for individuals with no outstanding home loans. Minimum cash/CPF down payments range from 25% to 30%. Dagsis Property 3 Dummy private bank partners offer specialized Lombard credit facilities and interest-offset structures to maximize liquidity."),
         ("Can I request an unlisted off-market property?",
-         "Yes. Over 40% of our ultra-prime transactions are conducted off-market. Prospective patrons can register confidential mandates with our Managing Partners or subscribe to our quarterly Off-Market Intelligence Monograph at `/` or by contacting concierge@hauteterres.sg."),
+         "Yes. Over 40% of our ultra-prime transactions are conducted off-market. Prospective patrons can register confidential mandates with our Senior Advisory Partners or subscribe to our quarterly Off-Market Intelligence Monograph at `/` or by contacting contact@dagsisproperty3dummy.com."),
         ("What is the highest-priced property in your current collection?",
          "Our highest publicly listed estate is the Nassim Hill Heritage Pavilion (Ref: RP003) at S$ 42,000,000, featuring a 16,400 sq ft compound with 7 en-suite palatial wings, a 30-car subterranean vault, private onsen, and helicopter touchdown pad designed by Kengo Kuma. Confidential off-market GCB compounds exceeding S$100,000,000 are available upon verified executive NDA."),
         ("What amenities are standard across Dagsis Property 3 Dummy represented properties?",
          "Signature amenities include cantilevered horizon glass pools, Technogym biometric studios, Lutron/Crestron OS 4 smart automation, biometric retina security, subterranean climate-controlled supercar garages (50% RH), and private sommelier tasting cellars."),
-        ("Who founded Dagsis Property 3 Dummy and what is their background?",
-         "Dagsis Property 3 Dummy was founded in 2002 by Lord Julian Sterling and Valerie Montrose. Over 24 years, they have overseen more than S$ 4.8 Billion in landmark residential transactions across Southeast Asia."),
+        ("What is the history and track record of Dagsis Property 3 Dummy?",
+         "Dagsis Property 3 Dummy was established in 2002. Over 24 years, our senior advisory team has overseen more than S$ 4.8 Billion in landmark residential transactions across Southeast Asia."),
         ("Where is your physical private client office located?",
          "Our private salon and executive office is located at 123, Street ABC, State XYZ, Pin-000000. Visits are strictly by prior appointment.")
     ]
@@ -853,8 +852,8 @@ def build_pdf_document(data, output_pdf_path):
         "• Execution of bilateral non-disclosure agreements (NDAs) prior to architectural file release.<br/><br/>"
         "<b>Immediate Contact Routing:</b><br/>"
         "• <b>24/7 Client Desk Hotline:</b> +65 XXXXXXXXX<br/>"
-        "• <b>Confidential Advisory Inquiries:</b> concierge@hauteterres.sg<br/>"
-        "• <b>Managing Principals:</b> Lord Julian Sterling & Valerie Montrose<br/>"
+        "• <b>Confidential Advisory Inquiries:</b> contact@dagsisproperty3dummy.com<br/>"
+        "• <b>Advisory Leadership:</b> Senior Advisory Partners & Private Client Desk<br/>"
         "• <b>Executive Address:</b> 123, Street ABC, State XYZ, Pin-000000"
     )
     story.append(Paragraph(escalation_text, body_style))
@@ -910,7 +909,7 @@ def build_pdf_document(data, output_pdf_path):
     comp_box = [
         [Paragraph(
             "<b>DOCUMENT INTEGRITY & COMPLIANCE NOTICE:</b><br/>"
-            "This document constitutes the proprietary and confidential knowledge base of Dagsis Property 3 Dummy Pte Ltd (CEA Reg: L3009842J). "
+            "This document constitutes the proprietary and confidential knowledge base of Dagsis Property 3 Dummy. "
             "Prepared strictly for authorized artificial intelligence model grounding, semantic retrieval (RAG), and digital concierge operations. "
             "All property specifications, architectural attributions, and pricing representations are verified as of October 2026.",
             callout_style
@@ -931,40 +930,55 @@ def build_pdf_document(data, output_pdf_path):
 def main():
     data, base_dir = load_database()
     
-    # Target files in workspace
-    output_pdf = os.path.join(base_dir, "HAUTE_TERRES_AI_KNOWLEDGE_BASE.pdf")
-    output_md = os.path.join(base_dir, "HAUTE_TERRES_AI_KNOWLEDGE_BASE.md")
-    output_json = os.path.join(base_dir, "HAUTE_TERRES_AI_KNOWLEDGE_BASE.json")
+    # Target files in workspace (both clean new naming and legacy naming for full compatibility)
+    output_pdf = os.path.join(base_dir, "DAGSIS_PROPERTY_3_DUMMY_AI_KNOWLEDGE_BASE.pdf")
+    output_md = os.path.join(base_dir, "DAGSIS_PROPERTY_3_DUMMY_AI_KNOWLEDGE_BASE.md")
+    output_json = os.path.join(base_dir, "DAGSIS_PROPERTY_3_DUMMY_AI_KNOWLEDGE_BASE.json")
+
+    legacy_pdf = os.path.join(base_dir, "HAUTE_TERRES_AI_KNOWLEDGE_BASE.pdf")
+    legacy_md = os.path.join(base_dir, "HAUTE_TERRES_AI_KNOWLEDGE_BASE.md")
+    legacy_json = os.path.join(base_dir, "HAUTE_TERRES_AI_KNOWLEDGE_BASE.json")
     
     # Public directory files
     public_dir = os.path.join(base_dir, "public")
     if not os.path.exists(public_dir):
         os.makedirs(public_dir)
-    public_pdf = os.path.join(public_dir, "HAUTE_TERRES_AI_KNOWLEDGE_BASE.pdf")
-    public_json = os.path.join(public_dir, "HAUTE_TERRES_AI_KNOWLEDGE_BASE.json")
+    public_pdf = os.path.join(public_dir, "DAGSIS_PROPERTY_3_DUMMY_AI_KNOWLEDGE_BASE.pdf")
+    public_json = os.path.join(public_dir, "DAGSIS_PROPERTY_3_DUMMY_AI_KNOWLEDGE_BASE.json")
+    legacy_pub_pdf = os.path.join(public_dir, "HAUTE_TERRES_AI_KNOWLEDGE_BASE.pdf")
+    legacy_pub_json = os.path.join(public_dir, "HAUTE_TERRES_AI_KNOWLEDGE_BASE.json")
 
     # Brain / Artifacts directory copy
     artifact_dir = r"C:\Users\Mehardeep\.gemini\antigravity\brain\64de96cb-ce27-48ec-8685-2541562ff63a"
-    artifact_pdf = os.path.join(artifact_dir, "HAUTE_TERRES_AI_KNOWLEDGE_BASE.pdf")
-    artifact_md = os.path.join(artifact_dir, "HAUTE_TERRES_AI_KNOWLEDGE_BASE.md")
+    artifact_pdf = os.path.join(artifact_dir, "DAGSIS_PROPERTY_3_DUMMY_AI_KNOWLEDGE_BASE.pdf")
+    artifact_md = os.path.join(artifact_dir, "DAGSIS_PROPERTY_3_DUMMY_AI_KNOWLEDGE_BASE.md")
+    legacy_art_pdf = os.path.join(artifact_dir, "HAUTE_TERRES_AI_KNOWLEDGE_BASE.pdf")
+    legacy_art_md = os.path.join(artifact_dir, "HAUTE_TERRES_AI_KNOWLEDGE_BASE.md")
 
     print("[1/5] Generating Markdown Knowledge Base...")
     create_markdown_knowledge_base(data, output_md)
+    shutil.copyfile(output_md, legacy_md)
     if os.path.exists(artifact_dir):
         shutil.copyfile(output_md, artifact_md)
+        shutil.copyfile(output_md, legacy_art_md)
     print(f"Created: {output_md}")
 
     print("[2/5] Generating JSON Knowledge Base for Vector Embeddings...")
     with open(output_json, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
+    shutil.copyfile(output_json, legacy_json)
     shutil.copyfile(output_json, public_json)
+    shutil.copyfile(output_json, legacy_pub_json)
     print(f"Created: {output_json} and {public_json}")
 
     print("[3/5] Generating Publication-Grade PDF...")
     build_pdf_document(data, output_pdf)
+    shutil.copyfile(output_pdf, legacy_pdf)
     shutil.copyfile(output_pdf, public_pdf)
+    shutil.copyfile(output_pdf, legacy_pub_pdf)
     if os.path.exists(artifact_dir):
         shutil.copyfile(output_pdf, artifact_pdf)
+        shutil.copyfile(output_pdf, legacy_art_pdf)
     print(f"Created: {output_pdf}")
     print(f"Copied to public: {public_pdf}")
     if os.path.exists(artifact_dir):

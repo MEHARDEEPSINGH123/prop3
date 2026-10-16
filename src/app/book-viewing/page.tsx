@@ -609,7 +609,7 @@ function BookViewingContent() {
                         <input
                           type="text"
                           required
-                          placeholder="e.g. Lord Julian Sterling / Lady Valerie"
+                          placeholder="e.g. Alexander Vance / Sophia Tan"
                           value={fullName}
                           onChange={(e) => setFullName(e.target.value)}
                           className="w-full bg-white/[0.04] text-white placeholder-neutral-500 text-xs rounded-xl px-4 py-3 border border-white/15 focus:outline-none focus:border-accent"
@@ -638,7 +638,7 @@ function BookViewingContent() {
                       <input
                         type="email"
                         required
-                        placeholder="julian@familyoffice.sg"
+                        placeholder="alexander@familyoffice.sg"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         className="w-full bg-white/[0.04] text-white placeholder-neutral-500 text-xs rounded-xl px-4 py-3 border border-white/15 focus:outline-none focus:border-accent"
