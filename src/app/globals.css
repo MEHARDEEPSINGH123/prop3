@@ -142,3 +142,18 @@ select option:checked {
   font-weight: 600;
 }
 
+/* Suppress any default unstyled blue Dagsis widget elements */
+#dagsis-chat-button {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+#dagsis-chat-container {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
